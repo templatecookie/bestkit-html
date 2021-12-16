@@ -75,17 +75,17 @@ $primary: inherit;
 	}
 
 	.nav-link-item {
-		color: rgba(2, 12, 23,0.6);
-		font-size: 16px;
-		font-weight: 700;
-		line-height: 1.5;
+		color: #222D39;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.222222222222222;
 		position: relative;
 		transition: .3s;
 		&:hover{
-			color: #020C17;
+			color: #008AFF;
 		}
 		@media (min-width:992px) {
-			padding: 32px 21px;
+			padding: 35px 25px;
 		}
 	}
 }
@@ -122,8 +122,8 @@ $primary: inherit;
 			}
 		}
 		&--item {
-			font-size: 16px;
-			font-weight: 600;
+			font-size: 18px;
+			font-weight: 500;
 			letter-spacing: normal;
 			line-height: 1.75;
 			transition: 0.4s;
@@ -136,8 +136,8 @@ $primary: inherit;
 			}
 
 			>a {
-				color: rgba(26, 35, 54, 0.65);
-				transition: 0.4s;
+				color: #222D39;
+				transition: 0.3s;
 				padding-left: 10px;
 				padding-right: 10px;
 				padding-top: 15px;
@@ -162,7 +162,7 @@ $primary: inherit;
 					justify-content: center;
 				}
 				&:hover{
-					color: red;
+					color: #008AFF !important;
 				}
 			}
 

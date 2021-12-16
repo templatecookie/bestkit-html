@@ -6,6 +6,6 @@
     "header_button":true,
     "additional_button_classes":"site-header__btns--01",
     "header_button_class":"header-text",
-    "header_button_text" :"hi@bestkit.design"
+    "header_button_text" :"<img src='./image/l-1/mail.png' alt='mail'>hi@bestkit.design"
   }
 }

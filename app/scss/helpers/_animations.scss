@@ -1,26 +1,4 @@
-.floating-Y-animation{
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction:alternate;
-  animation-timing-function:ease-in-out;
-}
-.floating-Y-animation-reverse{
-  animation-name: floating-reverse;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction:alternate;
-  animation-timing-function:ease-in-out;
-}
 
-@keyframes floating {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-15px); }
-}
-@keyframes floating-reverse {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(15px); }
-}
 .floating-Y-animation-02{
   animation-name: floating-02;
   animation-duration: 10s;
@@ -275,4 +253,51 @@
 @keyframes circle-x-animation-02 {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(500%); }
+}
+
+
+
+// Start css
+.floating-Y-animation{
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+.floating-Y-animation-reverse{
+  animation-name: floating-reverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+@keyframes floating-reverse {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(15px); }
+}
+
+.wave {
+  animation-name: wave-animation; 
+  color: unset;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
 }
