@@ -1,0 +1,27 @@
+.fact-section{
+    background: rgba(230, 222, 209,0.2);
+    padding: 55px 0;
+    @media (min-width:575px) {
+        padding: 70px 0 76px;
+    }
+
+}
+
+.widget-counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    @media (min-width:575px) {
+        text-align: start;
+    flex-direction: row;        
+    }
+    &--icon{
+        margin-bottom: 15px;
+        @media (min-width:575px) {
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
+    }
+}

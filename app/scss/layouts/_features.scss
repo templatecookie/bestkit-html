@@ -1,0 +1,94 @@
+.features-section{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:768px) {
+        padding: 100px 0;
+    }
+    @media (min-width:992px) {
+        padding: 102px 0 120px;
+    }
+    &__image {
+        margin-bottom: 30px;
+        img{
+            border-radius: 5px;
+        }
+        position: relative;
+        font-size: 8px;
+        @media (min-width:480px) {
+            font-size: 10px;
+        }
+        @media (min-width:992px) {
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+        @media (min-width:1200px) {
+            font-size: 16px;
+        }
+        .content-card{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            @media (min-width:1200px) {
+                bottom: 0;
+                left: -14%;
+            }
+        }
+        .content-card-modifi{
+            position: absolute;
+            bottom: 0;
+            right: 0 !important;
+            @media (min-width:1200px) {
+                bottom: 0;
+                right: -8% !important;
+            } 
+        }
+    }
+}
+
+.features-content-block{
+    .content-list{
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        li{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-bottom: 18px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .icon{
+                margin-right: 13.29px;
+                svg{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.content-card-style-two{
+    border-radius: 5px;
+    width: 12.3125em;
+    text-align: center;
+    padding: 1.5625em;
+    span{
+        font-weight: 700;
+        font-size: 3em;
+        line-height: 1.104166666666667;
+        color: white;
+        margin-bottom: 5px;
+        @media (min-width:992px) {
+            margin-bottom: 10px;
+        }
+    }
+    .title{
+        color: white;
+      font-weight: 700;
+      line-height:1.142857142857143;
+      font-size: 1.75em;
+    }
+}

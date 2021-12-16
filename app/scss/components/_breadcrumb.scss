@@ -1,0 +1,29 @@
+.breadcrumb{
+    margin: 0;
+    background: rgb(230, 222, 209,0.5);
+    padding-top: 55px;
+    padding-bottom: 59px;
+    @media (min-width:768px) {
+        padding-top: 75px;
+        padding-bottom: 78px;
+    }
+    .breadcrumb-text-block{
+        .breadcrumb--navigation{
+            padding-bottom: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .title {
+        line-height: 1.181818181818182;
+        font-weight: 700;
+          font-size: 35px;
+        @media (min-width: 768px) {
+          font-size: 45px;
+        }
+        @media (min-width: 992px) {
+          font-size: 55px;
+        }
+      }
+}

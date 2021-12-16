@@ -1,0 +1,19 @@
+.service-section{
+    background: rgb(230, 222, 209,0.15);
+    padding: 52px 0 60px;
+    @media (min-width:575px) {
+        padding: 70px 0 80px;
+    }
+    @media (min-width:768px) {
+        padding: 87px 0 100px;
+    }
+    @media (min-width:992px) {
+        padding: 102px 0 120px;
+    }
+    .section-content-block {
+        margin-bottom: 45px;
+        @media (min-width:992px) {
+            margin-bottom: 80px;
+        }
+    }
+}

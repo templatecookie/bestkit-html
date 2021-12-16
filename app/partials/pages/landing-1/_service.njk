@@ -1,0 +1,45 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/icons/service-icon-1.png",
+        title:"Generate Marketing <br> strategy & ideas"
+        },
+        {
+        id:2,
+        img:"./image/icons/service-icon-2.png",
+        title:"Increasing <br> organic traffic"
+        },
+        {
+        id:3,
+        img:"./image/icons/service-icon-3.png",
+        title:"Conducting vast<br> promotion"
+        },
+        {
+        id:4,
+        img:"./image/icons/service-icon-4.png",
+        title:"Boosting your sell <br>advertisement"
+        }
+
+
+]%}
+<div class="service-section">
+    <div class="container">
+        <div class="section-content-block text-center">
+            <h2 class="title"><span class="text-see-green">Services</span> we provide</h2>
+        </div>
+        <div class="row justify-content-center card-row">
+            {% for item in cardData%}
+            <div class="col-xl-3 col-xs-6" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                {{Card.SerciceCard({
+                    img:item.img,
+                    title:item.title
+                })}}
+            </div>
+            {% endfor %}
+        </div>
+    </div>              
+</div>
+{% endmacro %}

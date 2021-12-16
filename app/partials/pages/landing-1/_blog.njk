@@ -1,0 +1,54 @@
+{% macro render(options) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        className:"active",
+        meta:"Asset management",
+        date:"24 June 2021",
+        img:"./image/home/blog-1.png",
+        title:"How to manage your financial assets and investment"
+        },
+        {
+        id:2,
+        meta:"Currency & economy",
+        date:"24 June 2021",
+        img:"./image/home/blog-2.png",
+        title:"How to manage your financial assets and investment"
+        },
+        {
+        id:3,
+        meta:"Asset management",
+        date:"24 June 2021",
+        img:"./image/home/blog-3.png",
+        title:"How to manage your financial assets and investment"
+        }
+
+
+]%}
+<div class="blog-section">
+    <div class="container">
+        <div class="section-content-block text-center text-xl-start">
+            <h2 class="title">Enrich your marketing knowledge <br class="d-none d-xl-block"> with latest article and blogs</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class=" col-xxl-12 col-xl-10 col-md-12 col-xs-10">
+                <div class="row three-row-mobile-slider mobile-slider">
+                    {% for item in cardData%}
+                    <div class="col-lg-4 single-slider" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                        {{Card.StyleOne({
+                        img:item.img,
+                        className:item.className,
+                        date:item.date,
+                        meta:item.meta,
+                        title:item.title
+                        })}}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>              
+</div>
+{% endmacro %}

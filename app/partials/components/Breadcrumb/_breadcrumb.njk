@@ -1,0 +1,14 @@
+{% macro render(option) %}
+    <div class="breadcrumb {{option.PaddingClass}}">
+        <div class="container">
+            <div class="row {{option.ClassName}}">
+                <div class="{{'col-xxl-6 col-xl-8 col-sm-10' if not option.column else option.column}}">
+                    <div class="section-title-block breadcrumb-text-block {{option.CenterClass}}">
+                        <span class="breadcrumb--navigation text-see-green text">Home/{{option.pageName}}</span>
+                        <h2 class="title">{{option.titleOne}} <span class="text-see-green">{{option.titleTwo}}</span> {{option.titleThree}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

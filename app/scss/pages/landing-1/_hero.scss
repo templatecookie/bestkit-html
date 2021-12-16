@@ -1,0 +1,15 @@
+.hero-section-01{
+    padding-top: 123px;
+    position: relative;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 30%;
+        background: #EBF6FF;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,112 @@
+{% macro SerciceCard(obj) %}
+<a href="#" class="d-block">
+    <div class="card card-service">
+        <div class="card-image">
+            <img src="{{obj.img}}" alt="card" class="mw-100">
+        </div>
+        <div class="card-body p-0">
+            <h4 class="card-title">{{obj.title | safe}}</h4>
+            <span class="card-btn-link">
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.6667 7.4165L1 7.4165" stroke="#020C17" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M9.25 13.8333L15.6667 7.41659L9.25 0.99992" stroke="#020C17" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </span>
+        </div>
+    </div>
+</a>
+{% endmacro %}
+{% macro StyleOne(obj) %}
+<div class="card card-category-one {{obj.className}}">
+    <div class="card-body">
+        <span class="meta">{{obj.meta}}<small>{{obj.date}}</small></span>
+        <h4 class="card-title" title="{{obj.title}}"><a href="#">{{obj.title}}</a></h4>
+    </div>
+    <div class="card-image">
+        <a href="#"><img src="{{obj.img}}" alt="card" class="w-100"></a>
+    </div>
+    <div class="card-btn">
+        <a href="#" class="card-btn-link"><span> Read More</span>
+            <div class="icon">
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.6667 7.4165L1 7.4165" stroke="" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M9.25 13.8333L15.6667 7.41659L9.25 0.99992" stroke="" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </a>
+    </div>
+</div>
+{% endmacro %}
+{% macro StyleTwo(obj) %}
+<div class="card card-category-two {{obj.className}}">
+    <div class="card-image">
+        <a href="{{obj.link}}"><img src="{{obj.img}}" alt="card" class="w-100"></a>
+    </div>
+    <div class="card-body">
+        <p class="text-see-green text">{{obj.category}}</p>
+        <h4 class="card-title" title="{{obj.title}}"><a href="{{obj.link}}">{{obj.title}}</a></h4>
+        <span class="meta">{{obj.date}}<small>{{obj.comment}}</small></span>
+        <div class="card-btn">
+            <a href="{{obj.link}}" class="card-btn-link"><span> Read More</span>
+                <div class="icon">
+                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6667 7.4165L1 7.4165" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M9.25 13.8333L15.6667 7.41659L9.25 0.99992" stroke="" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endmacro %}
+{% macro StyleThree(obj) %}
+<div class="card card-category-three {{obj.className}}">
+    <div class="card-image">
+        <a href="{{obj.link}}"><img src="{{obj.img}}" alt="card" class="w-100"></a>
+    </div>
+    <div class="card-body">
+        <h6 class="subtitle text-see-green">{{obj.category}}</h6>
+        <h4 class="card-title" title="{{obj.title}}"><a href="#">{{obj.title}}</a></h4>
+        <span class="meta">{{obj.date}}<small>{{obj.comment}}</small></span>
+        <p class="text text-18 text-dark">{{obj.text}}</p>
+        <div class="card-btn">
+            <a href="{{obj.link}}" class="card-btn-link"><span> Read More</span>
+                <div class="icon">
+                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.6667 7.4165L1 7.4165" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M9.25 13.8333L15.6667 7.41659L9.25 0.99992" stroke="" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endmacro %}
+{% macro Team(obj) %}
+<div class="team-member {{obj.ClassName}}">
+    <img src="{{obj.img}}" alt="team" class="w-100 rounded-5">
+    <div class="team-info">
+        <h4 class="text-24 text-white">{{obj.name}}</h4>
+        <p class="text-white">{{obj.position}}</p>
+    </div>
+</div>
+{% endmacro %}
+{% macro PostCard(obj) %}
+  <div class="card-post">
+    <div class="post-img">
+      <img src="{{obj.img}}" alt="card-img">
+    </div>
+      <div class="post-content">
+          <h6 class="subtitle text-see-green">{{obj.subtitle}}</h6>
+          <p class="text"><a href="{{obj.link}}">{{obj.text}}</a></p>
+      </div>
+  </div>
+{% endmacro %}

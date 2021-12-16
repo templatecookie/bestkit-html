@@ -1,242 +1,341 @@
-const gulp = require('gulp');
-const { src, dest, watch, series, parallel } = require('gulp');
-const uglify = require('gulp-uglify');
-const concat = require('gulp-concat');
-const minifyCss = require('gulp-clean-css');
-const plumberNotifier = require('gulp-plumber-notifier');
-const sourcemaps = require('gulp-sourcemaps');
-//const sass = require('gulp-sass');
-const sass = require('gulp-dart-sass');
-const del = require('del');
-//const imagemin = require('gulp-imagemin');
-//const imageminPngQuant = require('imagemin-pngquant');
-//const imageminjpegCrompress = require('imagemin-jpeg-recompress');
-const babel = require('gulp-babel');
-const rename = require("gulp-rename");
-//const csscomb = require('gulp-csscomb');
-const browserSync = require('browser-sync').create();
-const prettyHtml = require('gulp-pretty-html');
-const nunjucksRender = require('gulp-nunjucks-render');
-const cssbeautify = require('gulp-cssbeautify');
+var gulp = require("gulp"),
+  Fiber = require('fibers'),
+  autoPrefixer = require("gulp-autoprefixer"),
+  argv = require("minimist")(process.argv.slice(2)),
+  browserSync = require("browser-sync").create(),
+  reload = browserSync.reload,
+  sass = require("gulp-sass"),
+  cleanCSS = require("gulp-clean-css"),
+  merge = require("gulp-merge-json"),
+  csso = require("gulp-csso"),
+  del = require("del");
+(gulpif = require("gulp-if")),
+  (sourcemaps = require("gulp-sourcemaps")),
+  (concat = require("gulp-concat")),
+  (imagemin = require("gulp-imagemin")),
+  (changed = require("gulp-changed")),
+  (rename = require("gulp-rename")),
+  (uglify = require("gulp-uglify")),
+  (beautify = require("gulp-beautify-code")),
+  (notify = require("gulp-notify")),
+  (plumber = require("gulp-plumber")),
+  (purgecss = require("gulp-purgecss")),
+  (nunjucks = require("gulp-nunjucks")),
+  (rendeNun = require("gulp-nunjucks-render")),
+  (data = require("gulp-data")),
+  (lineec = require("gulp-line-ending-corrector")),
+  (purgecss = require("gulp-purgecss")),
+  (filter = require("gulp-filter"));
+  sass.compiler = require('sass');
+const destination = argv.clean
+  ? "dist/demo/"
+  : argv.pub
+  ? "dist/publish/"
+  : "dist/";
+const port = argv.demo ? 4002 : argv.pub ? 4003 : 4001;
 
-//path 
-const files = {
-    output: 'dist',
-    templates: 'src/templates',
-    layout: 'src/layout',
-    pages: 'src/pages',
-    sass_path: 'src/sass/**/*.{sass,scss}',
-    css_path: 'src/css/**/*.css',
-    plugins_path: 'src/js/plugins/**/*.js',
-    main_js_path: 'src/js/main.js',
-    fonts_path: 'src/fonts/**/*',
-    jquery_js_path: 'src/js/jquery-3.6.0.min.js',
-    image_path: 'src/images/**/*.{png,jpeg,jpg,svg,gif,ico}',
-    buildOutput:'build'
+var sourcemap = argv.demo ? false : argv.pub ? true : true;
+var minImg = argv.demo ? false : argv.pub ? true : false;
+// All Path
+const path = {
+  root: "./",
+  temp: "./app/temp/",
+  html: "./app/*.+(html|njk)",
+  htmlElem: "./app/components/**/*.+(html|njk)",
+  _partialFiles: "./app/partials/**/*.+(htm|njk)",
+  _partial: "./app/partials/",
+  php: "./app/php/**/*.php",
+  fonts: "./app/fonts/**/*.*",
+  js: "./app/js/*.*",
+  scss: "./app/scss/**/*.scss",
+  escScss: "!./app/scss/bootstrap/**.scss",
+  img: "./app/image/**/*.+(png|jpg|gif|ico|svg|webp)",
+  data: "./app/data/data.json",
+  jsonAll: "./app/database/*.json",
+  plugins: "./app/plugins/**/*.*",
+  pluginCss: "./app/plugins/**/*.css",
+  bootstrap: "node_modules/bootstrap/scss/**/*.scss",
+  vendorJs: ["node_modules/jquery/dist/jquery.min.js", "node_modules/jquery-migrate/dist/jquery-migrate.min.js", "node_modules/bootstrap/dist/js/bootstrap.bundle.js"],
+  pluginJs: "./app/plugins/**/*.js",
+  plugin: { js: "./app/plugin/js/*.js", css: "./app/plugin/css/*.css" },
+};
+// const folders = [path.php,path.js,path.plugins];
+
+const dest = {
+  css: destination + "css/",
+  scss: destination + "scss/",
+  js: destination + "js/",
+  fonts: destination + "fonts/",
+  php: destination + "php/",
+  img: destination + "image/",
+  plugins: destination + "plugins/",
+  temp: destination + "temp/",
+  elem: destination + "components/",
+  bundle: { css: "bundled/css/", js: "bundled/js/" },
 };
 
+// const watchSrc = [path.html, path.js, path.php, path.img, path.fonts, path.plugin.css,path.plugin.css,path.plugin];
 
-
-function serve(done) {
-    browserSync.init({
-        server: {
-            baseDir: files.output
-        },
-    });
-    done();
-
+/* =====================================================
+   BrowserSync
+===================================================== */
+function browserReload(done) {
+  browserSync.init({
+    server: {
+      baseDir: destination + "/",
+    },
+    port: port,
+  });
+  done();
 }
 
-function nunjucks(done) {
-    console.log("Rendering nunjucks files..");
-    return src(files.pages + '/**/*.+(html|js|css)')
-        .pipe(nunjucksRender({
-            path: [files.templates],
-            watch: true,
-        }))
-        .pipe(plumberNotifier())
-        .pipe(prettyHtml({
-            indent_size: 2,
-            indent_char: ' ',
-            unformatted: ['code', 'pre', 'em', 'strong', 'span', 'i', 'b', 'br'],
-            extra_liners: ['head', 'body'],
-        }))
-        .pipe(dest(files.output))
-        .pipe(browserSync.stream());
-    done();
+/* =====================================================
+    CLEAN
+===================================================== */
+function clean() {
+  return del([destination]);
 }
 
-
-
-function sassCompile() {
-    console.log('sass task start');
-    return src(files.sass_path)
-        .pipe(plumberNotifier())
-        .pipe(sourcemaps.init())
-        .pipe(sass())
-        .pipe(cssbeautify({
-            indent: '',
-            openbrace: 'separate-line',
-            autosemicolon: true
-        }))
-        .pipe(sourcemaps.write('.'))
-        .pipe(dest(files.output + "/" + 'assets/css'))
-        .pipe(browserSync.stream())
-        .pipe(rename({ suffix: ".min" }))
-        .pipe(minifyCss())
-        .pipe(dest(files.output + "/" + 'assets/css'));
-}
-
-function scriptsTask() {
-    console.log('script task start');
-    return src(files.plugins_path)
-        .pipe(plumberNotifier())
-        .pipe(sourcemaps.init())
-        .pipe(uglify())
-        .pipe(concat('rt-plugins.js'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(dest(files.output + "/" + "assets/js"))
-        .pipe(browserSync.stream());
-}
-
-function appJstask() {
-    return src(files.main_js_path)
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(plumberNotifier())
-        .pipe(sourcemaps.init())
-        .pipe(concat('app.js'))
-        .pipe(dest(files.output + "/" + "assets/js"))
-        .pipe(uglify())
-        .pipe(rename({ suffix: ".min" }))
-        .pipe(dest(files.output + "/" + "assets/js"))
-        .pipe(browserSync.stream());
-}
-
-function csspluginTask() {
-    console.log('css plugin task start');
-    return src(files.css_path)
-        .pipe(plumberNotifier())
-        .pipe(concat('rt-plugins.css'))
-        .pipe(minifyCss())
-        .pipe(sourcemaps.write('.'))
-        .pipe(dest(files.output + "/" + "assets/css"))
-        .pipe(browserSync.stream());
-}
-
-function imagetask() {
-    return src(files.image_path)
-        // .pipe(imagemin(
-        //     [
-        //         imagemin.gifsicle(),
-        //         imagemin.jpegtran(),
-        //         imagemin.optipng(),
-        //         imagemin.svgo(),
-        //         imageminPngQuant(),
-        //         imageminjpegCrompress()
-        //     ]
-        // ))
-        .pipe(dest(files.output + "/" + "assets/images"))
-        .pipe(browserSync.stream());
-}
-
-function copyfonts() {
-    return src(files.fonts_path)
-        .pipe(dest(files.output + "/" + "assets/fonts"))
-        .pipe(browserSync.stream());
-}
-
-function copycss() {
-    return src(files.css_path)
-        .pipe(dest(files.output + "/" + "assets/css"))
-        .pipe(browserSync.stream());
-}
-
-function copyjs() {
-    return src(files.plugins_path)
-        .pipe(dest(files.output + "/" + "assets/js"))
-        .pipe(browserSync.stream());
-}
-
-
-function copyjs2() {
-    return src(files.jquery_js_path)
-        .pipe(dest(files.output + "/" + "assets/js"))
-        .pipe(browserSync.stream());
-}
-
-
-function copysass() {
-    return src(files.sass_path)
-        .pipe(dest(files.output + "/" + "assets/sass"))
-        .pipe(browserSync.stream());
-}
-
-function dlt_dist() {
-    return del.sync([
-        files.output
-
-    ]);
+/*--------------------------------------
+    Gulp Custom Notifier
+----------------------------------------*/
+function customPlumber([errTitle]) {
+  return plumber({
+    errorHandler: notify.onError({
+      title: errTitle || "Error running Gulp",
+      message: "Error: <%= error.message %>",
+      sound: "Glass",
+    }),
+  });
 }
 
 
 
-function reload(done) {
-    browserSync.reload();
-    done();
+
+/* =====================================================
+    HTML
+===================================================== */
+function htmlmain(e) {
+  return (
+      delete require.cache[require.resolve("./app/db.json")],
+      gulp
+          .src([path.html])
+          .pipe(data(require("./app/db.json")))
+          .pipe(rendeNun({ path: [path._partial] }))
+          .pipe(customPlumber("Error Running Nunjucks"))
+          .pipe(beautify({ indent_size: 2, indent_char: " ", max_preserve_newlines: 0, unformatted: ["code", "pre", "em", "strong", "span", "i", "b", "br"] }))
+          .pipe(gulp.dest(destination))
+          .pipe(browserSync.reload({ stream: !0 }))
+  );
+}
+function htmlElem(e) {
+  return (
+      delete require.cache[require.resolve("./app/db.json")],
+      gulp
+          .src([path.htmlElem])
+          .pipe(data(require("./app/db.json")))
+          .pipe(rendeNun({ path: [path._partial] }))
+          .pipe(customPlumber("Error Running Nunjucks"))
+          .pipe(beautify({ indent_size: 2, indent_char: " ", max_preserve_newlines: 0, unformatted: ["code", "pre", "em", "strong", "span", "i", "b", "br"] }))
+          .pipe(gulp.dest(dest.elem))
+          .pipe(browserSync.reload({ stream: !0 }))
+  );
+}
+function json() {
+  return gulp
+      .src([path.jsonAll])
+      .pipe(merge({ fileName: "db.json" }))
+      .pipe(gulp.dest("./app/"));
+}
+exports.html = htmlElem;
+const html = gulp.series(json, gulp.parallel(htmlmain, htmlElem));
+
+/* =====================================================
+    Scss
+===================================================== */
+function css() {
+  return (
+    gulp
+      .src([path.scss, path.escScss])
+      // .pipe(customPlumber('Error Running Sass'))
+      // sourcemaps for Development
+      .pipe(gulpif(sourcemap, sourcemaps.init()))
+      .pipe(sass({ includePaths: ['./node_modules'],
+      fiber: Fiber }).on("error", sass.logError))
+      .pipe(autoPrefixer())
+      .pipe(
+        gulpif(
+          argv.demo,
+          csso({
+            restructure: false,
+            sourceMap: true,
+            debug: true,
+          })
+        )
+      )
+      .pipe(gulpif(sourcemap, sourcemaps.write("./maps/")))
+      .pipe(lineec())
+      .pipe(gulp.dest(dest.css))
+      .pipe(
+        browserSync.reload({
+          stream: true,
+        })
+      )
+  );
+}
+// function bootstrapCss() {
+//   return (
+//     gulp
+//       .src([path.bootstrap])
+//       // .pipe(customPlumber('Error Running Sass'))
+//       // sourcemaps for Development
+//       .pipe(gulp.dest("./app/scss/bootstrap/"))
+//       .pipe(
+//         browserSync.reload({
+//           stream: true,
+//         })
+//       )
+//   );
+// }
+const scss = gulp.parallel(css);
+
+/* =====================================================
+    Copy SCSS Folder
+===================================================== */
+function sassCopy() {
+  return gulp.src([path.scss]).pipe(gulpif(argv.pub, gulp.dest(dest.scss)));
 }
 
-function watchfiles() {
-    watch([files.sass_path], series(sassCompile, reload));
-    watch([files.css_path], series(csspluginTask, reload));
-    watch([files.main_js_path], series(appJstask, reload));
-    watch([files.plugins_path], series(scriptsTask, reload));
-    watch([files.image_path], series(imagetask, reload));
-    watch([files.fonts_path], series(copyfonts, reload));
-    watch(['src/templates/**/*.html', 'src/pages/**/*.html'], series(nunjucks, reload));
-    watch(files.output + '/*').on('change', browserSync.reload);
+/* =====================================================
+    Image
+===================================================== */
+// function imgmin(){
+//     return gulp.src([path.img])
+//         .pipe(changed(dest.img))
+//         .pipe(gulpif(minImg, imagemin([
+//             imagemin.gifsicle({ interlaced: true }),
+//             imagemin.jpegtran({ progressive: true }),
+//             imagemin.optipng({ optimizationLevel: 5 })
+//         ])))
+//         .pipe(gulp.dest(dest.img))
+//         .pipe(browserSync.reload({
+//             stream: true
+//         }));
+// }
+/* =====================================================
+    PHP file
+===================================================== */
+function php() {
+  return gulp
+    .src([path.php])
+    .pipe(changed(dest.php))
+    .pipe(gulp.dest(dest.php))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      })
+    );
+}
+/* =====================================================
+    Plugins Folder
+===================================================== */
+function plugins() {
+  return gulp
+    .src([path.plugins])
+    .pipe(changed(dest.plugins))
+    .pipe(gulp.dest(dest.plugins))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      })
+    );
+}
+/* =====================================================
+    Fonts Folder
+===================================================== */
+
+function fonts() {
+  return gulp
+    .src([path.fonts])
+    .pipe(changed(dest.fonts))
+    .pipe(gulp.dest(dest.fonts))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      })
+    );
+}
+/* =====================================================
+    Image Folder
+===================================================== */
+function image() {
+  return gulp
+    .src([path.img])
+    .pipe(changed(dest.img))
+    .pipe(gulp.dest(dest.img))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      })
+    );
 }
 
-function  build (){
-    return src(['dist/**/*'])
-    .pipe(dest("./build"))
+/* =====================================================
+    Javascript
+===================================================== */
+function customscript() {
+  return gulp
+    .src([path.js])
+    .pipe(changed(dest.js))
+    .pipe(beautify())
+    .pipe(lineec())
+    .pipe(gulp.dest(dest.js));
+}
+function pluginscript() {
+  return gulp
+    .src(path.vendorJs, { allowEmpty: true })
+    .pipe(concat("vendor.min.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest(dest.js));
+}
+const javascript = gulp.parallel(customscript, pluginscript);
+
+/* =====================================================
+    fonts Folder Copy
+===================================================== */
+const copyAssets = gulp.parallel(php, plugins, fonts, image);
+
+// /* =====================================================
+//     Purge Css
+// ===================================================== */
+function sassCopy() {
+  return gulp.src([path.scss]).pipe(gulpif(argv.pub, gulp.dest(dest.scss)));
 }
 
+function watchFiles() {
+  gulp.watch(path.html, html);
+  gulp.watch(path._partial, html);
+  gulp.watch([path.plugin.js, path.js, path.fonts, path.img], copyAssets);
+  gulp.watch([path.js], javascript);
+  gulp.watch(path.scss, css);
+  gulp.watch(path.root, gulp.series(clean, build));
+}
 
-exports.default = parallel(
-    dlt_dist,
-    nunjucks,
-    sassCompile,
-    csspluginTask,
-    copyjs2,
-    copyjs,
-    imagetask,
-    copyfonts,
-    scriptsTask,
-    reload,
-    serve,
-    appJstask,
-    watchfiles
- 
-
+// const copyAssets = gulp.parallel(fonts,php, javascript, sassCopy, plugins,imgmin);
+const build = gulp.series(
+  clean,
+  html,
+  gulp.parallel(scss, javascript, copyAssets)
 );
+const buildWatch = gulp.series(build, browserReload, gulp.parallel(watchFiles));
 
-exports.build = parallel(
-    nunjucks,
-    sassCompile,
-    csspluginTask,
-    copyjs2,
-    copyjs,
-    imagetask,
-    copyfonts,
-    scriptsTask,
-    appJstask,
-    build
-)
-
-
-
-
-
-
+exports.html = html;
+exports.browserReload = browserReload;
+exports.scss = scss;
+exports.clean = clean;
+exports.javascript = javascript;
+exports.build = build;
+exports.buildWatch = buildWatch;
+exports.watchFiles = watchFiles;
+exports.default = buildWatch;
+exports.copyAssets = copyAssets;
