@@ -1,12 +1,13 @@
 .hero-section-01{
-    padding: 60px 0 60px;
+    padding: 101px 0 60px;
     position: relative;
     z-index: 1;
     @media (min-width:575px) {
-        padding: 80px 0 80px;
+        padding: 125px 0 80px;
     }
     @media (min-width:992px) {
         padding-top: 130px;
+        padding-bottom: 0;
         &::before{
             position: absolute;
             content: "";
@@ -21,15 +22,30 @@
     &__content{
         .subtitle{
             font-weight: 600;
-            font-size: 58px;
-            line-height: 76px;
+            font-size: 38px;
+            line-height: 1.310344827586207;
+            @media (min-width:768px) {
+                font-size: 42px;
+            }
+            @media (min-width:992px) {
+                font-size: 46px;
+            }
+            @media (min-width:1400px) {
+                font-size: 58px;
+            }
         }
         .title{
-            margin-bottom: 35px;
+            margin-bottom: 25px;
+            @media (min-width:575px) {
+                margin-bottom: 35px;
+            }
         }
         &--button-group{
             margin: 0 -10px;
-            margin-top: 55px;
+            margin-top: 30px;
+            @media (min-width:575px) {
+                margin-top: 55px;
+            }
             .btn{
                 margin: 0 10px;
             }
@@ -53,6 +69,9 @@
                         }
                     }
                 }
+                @media (max-width:380px) {
+                    width: 185px;
+                }
             }
             .btn-2{
                 border: 2px solid #DEE7EE;
@@ -74,6 +93,10 @@
                             stroke: white;
                         }
                     }
+                }
+                @media (max-width:380px) {
+                    width: 185px;
+                    margin-top: 15px;
                 }
             }
         }

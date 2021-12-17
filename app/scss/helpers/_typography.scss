@@ -3,10 +3,19 @@
 .page-title-block {
   .title {
     font-weight: 600;
-    line-height: 1.310344827586207;
-    font-size: 48px;
+    line-height: 1.225;
+    font-size: 52px;
     @media (min-width: 768px) {
+      font-size: 60px;
+    }
+    @media (min-width: 992px) {
       font-size: 58px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 70px;
+    }
+    @media (min-width: 1400px) {
+      font-size: 80px;
     }
   }
   p{
