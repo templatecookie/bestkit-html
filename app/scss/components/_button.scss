@@ -5,16 +5,62 @@
   font-size: 16px;
   font-weight: 600;
   display: inline-flex;
-  padding: 1.2em 1.6em;
+  padding: 1em 1.7em;
   line-height: 1;
   align-items: center;
   justify-content: center;
+  transition: .3s;
   @media (min-width:575px) {
     font-size: 18px;
   }
   &:focus{
     box-shadow: none;
     outline: none;
+  }
+  &.btn-primary{
+    border: 2px solid #008AFF;
+    background: #008AFF;
+    color: white;
+    svg{
+      margin-left: 15px;
+      path{
+        transition: .3s;
+        stroke: white;
+      }
+    }
+    &:hover{
+      background: transparent;
+      border-color: #DEE7EE ;
+      color: #222D39;
+      svg{
+        margin-left: 15px;
+        path{
+          stroke: #222D39;
+        }
+      }
+    }
+  }
+  &.btn-outline-primary{
+    border: 2px solid #DEE7EE;
+    color: #222D39;
+    transition: .3s;
+    svg{
+        margin-left: 15px;
+        path{
+            stroke: #222D39;
+            transition: .3s;
+        }
+    }
+    &:hover{
+        background: #008AFF !important;
+        border-color:#008AFF;
+        color: white;
+        svg{
+            path{
+                stroke: white;
+            }
+        }
+    }
   }
 }
 
