@@ -1,56 +1,89 @@
+@use "../abstracts/mixins" as *;
 .card-service{
-  background: var(--bs-black);
-  box-shadow: 0px 4px 32px rgba(157, 157, 157, 0.06);
+  background: var(--bs-white);
+  border: 1px solid #DEE7EE;
   border-radius: 5px;
-  padding: 67px 42px;
-  text-align: center;
-  @media (min-width:480px) {
-    padding: 30px 20px;
-  }
-  @media (min-width:768px) {
-    padding: 60px 30px;
-  }
-  @media (min-width:1400px) {
-    padding: 67px 42px;
+  display: flex;
+  transition: .3s;
+  align-items: flex-start;
+  padding: 30px 25px;
+  @media (min-width:575px) {
+    flex-direction: row;
+    padding: 45px;
+    padding-top: 37px;
   }
   .card-image{
+    margin-bottom: 20px;
+    @include square(60px,500px);
+    @include flexAllCenter;
+    background: #EBF6FF;
     transition: .3s;
-    min-width: 86px;
-    max-width: 86px;
-    min-height: 74px;
-    max-height: 74px;
-    margin: auto;
-    margin-bottom: 25px;
-    @media (min-width:768px) {
-      margin-bottom: 35px;
+    @media (min-width:575px) {
+      margin-bottom: 0;
+      margin-right: 30px;
     }
-  }
-  .card-body{
-    transition: .3s;
-    .card-title{
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 1.571428571428571;
-      margin-bottom: 25px;
-      @media (min-width:768px) {
-        font-size: 21px;
-        margin-bottom: 32px;
+    svg{
+      path{
+        transition: .3s;
+        stroke: var(--bs-primary);
       }
     }
   }
-  .card-btn-link{
-    visibility: hidden;
-    opacity: 0;
-    transition: .3s;
+  .card-body{
+    .card-title{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      @media (min-width:575px) {
+        font-size: 24px;
+      }
+    }
+    p{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.555555555555556;
+      margin-bottom: 25px;
+      @media (min-width:575px) {
+        font-size: 18px;
+      }
+    }
+    a{
+      position: relative;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: black;
+      transition: .3s;
+      padding: 5px 0;
+      &::before{
+        position: absolute;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        left: 0;
+        width: 0;
+        transition: .3s;
+        background: var(--bs-azure-radiance);
+      }
+      &:hover{
+        color: var(--bs-azure-radiance);
+        &::before{
+          width: 100%;
+        }
+      }
+    }
   }
   &:hover{
-    .card-image,.card-body{
-      transform: translateY(-8px);
-    }
-    .card-btn-link{
-      transform: translateY(-8px);
-      visibility: visible;
-      opacity: 1;
+    border-color: transparent;
+    filter: drop-shadow(0px 15px 30px rgba(210, 217, 224, 0.35));
+    .card-image{
+      background: var(--bs-primary);
+      svg{
+        path{
+          stroke: var(--bs-white);
+        }
+      }
     }
   }
 }

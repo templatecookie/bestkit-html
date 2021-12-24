@@ -1,10 +1,12 @@
 {% macro SerciceCard(obj) %}
 <div class="card card-service">
     <div class="card-image">
-        <img src="{{obj.img}}" alt="card" class="mw-100">
+        <img src="{{obj.img}}" alt="card" class="mw-100 make-it-inline">
     </div>
     <div class="card-body p-0">
-        <h4 class="card-title">{{obj.title | safe}}</h4>
+        <h4 class="card-title heading-dark">{{obj.title | safe}}</h4>
+        <p class="text-dark">{{obj.text}}</p>
+        <a href="#">Explore Service</a>
     </div>
 </div>
 {% endmacro %}

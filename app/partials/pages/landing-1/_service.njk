@@ -4,38 +4,38 @@
 {% set cardData =[
         {
         id:1,
-        img:"./image/icons/service-icon-1.png",
-        title:"Generate Marketing <br> strategy & ideas"
+        img:"./image/l-1/s-1.svg",
+        title:"Web Design",
+        text:"Lorem Ipsum is simply dumy text of the printing and type setting industry."
         },
         {
         id:2,
-        img:"./image/icons/service-icon-2.png",
-        title:"Increasing <br> organic traffic"
+        img:"./image/l-1/s-2.svg",
+        title:"Web Development",
+        text:"Lorem Ipsum is simply dumy text of the printing and type setting industry."
         },
         {
         id:3,
-        img:"./image/icons/service-icon-3.png",
-        title:"Conducting vast<br> promotion"
-        },
-        {
-        id:4,
-        img:"./image/icons/service-icon-4.png",
-        title:"Boosting your sell <br>advertisement"
+        img:"./image/l-1/s-3.svg",
+        title:"UI/UX Design",
+        text:"Lorem Ipsum is simply dumy text of the printing and type setting industry."
         }
 
 
 ]%}
 <div class="service-section">
     <div class="container">
-        <div class="section-content-block text-center">
-            <h2 class="title"><span class="text-see-green">Services</span> we provide</h2>
+        <div class="section-title-block text-center">
+            <h6 class="subtitle text-primary mb-10">My Expertise</h6>
+            <h2 class="title">Awesome Services For You</h2>
         </div>
         <div class="row justify-content-center card-row">
             {% for item in cardData%}
-            <div class="col-xl-3 col-xs-6" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+            <div class="col-xxl-4 col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
                 {{Card.SerciceCard({
                     img:item.img,
-                    title:item.title
+                    title:item.title,
+                    text:item.text
                 })}}
             </div>
             {% endfor %}
