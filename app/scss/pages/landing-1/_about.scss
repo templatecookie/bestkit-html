@@ -47,7 +47,7 @@
             line-height: 1.2;
             font-weight: 500;
             font-size: 16px;
-            color: #222D39;
+            color: var(--bs-black);
             @media (min-width:768px) {
                 font-size: 18px;
                 
@@ -66,7 +66,7 @@
            .line{
              width: 50px;
              height: 2px;
-             background: #8492A7; 
+             background: var(--bs-gray); 
              margin-right: 30px;
              @media (min-width:768px) {
                  margin: 0 40px;
@@ -96,11 +96,11 @@
                    margin-right: 25px;
                }
                a{
-                color: #8492A7;
+                color: var(--bs-gray);
                 line-height: 18px;
                 transition: .3s;
                 &:hover{
-                    color: #008AFF;
+                    color: var(--bs-azure-radiance);
                 }
                }
                &:last-child{

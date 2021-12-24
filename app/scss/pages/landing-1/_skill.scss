@@ -41,7 +41,7 @@
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 28px; 
-                color: #222D39;
+                color: var(--bs-black);
             }
         }
         .skill-bar-wrapper{
@@ -54,8 +54,8 @@
                 background: #DEE7EE;
                 .skill-per{
                     height: 8px;
-                    background: #008AFF;
-                    animation: fillbars 2.5s 1;
+                    background: var(--bs-azure-radiance);
+                    animation: fillbars 8s 1;
                 }
             }
             .skill-bar-count{
@@ -64,7 +64,7 @@
                     font-weight: 600;
                     font-size: 18px;
                     line-height: 28px;
-                    color: #008AFF;
+                    color: var(--bs-azure-radiance);;
                 }
             }
         }

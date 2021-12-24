@@ -15,7 +15,7 @@
             right: 0;
             height: 100%;
             width: 29%;
-            background: #EBF6FF;
+            background: var(--bs-solitude);
             z-index: -1;
         }
     }
@@ -75,7 +75,7 @@
             position: absolute;
             bottom: 48%;
             left: -4%;
-            background: white;
+            background: var(--bs-white);
             box-shadow: 0px 15px 35px rgba(165, 180, 192, 0.35);
             border-radius: 3px;
             max-width: 55px;
@@ -96,7 +96,7 @@
             position: absolute;
             top: 17%;
             left: 10%;
-            background: white;
+            background: var(--bs-white);
             box-shadow: 0px 15px 35px rgba(165, 180, 192, 0.35);
             border-radius: 3px;
             max-width: 42px;
@@ -117,7 +117,7 @@
             position: absolute;
             top: 18%;
             right: 16%;
-            background: white;
+            background: var(--bs-white);
             box-shadow: 0px 15px 35px rgba(165, 180, 192, 0.35);
             border-radius: 3px;
             max-width: 21.28px;
@@ -138,7 +138,7 @@
             position: absolute;
             top: 10%;
             right: -18%;
-            background: white;
+            background: var(--bs-white);
             box-shadow: 0px 15px 35px rgba(165, 180, 192, 0.35);
             border-radius: 3px;
             max-width: 35px;
@@ -159,7 +159,7 @@
             position: absolute;
             top: 32%;
             right: -13%;
-            background: white;
+            background: var(--bs-white);
             box-shadow: 0px 15px 35px rgba(165, 180, 192, 0.35);
             border-radius: 3px;
             max-width: 59px;
