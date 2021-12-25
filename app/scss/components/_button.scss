@@ -63,7 +63,13 @@
     }
   }
 }
-
+.svg-white{
+  svg{
+    path{
+      stroke: white !important;
+    }
+  }
+}
 button {
   &:focus {
     outline: none;
