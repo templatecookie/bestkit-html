@@ -10,6 +10,7 @@
 {% import "pages/landing-1/_cta.njk" as CtaSection %}
 {% import "pages/landing-1/_portfolio.njk" as PortfolioSection %}
 {% import "pages/landing-1/_testimonial.njk" as TestimonialSection %}
+{% import "pages/landing-1/_blog.njk" as BlogSection %}
 {% block main %}
   <!-- Header Section Start -->
   {{Header.render(siteHeader)}}
@@ -44,4 +45,7 @@
   <!-- Testimonial Section Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->
+  <!-- Blog Section Start -->
+  {{BlogSection.render()}}
+  <!-- Blog Section End -->
 {% endblock %}
