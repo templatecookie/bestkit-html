@@ -16,6 +16,25 @@ $(".counter").counterUp({
   time: 1000,
 });
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+      Slick Slider Activation
+  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  $(".slick-slider").slick();
+  if (jQuery(".testimonial-slider--01").length > 0) {
+    $(".testimonial-slider--01")
+      .not(".slick-initialized")
+      .slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        prevArrow: $(".testimonial-slider--01__control-buttons .button--prev"),
+        nextArrow: $(".testimonial-slider--01__control-buttons .button--next"),
+      });
+  }
 
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Preloader Activation
