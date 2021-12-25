@@ -29,3 +29,25 @@ $(window).load(function () {
     $("#loader").remove();
   }, 2000);
 });
+
+//***ISOTOPE***
+// Portfolio-01
+$(window).load(function () {
+  $(".portfolio-active").isotope({
+    itemSelector: ".grid-item",
+    layoutMode: "fitRows",
+  });
+});
+
+// filter items on button click
+$(".portfolio-filter-menu").on("click", "button", function () {
+  var filterValue = $(this).attr("data-filter");
+  $(".portfolio-active").isotope({ filter: filterValue });
+});
+
+$(".slider-arrow-click-active .slick-arrow").on("click", function (e) {
+  if (!$(this).hasClass("active")) {
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+  }
+});
