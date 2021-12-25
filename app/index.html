@@ -11,6 +11,7 @@
 {% import "pages/landing-1/_portfolio.njk" as PortfolioSection %}
 {% import "pages/landing-1/_testimonial.njk" as TestimonialSection %}
 {% import "pages/landing-1/_blog.njk" as BlogSection %}
+{% import "pages/landing-1/_footer.njk" as FooterSection %}
 {% block main %}
   <!-- Header Section Start -->
   {{Header.render(siteHeader)}}
@@ -48,4 +49,7 @@
   <!-- Blog Section Start -->
   {{BlogSection.render()}}
   <!-- Blog Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
 {% endblock %}
