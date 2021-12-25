@@ -5,6 +5,8 @@
 {% import "pages/landing-1/_about.njk" as AboutSection %}
 {% import "pages/landing-1/_skill.njk" as SkillSection %}
 {% import "pages/landing-1/_service.njk" as ServiceSection %}
+{% import "pages/landing-1/_counter.njk" as CounterSection %}
+{% import "pages/landing-1/_qualification.njk" as QualificationSection %}
 {% block main %}
   <!-- Header Section Start -->
   {{Header.render(siteHeader)}}
@@ -24,4 +26,10 @@
   <!-- Service Section Start -->
   {{ServiceSection.render()}}
   <!-- Service Section End -->
+  <!-- Counter Section Start -->
+  {{CounterSection.render()}}
+  <!-- Counter Section End -->
+  <!-- Qualification Section Start -->
+  {{QualificationSection.render()}}
+  <!-- Qualification Section End -->
 {% endblock %}

@@ -1,0 +1,15 @@
+.counter-section-01{
+    .counter-wrapper{
+        padding: 60px 0 60px;
+        border-top: 1px solid var(--bs-mystic);
+        border-bottom: 1px solid var(--bs-mystic);
+        @media (min-width:575px) {
+            padding: 70px 0 76px;
+        }
+    }
+    .count-block{
+        .title{
+            margin-bottom: 5px;
+        }
+    }
+}
