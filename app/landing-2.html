@@ -1,7 +1,7 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/landing-1/_hero.njk" as HeroSection %}
-{% import "pages/landing-1/_brand.njk" as BrandSection %}
+{% import "pages/landing-2/_hero.njk" as HeroSection %}
+{# {% import "pages/landing-1/_brand.njk" as BrandSection %}
 {% import "pages/landing-1/_about.njk" as AboutSection %}
 {% import "pages/landing-1/_skill.njk" as SkillSection %}
 {% import "pages/landing-1/_service.njk" as ServiceSection %}
@@ -11,15 +11,15 @@
 {% import "pages/landing-1/_portfolio.njk" as PortfolioSection %}
 {% import "pages/landing-1/_testimonial.njk" as TestimonialSection %}
 {% import "pages/landing-1/_blog.njk" as BlogSection %}
-{% import "pages/landing-1/_footer.njk" as FooterSection %}
+{% import "pages/landing-1/_footer.njk" as FooterSection %} #}
 {% block main %}
   <!-- Header Section Start -->
-  {{Header.render(siteHeaderOne)}}
+  {{Header.render(siteHeaderTwo)}}
   <!-- Header Section End -->
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
-  <!-- Brand Section Start -->
+  {# <!-- Brand Section Start -->
   {{BrandSection.render()}}
   <!-- Brand Section End -->
   <!-- About Section Start -->
@@ -51,5 +51,5 @@
   <!-- Blog Section End -->
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
-  <!-- Footer Section End -->
+  <!-- Footer Section End --> #}
 {% endblock %}

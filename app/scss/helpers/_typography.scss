@@ -5,11 +5,8 @@
     font-weight: 600;
     line-height: 1.225;
     font-size: 52px;
-    @media (min-width: 768px) {
-      font-size: 60px;
-    }
     @media (min-width: 992px) {
-      font-size: 58px;
+      font-size: 60px;
     }
     @media (min-width: 1200px) {
       font-size: 70px;
@@ -22,6 +19,35 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 1.555555555555556;
+  }
+}
+.page-title-block-two {
+  .subtitle{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    @media (min-width: 575px) {
+      font-size: 18px;
+    }
+  }
+  .title {
+    font-weight: 600;
+    line-height: 1.310344827586207;
+    font-size: 50px;
+    @media (min-width: 768px) {
+      font-size: 52px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 58px;
+    }
+  }
+  p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.555555555555556;
+    @media (min-width: 575px) {
+      font-size: 18px;
+    }
   }
 }
 

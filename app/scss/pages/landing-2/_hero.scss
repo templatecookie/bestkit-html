@@ -1,0 +1,113 @@
+.hero-section-02{
+    padding: 101px 0 60px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    @media (min-width:575px) {
+        padding: 125px 0 80px;
+    }
+    @media (min-width:992px) {
+        padding-top: 130px;
+        padding-bottom: 0;
+    }
+    &__content{
+        .subtitle{
+            display: flex;
+            align-items: center;
+            .line{
+                width: 60px;
+                display: block;
+                height: 1.5px;
+                margin-right: 10px;
+                background: var(--bs-primary);
+                @media (min-width:480px) {
+                    width: 100px;
+                }
+                @media (min-width:768px) {
+                    font-size: 42px;
+                }
+                @media (min-width:992px) {
+                    font-size: 46px;
+                }
+            }
+        }
+        .title{
+            margin-bottom: 25px;
+            @media (min-width:575px) {
+                margin-bottom: 35px;
+            }
+        }
+        &--newsletter{
+            max-width: 563px;
+            position: relative;
+            margin-top: 28px;
+            @media (min-width:992px) {
+                margin-top: 55px;
+            }
+            .form-group{
+                position: relative;
+                .form-control{
+                  box-shadow: 0px 15px 35px rgba(210, 217, 224, 0.25);
+                  border-radius: 5px;
+                  padding: 0;
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 1.2;
+                  height: 60px;
+                  border: 0;
+                  padding: 0 20px 0 50px;
+                  color: var(--bs-black);
+                  @media (min-width:575px) {
+                      font-size: 18px;
+                      height: 71px;
+                      padding-left: 65px;
+                      padding-right: 200px;
+      
+                  }
+                  &::placeholder{
+                      color: var(--bs-gray);
+                  }
+                } 
+                .icon{
+                    position: absolute;
+                    top: 48%;
+                    left: 20px;
+                    transform: translateY(-50%);
+                    @media (min-width:575px) {
+                        left: 30px;
+                    }
+                }
+            }
+          button{
+              width: 100%;
+              margin-top: 20px;
+              @media (min-width:575px) {
+                  width: auto;
+                margin-top: 0px;
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                transform: translateY(-50%);
+            }
+          } 
+        }
+    }
+    &__image-group{
+        position: relative;
+        @media (max-width:992px) {
+            display: none;
+        }
+        @media (min-width:1400px) {
+            margin-right: -10%;
+            margin-left: -3%;
+        }
+        &--bg{
+            position: absolute;
+            bottom: 0;
+            left: 58%;
+            transform: translateX(-50%);
+            width: 120%;
+            z-index: -1;
+        }
+    }
+}

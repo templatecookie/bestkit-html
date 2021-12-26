@@ -1,7 +1,28 @@
 {% macro render(root, elemroot, hideMegamenu, dropdownStyle2, megamenuPosition) %}
     <ul class="site-menu-main">
         <li class="nav-item nav-item-has-children">
-            <a href="index.html" class="nav-link-item drop-trigger">Home</a>
+            <a href="#" class="nav-link-item drop-trigger">Home <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="sub-menu" id="submenu-1">
+                <li class="sub-menu--item">
+                    <a href="index.html">Landing 1</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="landing-2.html">Landing 2</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="landing-3.html">Landing 3</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="landing-4.html">Landing 4</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="landing-5.html">Landing 5</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="landing-6.html">Landing 6</a>
+                </li>
+            </ul>
         </li>
         <li class="nav-item nav-item-has-children">
             <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>

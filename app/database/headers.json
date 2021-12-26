@@ -1,5 +1,5 @@
 {
-  "siteHeader":{
+  "siteHeaderOne":{
     "additional_header_class":"site-header--menu-center logo-dark mobile-menu-trigger-dark",
     "header_double_button":false,
     "absolute_header":true,
@@ -7,5 +7,14 @@
     "additional_button_classes":"site-header__btns--01",
     "header_button_class":"header-text",
     "header_button_text" :"<img src='./image/l-1/mail.png' alt='mail'>hi@bestkit.design"
+  },
+  "siteHeaderTwo":{
+    "additional_header_class":"site-header--menu-center logo-dark mobile-menu-trigger-dark",
+    "header_double_button":false,
+    "absolute_header":true,
+    "header_button":true,
+    "additional_button_classes":"site-header__btns--01",
+    "header_button_class":"btn-primary w-180",
+    "header_button_text" :"Contact Us <img src='./image/l-2/arrow.svg' class='make-it-inline' alt='mail'>"
   }
 }
