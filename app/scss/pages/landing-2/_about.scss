@@ -1,14 +1,14 @@
 .about-section-02{
     overflow: hidden;
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     @media (min-width:575px) {
         padding-top: 37px;
-        padding-bottom: 80px;
+        padding-bottom: 40px;
     }
     @media (min-width:992px) {
         padding-top: 65px;
-        padding-bottom: 0;
+        padding-bottom: 50px;
     }
     &__content{
         .title{
