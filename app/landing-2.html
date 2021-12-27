@@ -11,8 +11,7 @@
 {% import "pages/landing-2/_feature.njk" as FeatureSection %}
 {% import "pages/landing-2/_testimonial.njk" as TestimonialSection %}
  {% import "pages/landing-2/_faq.njk" as FaqSection %}
-{#{% import "pages/landing-1/_blog.njk" as BlogSection %}
-{% import "pages/landing-1/_footer.njk" as FooterSection %} #}
+{% import "pages/landing-2/_footer.njk" as FooterSection %}
 {% block main %}
   <!-- Header Section Start -->
   {{Header.render(siteHeaderTwo)}}
@@ -50,10 +49,7 @@
   <!-- Faq Section Start -->
   {{FaqSection.render()}}
   <!-- Faq Section End -->
-    {#   <!-- Blog Section Start -->
-  {{BlogSection.render()}}
-  <!-- Blog Section End -->
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
-  <!-- Footer Section End --> #}
+  <!-- Footer Section End --> 
 {% endblock %}
