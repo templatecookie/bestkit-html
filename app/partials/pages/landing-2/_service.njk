@@ -1,0 +1,77 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/l-2/database.svg",
+        title:"Eneterpreneurs",
+        bgWrapper:"bg-titan-white svg-purple",
+        btnText:"Learn More <img src='./image/l-2/service-btn-arrow.svg' alt='arrow'>",
+        text:"Lorem Ipsum is simply for dummy text of the print and type setting industry."
+        },
+        {
+        id:2,
+        img:"./image/l-2/coffee.svg",
+        title:"Business Plan",
+        bgWrapper:"bg-solitude svg-primary",
+        btnText:"Learn More <img src='./image/l-2/service-btn-arrow.svg' alt='arrow'>",
+        text:"Lorem Ipsum is simply for dummy text of the print and type setting industry."
+        },
+        {
+        id:3,
+        img:"./image/l-2/command.svg",
+        title:"Capital Markets",
+        bgWrapper:"bg-sazerac svg-yellow",
+        btnText:"Learn More <img src='./image/l-2/service-btn-arrow.svg' alt='arrow'>",
+        text:"Lorem Ipsum is simply for dummy text of the print and type setting industry."
+        },
+        {
+        id:4,
+        img:"./image/l-2/send.svg",
+        title:"Startups",
+        bgWrapper:"bg-narvik svg-secondary",
+        btnText:"Learn More <img src='./image/l-2/service-btn-arrow.svg' alt='arrow'>",
+        text:"Lorem Ipsum is simply for dummy text of the print and type setting industry."
+        }
+
+
+]%}
+<div class="service-section-02">
+    <div class="container">
+        <div class="row justify-content-center align-items-end service-section-02__content">
+            <div class=" col-md-10 col-lg-7 col-xl-6 col-xxl-5">
+                <div class="section-title-block text-center text-lg-start">
+                    <h6 class="subtitle text-primary mb-10">How Can We Help?</h6>
+                    <h2 class="title">Special Outstanding Services
+                        For Startups Business</h2>
+                </div>
+            </div>
+            <div class="col-lg-5 col-xl-6 col-xxl-7">
+                <div class="button-group text-center text-lg-end mt-4 mt-lg-0">
+                    <a class="btn btn-1 btn-primary" href="#">
+                        View All Services
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center card-row service-section-02__card">
+            {% for item in cardData%}
+            <div class="col-xl-5 col-sm-6 col-xxl-3 col-xs-9" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                {{Card.SerciceCard({
+                    modifier:"card-service--02",
+                    img:item.img,
+                    bgWrapper:item.bgWrapper,
+                    title:item.title,
+                    btnText:item.btnText,
+                    text:item.text
+                })}}
+            </div>
+            {% endfor %}
+        </div>
+    </div>              
+</div>
+{% endmacro %}

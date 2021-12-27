@@ -86,6 +86,71 @@
       }
     }
   }
+  &--02{
+    overflow: hidden;
+    flex-direction: column;
+    padding: 40px 30px;
+    box-shadow: 0px 15px 30px rgba(210, 217, 224, 0.35);
+    @media (min-width:768px) {
+      padding: 50px 40px;
+    }
+    border: 0;
+    position: relative;
+    &::before{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: "";
+      width:100%;
+      transform: translateY(100%);
+      transition: .3s;
+      height: 3px;
+      background: var(--bs-primary);
+    }
+    .card-image{
+      @include square(65px,500px);
+      margin-bottom: 20px;
+      @media (min-width:992px) {
+        margin-bottom: 35px;
+      }
+    }
+    .card-body{
+      .card-title{
+        line-height: 1.2;
+        margin-bottom: 15px;
+        @media (min-width:575px) {
+          margin-bottom: 25px;
+        }
+      }
+      a{
+        padding: 0;
+        display: flex;
+        font-weight: 600 !important;
+        align-items: center;
+        color: var(--bs-black) !important;
+        img{
+          margin-left: 5px;
+        }
+        &::before{
+          display: none;
+        }
+      }
+    }
+    &:hover{
+      box-shadow: none;
+      &::before{
+        transform: translateY(0);
+      }
+      .card-image{
+        background: var(--bs-primary) !important;
+        svg{
+          path{
+            stroke: var(--bs-white) !important;
+          }
+        }
+      }
+    }
+  }
 }
 .card-blog{
   background: var(--bs-white-lilac);
