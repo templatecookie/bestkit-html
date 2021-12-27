@@ -10,8 +10,8 @@
 {% import "pages/landing-2/_portfolio.njk" as PortfolioSection %}
 {% import "pages/landing-2/_feature.njk" as FeatureSection %}
 {% import "pages/landing-2/_testimonial.njk" as TestimonialSection %}
-{# {% import "pages/landing-1/_qualification.njk" as QualificationSection %}
-{% import "pages/landing-1/_blog.njk" as BlogSection %}
+ {% import "pages/landing-2/_faq.njk" as FaqSection %}
+{#{% import "pages/landing-1/_blog.njk" as BlogSection %}
 {% import "pages/landing-1/_footer.njk" as FooterSection %} #}
 {% block main %}
   <!-- Header Section Start -->
@@ -47,10 +47,10 @@
   <!-- Testimonial Section Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->
-   {#    <!-- Qualification Section Start -->
-  {{QualificationSection.render()}}
-  <!-- Qualification Section End -->
-  <!-- Blog Section Start -->
+  <!-- Faq Section Start -->
+  {{FaqSection.render()}}
+  <!-- Faq Section End -->
+    {#   <!-- Blog Section Start -->
   {{BlogSection.render()}}
   <!-- Blog Section End -->
   <!-- Footer Section Start -->
