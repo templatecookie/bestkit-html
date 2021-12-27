@@ -39,3 +39,14 @@
         </div>
     </div>
 {% endmacro %}
+{% macro FeatureCard(obj) %}
+    <div class="card feature-card {{obj.mondifi}}">
+        <div class="card-img">
+            <img src="{{obj.img}}" alt="feature" class=" make-it-inline">
+        </div>
+        <div class="card-content">
+            <h6>{{obj.title}}</h6>
+            <p>{{obj.text}}</p>
+        </div>
+    </div>
+{% endmacro %}
