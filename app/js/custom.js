@@ -35,6 +35,44 @@ $(".counter").counterUp({
         nextArrow: $(".testimonial-slider--01__control-buttons .button--next"),
       });
   }
+  if (jQuery(".testimonial-slider--02").length > 0) {
+    $(".testimonial-slider--02")
+      .not(".slick-initialized")
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        prevArrow: $(".testimonial-slider--02__control-buttons .button--prev"),
+        nextArrow: $(".testimonial-slider--02__control-buttons .button--next"),
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+  }
 
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Preloader Activation
