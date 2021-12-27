@@ -1,0 +1,28 @@
+.cta-section-02{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    .section-content-block{
+        @media (min-width:1400px) {
+            margin-right: 80px;
+        }
+        .title{
+            margin-bottom: 20px;
+            @media (min-width:575px) {
+                margin-bottom: 25px;
+            }
+
+        }
+        .btn{
+            margin-top: 25px;
+            @media (min-width:768px) {
+                margin-top: 50px;
+            }
+
+        }
+    }
+}
