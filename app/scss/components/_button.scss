@@ -18,8 +18,8 @@
     outline: none;
   }
   &.btn-primary{
-    border: 2px solid #008AFF;
-    background: #008AFF;
+    border: 2px solid var(--bs-primary);
+    background: var(--bs-primary);
     color: white;
     svg{
       margin-left: 15px;
@@ -52,8 +52,53 @@
         }
     }
     &:hover{
-        background: #008AFF !important;
-        border-color:#008AFF;
+        background: var(--bs-primary) !important;
+        border-color:var(--bs-primary);
+        color: white;
+        svg{
+            path{
+                stroke: white;
+            }
+        }
+    }
+  }
+  &.btn-secondary{
+    border: 2px solid var(--bs-secondary);
+    background: var(--bs-secondary);
+    color: white;
+    svg{
+      margin-left: 15px;
+      path{
+        transition: .3s;
+        stroke: white;
+      }
+    }
+    &:hover{
+      background: transparent;
+      border-color: #DEE7EE ;
+      color: #222D39;
+      svg{
+        margin-left: 15px;
+        path{
+          stroke: #222D39;
+        }
+      }
+    }
+  }
+  &.btn-outline-secondary{
+    border: 2px solid #DEE7EE;
+    color: #222D39;
+    transition: .3s;
+    svg{
+        margin-left: 15px;
+        path{
+            stroke: #222D39;
+            transition: .3s;
+        }
+    }
+    &:hover{
+        background: var(--bs-secondary) !important;
+        border-color:var(--bs-secondary);
         color: white;
         svg{
             path{

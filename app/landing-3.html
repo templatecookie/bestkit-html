@@ -1,0 +1,55 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/landing-3/_hero.njk" as HeroSection %}
+ {% import "pages/landing-3/_brand.njk" as BrandSection %}
+{#{% import "pages/landing-3/_about.njk" as AboutSection %}
+{% import "pages/landing-3/_counter.njk" as CounterSection %}
+{% import "pages/landing-3/_skill.njk" as SkillSection %}
+{% import "pages/landing-3/_service.njk" as ServiceSection %}
+{% import "pages/landing-3/_cta.njk" as CtaSection %}
+{% import "pages/landing-3/_portfolio.njk" as PortfolioSection %}
+{% import "pages/landing-3/_feature.njk" as FeatureSection %}
+{% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
+ {% import "pages/landing-3/_faq.njk" as FaqSection %}
+{% import "pages/landing-3/_footer.njk" as FooterSection %} #}
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(siteHeaderTwo)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  <!-- Brand Section Start -->
+  {{BrandSection.render()}}
+  <!-- Brand Section End -->
+  {#   <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Counter Section Start -->
+  {{CounterSection.render()}}
+  <!-- Counter Section End -->
+  <!-- Skill Section Start -->
+  {{SkillSection.render()}}
+  <!-- Skill Section End -->
+  <!-- Service Section Start -->
+  {{ServiceSection.render()}}
+  <!-- Service Section End -->
+  <!-- Cta Section Start -->
+  {{CtaSection.render()}}
+  <!-- Cta Section End -->
+  <!-- Portfolio Section Start -->
+  {{PortfolioSection.render()}}
+  <!-- Portfolio Section End -->
+  <!-- FeatureSection Section Start -->
+  {{FeatureSection.render()}}
+  <!-- FeatureSection Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Faq Section Start -->
+  {{FaqSection.render()}}
+  <!-- Faq Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->  #}
+{% endblock %}
