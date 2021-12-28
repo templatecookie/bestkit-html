@@ -4,6 +4,8 @@
  {% import "pages/landing-3/_brand.njk" as BrandSection %}
 {% import "pages/landing-3/_feature.njk" as FeatureSection %}
 {% import "pages/landing-3/_content-01.njk" as ContentSectionOne %}
+{% import "pages/landing-3/_content-02.njk" as ContentSectionTwo %}
+{% import "pages/landing-3/_content-03.njk" as ContentSectionThree %}
 {#{% import "pages/landing-3/_about.njk" as AboutSection %}
 {% import "pages/landing-3/_skill.njk" as SkillSection %}
 {% import "pages/landing-3/_service.njk" as ServiceSection %}
@@ -28,6 +30,12 @@
   <!-- Content Section One Section Start -->
   {{ContentSectionOne.render()}}
   <!-- Content Section One Section End -->
+  <!-- Content Section Two Section Start -->
+  {{ContentSectionTwo.render()}}
+  <!-- Content Section Two Section End -->
+  <!-- Content Section Three Section Start -->
+  {{ContentSectionThree.render()}}
+  <!-- Content Section Three Section End -->
   {#   <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
