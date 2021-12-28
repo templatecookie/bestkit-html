@@ -75,3 +75,67 @@
         }
     }
 }
+.about-wdidget-01{
+    background: var(--bs-white);
+    padding: 30px 25px;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: .3s;
+    display: flex;
+    align-items: flex-start;
+    @media (max-width:575px) {
+        flex-direction: column;
+    }
+    @media (min-width:992px) {
+        padding: 40px;
+    }
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        visibility: hidden;
+        transition: .3s;
+        opacity: 0;
+        content: "";
+        height: 2.53px;
+        background: var(--bs-primary);
+    }
+    .widget-icon{
+        @media (max-width:575px) {
+            margin-bottom: 20px;
+        }
+        @media (min-width:575px) {
+            margin-right: 30px;
+        }
+    }
+    .wdidget-content{
+        h6{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            @media (min-width:992px) {
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+        }
+        p{
+            font-weight: 500;
+            color: var(--bs-gray);
+            font-size: 16px;
+            line-height: 1.555555555555556;
+            @media (min-width:575px) {
+                font-size: 18px;
+            } 
+        }
+    }
+    &:hover{
+        box-shadow: 0px 15px 30px rgba(210, 217, 224, 0.35);
+        &::before{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
