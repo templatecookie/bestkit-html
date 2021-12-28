@@ -3,8 +3,8 @@
 {% import "pages/landing-3/_hero.njk" as HeroSection %}
  {% import "pages/landing-3/_brand.njk" as BrandSection %}
 {% import "pages/landing-3/_feature.njk" as FeatureSection %}
+{% import "pages/landing-3/_content-01.njk" as ContentSectionOne %}
 {#{% import "pages/landing-3/_about.njk" as AboutSection %}
-{% import "pages/landing-3/_counter.njk" as CounterSection %}
 {% import "pages/landing-3/_skill.njk" as SkillSection %}
 {% import "pages/landing-3/_service.njk" as ServiceSection %}
 {% import "pages/landing-3/_cta.njk" as CtaSection %}
@@ -25,6 +25,9 @@
   <!-- FeatureSection Section Start -->
   {{FeatureSection.render()}}
   <!-- FeatureSection Section End -->
+  <!-- Content Section One Section Start -->
+  {{ContentSectionOne.render()}}
+  <!-- Content Section One Section End -->
   {#   <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
