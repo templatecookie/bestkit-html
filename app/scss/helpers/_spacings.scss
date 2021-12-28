@@ -28,6 +28,14 @@
   }
 }
 
+.featre-card-bottom {
+  margin-bottom: -50px;
+
+  [class^="col"] {
+    margin-bottom: 50px;
+  }
+}
+
 .gallery-row {
   margin-bottom: -24px;
 

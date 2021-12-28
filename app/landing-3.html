@@ -2,13 +2,13 @@
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-3/_hero.njk" as HeroSection %}
  {% import "pages/landing-3/_brand.njk" as BrandSection %}
+{% import "pages/landing-3/_feature.njk" as FeatureSection %}
 {#{% import "pages/landing-3/_about.njk" as AboutSection %}
 {% import "pages/landing-3/_counter.njk" as CounterSection %}
 {% import "pages/landing-3/_skill.njk" as SkillSection %}
 {% import "pages/landing-3/_service.njk" as ServiceSection %}
 {% import "pages/landing-3/_cta.njk" as CtaSection %}
 {% import "pages/landing-3/_portfolio.njk" as PortfolioSection %}
-{% import "pages/landing-3/_feature.njk" as FeatureSection %}
 {% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
  {% import "pages/landing-3/_faq.njk" as FaqSection %}
 {% import "pages/landing-3/_footer.njk" as FooterSection %} #}
@@ -22,6 +22,9 @@
   <!-- Brand Section Start -->
   {{BrandSection.render()}}
   <!-- Brand Section End -->
+  <!-- FeatureSection Section Start -->
+  {{FeatureSection.render()}}
+  <!-- FeatureSection Section End -->
   {#   <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
@@ -40,9 +43,6 @@
   <!-- Portfolio Section Start -->
   {{PortfolioSection.render()}}
   <!-- Portfolio Section End -->
-  <!-- FeatureSection Section Start -->
-  {{FeatureSection.render()}}
-  <!-- FeatureSection Section End -->
   <!-- Testimonial Section Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->

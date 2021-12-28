@@ -340,7 +340,7 @@
     padding: 63px 45px 50px 45px;
   }
   .card-img{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     position: relative;
     z-index: 1;
     @media (min-width:992px) {
@@ -376,6 +376,16 @@
       color: var(--bs-gray);
       @media (min-width:992px) {
         font-size: 18px;
+      }
+    }
+  }
+  &--02{
+    text-align: center;
+    padding: 0;
+    .card-img{
+      margin-right: 17px;
+      &::before{
+        display: none;
       }
     }
   }
