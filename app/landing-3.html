@@ -9,9 +9,9 @@
 {% import "pages/landing-3/_about.njk" as AboutSection %}
 {% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
 {% import "pages/landing-3/_software-integrations.njk" as SoftwareintegrationsSection %}
+{% import "pages/landing-3/_cta.njk" as CtaSection %}
 {#{% import "pages/landing-3/_skill.njk" as SkillSection %}
 {% import "pages/landing-3/_service.njk" as ServiceSection %}
-{% import "pages/landing-3/_cta.njk" as CtaSection %}
 {% import "pages/landing-3/_portfolio.njk" as PortfolioSection %}
  {% import "pages/landing-3/_faq.njk" as FaqSection %} #}
 {% import "pages/landing-3/_footer.njk" as FooterSection %}
@@ -46,6 +46,9 @@
   <!-- Softwareintegrations Section Start -->
   {{SoftwareintegrationsSection.render()}}
   <!-- Softwareintegrations Section End -->
+  <!-- Cta Section Start -->
+  {{CtaSection.render()}}
+  <!-- Cta Section End -->
    {#  <!-- Counter Section Start -->
   {{CounterSection.render()}}
   <!-- Counter Section End -->
@@ -55,9 +58,6 @@
   <!-- Service Section Start -->
   {{ServiceSection.render()}}
   <!-- Service Section End -->
-  <!-- Cta Section Start -->
-  {{CtaSection.render()}}
-  <!-- Cta Section End -->
   <!-- Portfolio Section Start -->
   {{PortfolioSection.render()}}
   <!-- Portfolio Section End -->
