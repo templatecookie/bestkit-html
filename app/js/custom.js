@@ -98,6 +98,44 @@ $(".counter").counterUp({
       nextArrow: $(".testimonial-slider--03__control-buttons .button--next"),
     });
   }
+  if (jQuery(".software-slider").length > 0) {
+    $(".software-slider")
+      .not(".slick-initialized")
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        prevArrow: $(".software-slider__control-buttons .button--prev"),
+        nextArrow: $(".software-slider__control-buttons .button--next"),
+        responsive: [
+          {
+            breakpoint: 1399,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+  }
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Preloader Activation
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
