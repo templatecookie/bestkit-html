@@ -7,11 +7,11 @@
 {% import "pages/landing-3/_content-02.njk" as ContentSectionTwo %}
 {% import "pages/landing-3/_content-03.njk" as ContentSectionThree %}
 {% import "pages/landing-3/_about.njk" as AboutSection %}
+{% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
 {#{% import "pages/landing-3/_skill.njk" as SkillSection %}
 {% import "pages/landing-3/_service.njk" as ServiceSection %}
 {% import "pages/landing-3/_cta.njk" as CtaSection %}
 {% import "pages/landing-3/_portfolio.njk" as PortfolioSection %}
-{% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
  {% import "pages/landing-3/_faq.njk" as FaqSection %}
 {% import "pages/landing-3/_footer.njk" as FooterSection %} #}
 {% block main %}
@@ -39,6 +39,9 @@
   <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
    {#  <!-- Counter Section Start -->
   {{CounterSection.render()}}
   <!-- Counter Section End -->
@@ -54,9 +57,6 @@
   <!-- Portfolio Section Start -->
   {{PortfolioSection.render()}}
   <!-- Portfolio Section End -->
-  <!-- Testimonial Section Start -->
-  {{TestimonialSection.render()}}
-  <!-- Testimonial Section End -->
   <!-- Faq Section Start -->
   {{FaqSection.render()}}
   <!-- Faq Section End -->

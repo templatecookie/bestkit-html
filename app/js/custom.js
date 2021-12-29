@@ -73,7 +73,31 @@ $(".counter").counterUp({
         ],
       });
   }
-
+  if (jQuery(".testimonial-slider--03").length > 0) {
+    $(".testimonial-slider--03").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      swipe: false,
+      drag: false,
+      fade: true,
+      asNavFor: ".testimonial-slider--03__nav",
+    });
+  }
+  if (jQuery(".testimonial-slider--03__nav").length > 0) {
+    $(".testimonial-slider--03__nav").slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: ".testimonial-slider--03",
+      dots: false,
+      centerMode: true,
+      centerPadding: 0,
+      focusOnSelect: true,
+      arrows: true,
+      prevArrow: $(".testimonial-slider--03__control-buttons .button--prev"),
+      nextArrow: $(".testimonial-slider--03__control-buttons .button--next"),
+    });
+  }
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Preloader Activation
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
