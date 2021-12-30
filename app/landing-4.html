@@ -1,24 +1,24 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/landing-3/_hero.njk" as HeroSection %}
- {% import "pages/landing-3/_brand.njk" as BrandSection %}
-{% import "pages/landing-3/_feature.njk" as FeatureSection %}
-{% import "pages/landing-3/_content-01.njk" as ContentSectionOne %}
-{% import "pages/landing-3/_content-02.njk" as ContentSectionTwo %}
-{% import "pages/landing-3/_content-03.njk" as ContentSectionThree %}
-{% import "pages/landing-3/_about.njk" as AboutSection %}
-{% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
-{% import "pages/landing-3/_software-integrations.njk" as SoftwareintegrationsSection %}
-{% import "pages/landing-3/_cta.njk" as CtaSection %}
-{% import "components/Footer/_footer-01.njk" as FooterSection %}
+{% import "pages/landing-4/_hero.njk" as HeroSection %}
+{# {% import "pages/landing-4/_brand.njk" as BrandSection %}
+{% import "pages/landing-4/_feature.njk" as FeatureSection %}
+{% import "pages/landing-4/_content-01.njk" as ContentSectionOne %}
+{% import "pages/landing-4/_content-02.njk" as ContentSectionTwo %}
+{% import "pages/landing-4/_content-03.njk" as ContentSectionThree %}
+{% import "pages/landing-4/_about.njk" as AboutSection %}
+{% import "pages/landing-4/_testimonial.njk" as TestimonialSection %}
+{% import "pages/landing-4/_software-integrations.njk" as SoftwareintegrationsSection %}
+{% import "pages/landing-4/_cta.njk" as CtaSection %} #}
+{% import "components/Footer/_footer-02.njk" as FooterSection %}
 {% block main %}
   <!-- Header Section Start -->
-  {{Header.render(siteHeaderTwo)}}
+  {{Header.render(siteHeaderFour)}}
   <!-- Header Section End -->
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
-  <!-- Brand Section Start -->
+  {# <!-- Brand Section Start -->
   {{BrandSection.render()}}
   <!-- Brand Section End -->
   <!-- FeatureSection Section Start -->
@@ -44,7 +44,7 @@
   <!-- Softwareintegrations Section End -->
   <!-- Cta Section Start -->
   {{CtaSection.render()}}
-  <!-- Cta Section End -->
+  <!-- Cta Section End --> #}
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
   <!-- Footer Section End --> 

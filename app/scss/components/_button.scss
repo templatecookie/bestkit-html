@@ -17,6 +17,12 @@
     box-shadow: none;
     outline: none;
   }
+  &:active{
+    &:focus{
+      box-shadow: none;
+      outline: none;
+    }
+  }
   &.btn-primary{
     border: 2px solid var(--bs-primary);
     background: var(--bs-primary);
@@ -121,12 +127,13 @@ button {
   }
 }
 .site-header{
+  .header-btn,
   &__btns{
+    @media (max-width:991px) {
+      text-align: center;
+      margin-top: 55px;
+    }
     &--01{
-      @media (max-width:992px) {
-        text-align: center;
-        margin-top: 55px;
-      }
       .header-text{
         padding: 0;
         font-size: 18px;
@@ -137,8 +144,40 @@ button {
         }
       }
     }
+    &--02{
+      .btn{
+        padding: 0;
+        height: 55px;
+        &.btn-1{
+          background: transparent;
+          border: 0;
+          color: #222D39;
+        }
+      }
+    }
+    &--03{
+      .btn{
+        padding: 0;
+        height: 55px;
+        @media (min-width:992px) {
+          color: white;
+          border-color: white;
+          svg{
+            path{
+              stroke: white;
+            }
+          }
+        }
+      }
+    }
   }
 }
 .w-180{
   width: 180px !important;
+}
+.w-183{
+  width: 180px !important;
+}
+.w-140{
+  width: 140px !important;
 }

@@ -294,13 +294,13 @@ div#loading img {
 
 .site-header--dark {
   .nav-link-item {
-    color: #fff;
+    color: #fff !important;
   }
   .mobile-menu-trigger span {
-    background-color: rgba(#fff, 0.8);
+    background-color: #fff;
     &:before,
     &:after {
-      background-color: rgba(#fff, 0.8);
+      background-color: #fff;
     }
   }
 }
@@ -318,7 +318,7 @@ div#loading img {
 }
 
 .menu-block:not(.active) {
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     opacity: 0;
   }
 }

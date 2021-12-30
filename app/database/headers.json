@@ -15,6 +15,26 @@
     "header_button":true,
     "additional_button_classes":"site-header__btns--01",
     "header_button_class":"btn-primary w-180",
-    "header_button_text" :"Contact Us <img src='./image/l-2/arrow.svg' class='make-it-inline' alt='mail'>"
+    "header_button_text" :"Contact Us <img src='./image/l-2/arrow.svg' class='make-it-inline' alt='arrow'>"
+  },
+  "siteHeaderThree":{
+    "additional_header_class":"site-header--menu-right logo-dark mobile-menu-trigger-dark",
+    "header_double_button":true,
+    "absolute_header":true,
+    "header_button":false,
+    "additional_db_classes":"site-header__btns--02",
+    "header_button_class_1":"btn btn-1 btn-primary w-140",
+    "header_button_class_2":"btn btn-2 btn-primary w-140",
+    "header_button_text_1" :"Sign In",
+    "header_button_text_2" :"Sign Up <img src='./image/l-2/arrow.svg' class='make-it-inline' alt='arrow'>"
+  },
+  "siteHeaderFour":{
+    "additional_header_class":"site-header--menu-right site-header--dark",
+    "header_double_button":false,
+    "absolute_header":true,
+    "header_button":true,
+    "additional_button_classes":"site-header__btns--03",
+    "header_button_class":"btn-outline-secondary w-183",
+    "header_button_text" :"Get In Touch <img src='./image/l-2/arrow.svg' class='make-it-inline' alt='arrow'>"
   }
 }
