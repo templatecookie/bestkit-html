@@ -48,12 +48,12 @@
   }
   &.btn-outline-primary{
     border: 2px solid #DEE7EE;
-    color: #222D39;
+    color: var(--bs-primary);
     transition: .3s;
     svg{
         margin-left: 15px;
         path{
-            stroke: #222D39;
+            stroke: var(--bs-primary) !important;
             transition: .3s;
         }
     }
@@ -63,7 +63,7 @@
         color: white;
         svg{
             path{
-                stroke: white;
+                stroke: white !important;
             }
         }
     }

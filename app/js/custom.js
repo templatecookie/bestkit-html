@@ -140,6 +140,20 @@ $(".counter").counterUp({
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Price Deck Trigger
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+$("#js-contcheckbox").change(function() {
+  if(this.checked) {
+    $('.js-montlypricing').css('display', 'none');
+$('.js-yearlypricing').css('display', 'flex');
+    $('.afterinput').addClass('text-primary');
+    $('.beforeinput').removeClass('text-primary');
+  } else {
+    $('.js-montlypricing').css('display', 'flex');
+    $('.js-yearlypricing').css('display', 'none');
+    $('.afterinput').removeClass('text-primary');
+    $('.beforeinput').addClass('text-primary');
+}
+});
+
 $(".price-deck-trigger").on("change", function (e) {
   // $(e.target).addClass("active").siblings().removeClass("active");
   var target = $(e.target).attr("data-target");
