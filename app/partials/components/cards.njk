@@ -10,6 +10,19 @@
     </div>
 </div>
 {% endmacro %}
+{% macro SerciceCardTwo(obj) %}
+<div class="card card-service {{obj.modifier}}">
+    <div class="card-service-wrapper">
+        <div class="card-image {{obj.bgWrapper}}">
+            <img src="{{obj.img}}" alt="card" class="mw-100 make-it-inline">
+        </div>
+        <div class="card-body p-0">
+            <h4 class="card-title heading-dark">{{obj.title | safe}}</h4>
+        </div>
+    </div>
+    <p class="text-dark">{{obj.text}}</p>
+</div>
+{% endmacro %}
 {% macro BlogCardOne(obj) %}
     <div class="card-blog">
         <div class="card-image">
