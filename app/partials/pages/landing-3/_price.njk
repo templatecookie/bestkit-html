@@ -1,0 +1,132 @@
+{% macro render(args) %}
+    {% import "components/pricings.njk" as Card %}
+{% set pricingOne = [
+    {
+    plan:"Starter",
+    planTextColor:"text-turquoise",
+    price:{
+        monthly:"$10",
+        yearly:"$20"
+    },
+    list:[
+        {
+            id:"1",
+            text:"10 GB Disk Space"
+        },
+        {
+            id:"1",
+            text:"1 Year Support"
+        },
+        {
+            id:"1",
+            text:"500 Queries"
+        },
+        {
+            id:"1",
+            text:"Basic Statistics"
+        },
+        {
+            id:"1",
+            text:"Free Custom Domain"
+        }
+    ]
+
+    },
+        {
+        active:true,
+        plan:"Basic",
+        planTextColor:"text-my-sin",
+        price:{
+            monthly:"$20",
+            yearly:"$50"
+        },
+        list:[
+            {
+            id:"1",
+            text:"10 GB Disk Space"
+        },
+            {
+            id:"1",
+            text:"1 Year Support"
+        },
+            {
+            id:"1",
+            text:"500 Queries"
+        },
+            {
+            id:"1",
+            text:"Basic Statistics"
+        },
+            {
+            id:"1",
+            text:"Free Custom Domain"
+        }
+        ]
+
+    },
+        {
+        plan:"Premium",
+        planTextColor:"text-rose",
+        price:{
+            monthly:"$30",
+            yearly:"$60"
+        },
+        list:[
+            {
+            id:"1",
+            text:"10 GB Disk Space"
+        },
+            {
+            id:"1",
+            text:"1 Year Support"
+        },
+            {
+            id:"1",
+            text:"500 Queries"
+        },
+            {
+            id:"1",
+            text:"Basic Statistics"
+        },
+            {
+            id:"1",
+            text:"Free Custom Domain"
+        }
+        ]
+
+    }
+
+] %}
+<div class="pricing-section-01">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="section-title-block text-center">
+                <h6 class="subtitle text-primary mb-10">Pricing PLan</h6>
+                <h2 class="title">Choose Your Pricing Plan</h2>
+            </div>
+            <div class="pricing-section-01__pricing-trigger pricing-btn d-flex align-items-center justify-content-center flex-wrap">
+                <label class="mb-3 mb-lg-0">Annual</label>
+                <div class="toggle-btn form-check form-switch mb-3 mb-lg-0">
+                    <input class="form-check-input btn-toggle price-deck-trigger active" type="checkbox" id="flexSwitchCheckDefault" data-pricing-trigger="" data-target="#table-price-value" checked="">
+                </div>
+                <label class="mb-3 mb-lg-0">Monthly</label>
+            </div>
+        </div>
+        <div class="row pricing-section-01__wrapper" id="table-price-value"  data-pricing-dynamic data-value-active="monthly">
+            {% for item in pricingOne %}
+                <div class="col-lg-4">
+                    {{Card.One({
+                        active:item.active,
+                        modifier:"card-v2",
+                        plan:item.plan,
+                        planTextColor:item.planTextColor,
+                        price:item.price,
+                        list:item.list,
+                        btnClass:"btn-blue-ribbon--outline rounded-full"
+                    })}}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endmacro %}

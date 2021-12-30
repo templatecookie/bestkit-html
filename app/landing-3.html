@@ -1,7 +1,7 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-3/_hero.njk" as HeroSection %}
- {% import "pages/landing-3/_brand.njk" as BrandSection %}
+{% import "pages/landing-3/_brand.njk" as BrandSection %}
 {% import "pages/landing-3/_feature.njk" as FeatureSection %}
 {% import "pages/landing-3/_content-01.njk" as ContentSectionOne %}
 {% import "pages/landing-3/_content-02.njk" as ContentSectionTwo %}
@@ -9,6 +9,7 @@
 {% import "pages/landing-3/_about.njk" as AboutSection %}
 {% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
 {% import "pages/landing-3/_software-integrations.njk" as SoftwareintegrationsSection %}
+{% import "pages/landing-3/_price.njk" as PriceSection %}
 {% import "pages/landing-3/_cta.njk" as CtaSection %}
 {% import "components/Footer/_footer-03.njk" as FooterSection %}
 {% block main %}
@@ -42,6 +43,9 @@
   <!-- Softwareintegrations Section Start -->
   {{SoftwareintegrationsSection.render()}}
   <!-- Softwareintegrations Section End -->
+  <!-- Price Section Start -->
+  {{PriceSection.render()}}
+  <!-- Price Section End -->
   <!-- Cta Section Start -->
   {{CtaSection.render()}}
   <!-- Cta Section End -->

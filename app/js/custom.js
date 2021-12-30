@@ -136,6 +136,20 @@ $(".counter").counterUp({
         ],
       });
   }
+
+// /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//       Price Deck Trigger
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+$(".price-deck-trigger").on("change", function (e) {
+  // $(e.target).addClass("active").siblings().removeClass("active");
+  var target = $(e.target).attr("data-target");
+  // console.log($(target).attr("data-value-active") == "monthly");
+  if ($(target).attr("data-value-active") == "monthly") {
+    $(target).attr("data-value-active", "yearly");
+  } else {
+    $(target).attr("data-value-active", "monthly");
+  }
+});
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Preloader Activation
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
