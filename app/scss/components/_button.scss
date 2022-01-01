@@ -1,5 +1,5 @@
-@use "../abstracts/mixins" as utils;
-@use "../bs-customization/colors" as color;
+@use "../abstracts/mixins" as *;
+@use "../bs-customization/colors" as *;
 .btn {
   border-radius: 3px !important;
   font-size: 16px;
@@ -180,4 +180,10 @@ button {
 }
 .w-140{
   width: 140px !important;
+}
+.video-btn{
+  display: block;
+  @include square(50px,500px);
+  @include flexAllCenter;
+  background: white;
 }

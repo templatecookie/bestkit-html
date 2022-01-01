@@ -40,7 +40,7 @@
             </div>
             <div class="row card-row justify-content-center">
                 {% for item in cardData %}
-                    <div class="col-xl-3" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                    <div class="col-lg-3 col-sm-6 col-xs-8" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
                         {{Card.TeamOne({
                             img:item.img,
                             modifier:item.activeClass,

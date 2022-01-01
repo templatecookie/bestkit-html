@@ -1,0 +1,30 @@
+.counter-section-03{
+    @media (min-width:992px) {
+            margin-top: -100px;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        padding: 51px 0 28px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (min-width:768px) {
+            padding: 68px 0;
+        }
+        @media (min-width:992px) {
+            justify-content: space-around;
+            background: white;
+            box-shadow: 0px 15px 30px rgba(210, 217, 224, 0.35);
+        }
+        border-radius: 3px;
+        .count-block{
+            @media (max-width:480px) {
+                width: 100%;
+            }
+            @media (max-width:768px) {
+                padding: 0 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
