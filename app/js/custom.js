@@ -136,6 +136,19 @@ $(".counter").counterUp({
         ],
       });
   }
+  if (jQuery(".testimonial-slider--04").length > 0) {
+    $(".testimonial-slider--04")
+      .not(".slick-initialized")
+      .slick({
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+      });
+  }
 
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Price Deck Trigger

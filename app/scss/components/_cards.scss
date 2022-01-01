@@ -589,4 +589,69 @@
   }
 
 }
-
+.testimonial-card-04{
+  background: var(--bs-white);
+  border-radius: 3px;
+  padding: 30px 20px;
+  @media (min-width:575px) {
+    padding: 40px 35px;
+  }
+  @media (min-width:992px) {
+    padding: 50px 45px;
+  }
+  .card-rating{
+    i{
+      margin:0 2px;
+    }
+  }
+  .text{
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 18px;
+    padding: 20px 0;
+    @media (min-width:575px) {
+      padding: 25px 0;
+      font-size: 20px;
+    }
+    @media (min-width:992px) {
+      font-size: 24px;
+      padding: 35px 0;
+    }
+  }
+  .author-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .avatar{
+      margin-right: 20px;
+      @include square(60px,500px);
+      img{
+        object-fit: cover;
+        border-radius: 500px;
+      }
+    }
+    h6{
+      padding-bottom: 5px;
+      line-height: 1.208333333333333;
+      font-weight: 500;
+      font-size: 18px;
+      color: var(--bs-black);
+      @media (min-width:575px) {
+        font-size: 20px;
+      }
+      @media (min-width:992px) {
+        font-size: 24px;
+      }
+    }
+    p{
+      color: var(--bs-primary);
+      font-weight: 600;
+      line-height: 1.222222222222222;
+      font-size: 16px;
+      @media (min-width:575px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
