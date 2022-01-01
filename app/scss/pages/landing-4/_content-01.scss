@@ -1,40 +1,84 @@
-.content-section-05{
-    overflow: hidden;
-    padding-top: 60px;
+@use  "../../abstracts/mixins" as *;
+.content-section-04{
+    padding: 60px 0;
     @media (min-width:575px) {
-        padding-top: 80px;
+        paddinp: 80px 0;
     }
     @media (min-width:992px) {
-        padding-top: 130px;
+        padding: 130px 0;
     }
-    .section-title-block{
-        margin-bottom: 35px;
-        @media (min-width:992px) {
-            margin-bottom: 70px;
-        }
-    }
-    &__wrapper{
-        position: relative;
-        padding-bottom: 60px;
-        border-bottom: 1px solid #DEE7EE;
-        @media (min-width:575px) {
-            padding-bottom: 80px;
-        }
-        @media (min-width:992px) {
-            padding-bottom: 130px;
-        }  
-        .col-xl-4{
-            &:last-child{
-                .arrow{
-                    display: none;
+    &__content{
+        &--widget-list{
+            margin-top: 25px;
+            @media (min-width:992px) {
+                margin-top: 50px;
+            }
+            .content-list-wrapper{
+                margin-bottom: 33px;
+                &:last-child{
+                    margin-bottom: 0;
                 }
+                @media (min-width:992px) {
+                    margin-bottom: 53px;
+                }
+                
             }
         }
-        .arrow{
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
+    }
+    &__image-group{
+        margin-bottom: 30px;
+        @media (min-width:1200px) {
+            margin-bottom: 0px;
+        }
+        @media (min-width:1400px) {
+            margin-left: 45px;
+        }
+    }
+}
+.content-list-01{
+    .content-list-wrapper{
+        display: flex;
+        align-items: flex-start;
+        .list{
+            margin-right: 20px;
+            transform: translateY(-9px);
+            @include square(45px,500px);
+            @include flexAllCenter;
+            background: var(--bs-primary);
+            font-weight: 600;
+            color: white;
+            font-size: 18px;
+            @media (min-width:575px) {
+                font-size: 20px;
+                margin-right: 25px;
+            }
+            @media (min-width:992px) {
+                font-size: 24px;
+            }
+        }
+        .content{
+            h6{
+                font-weight: 600;
+                font-size: 18px;
+                margin-bottom: 20px;
+                color: var(--bs-dark);
+                line-height: 1.2;
+                @media (min-width:575px) {
+                    font-size: 20px;
+                }
+                @media (min-width:992px) {
+                    font-size: 24px;
+                }
+            }
+            p{
+                font-weight: 500;
+                color: var(--bs-gray);
+                line-height: 1.555555555555556;
+                font-size: 16px;
+                @media (min-width:575px) {
+                    font-size: 18px;
+                }
+            }
         }
     }
 }

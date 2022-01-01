@@ -51,3 +51,8 @@
 .mb-18{
   margin-bottom: 18px;
 }
+.pr-xxl-40{
+  @media (min-width:1400px) {
+    margin-right: 40px;
+  }
+}

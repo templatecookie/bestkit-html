@@ -1,0 +1,40 @@
+.content-section-05{
+    overflow: hidden;
+    padding-top: 60px;
+    @media (min-width:575px) {
+        padding-top: 80px;
+    }
+    @media (min-width:992px) {
+        padding-top: 130px;
+    }
+    .section-title-block{
+        margin-bottom: 35px;
+        @media (min-width:992px) {
+            margin-bottom: 70px;
+        }
+    }
+    &__wrapper{
+        position: relative;
+        padding-bottom: 60px;
+        border-bottom: 1px solid #DEE7EE;
+        @media (min-width:575px) {
+            padding-bottom: 80px;
+        }
+        @media (min-width:992px) {
+            padding-bottom: 130px;
+        }  
+        .col-xl-4{
+            &:last-child{
+                .arrow{
+                    display: none;
+                }
+            }
+        }
+        .arrow{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
