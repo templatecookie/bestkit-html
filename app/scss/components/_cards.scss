@@ -283,6 +283,62 @@
       }
     }
   }
+  &--02{
+    .card-image{
+      overflow: unset;
+      position: relative;
+      .meta{
+        position: absolute;
+        bottom: -18px;
+        left: 30px;
+        z-index: 11;
+        span{
+          border-radius: 3px;
+          background: var(--bs-primary);
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          padding: 8px 11px;
+          color: var(--bs-white);
+        }
+      }
+    }
+    .card-body{
+      padding-top: 30px;
+      @media (min-width:575px) {
+        padding-top: 42px;
+      }
+      .titel{
+        margin: 0;
+      }
+      p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.555555555555556;
+        padding-bottom: 20px;
+        padding-top: 15px;
+        @media (min-width:575px) {
+          padding-bottom: 25px;
+          font-size: 18px;
+          padding-top: 20px;
+        }
+      }
+      .author-block{
+        border-top: 1px solid #DEE7EE;
+        padding-top: 20px;
+        @media (min-width:992px) {
+          padding-top: 30px;
+        }
+      }
+    }
+    &:hover{
+      .card-image{
+        img{
+          transform: unset;
+        }
+      }
+    }
+  }
 }
 .portfolio-card{
   overflow: hidden;

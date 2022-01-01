@@ -12,6 +12,7 @@
 {% import "pages/landing-4/_testimonial.njk" as TestimonialSection %}
 {% import "pages/landing-4/_software-integrations.njk" as SoftwareintegrationsSection %}
 {% import "pages/landing-4/_cta.njk" as CtaSection %} #}
+{% import "pages/landing-4/_blog.njk" as BlogSection %}
 {% import "components/Footer/_footer-02.njk" as FooterSection %}
 {% block main %}
   <!-- Header Section Start -->
@@ -53,6 +54,9 @@
   <!-- Cta Section Start -->
   {{CtaSection.render()}}
   <!-- Cta Section End --> #}
+  <!-- Blog Section Start -->
+  {{BlogSection.render()}}
+  <!-- Blog Section End --> 
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
   <!-- Footer Section End --> 
