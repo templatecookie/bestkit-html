@@ -3,16 +3,10 @@
 {% import "pages/landing-4/_hero.njk" as HeroSection %}
 {% import "pages/landing-4/_brand.njk" as BrandSection %}
 {% import "pages/landing-4/_service.njk" as ServiceSection %}
+{% import "pages/landing-4/_content-01.njk" as ContentOneSection %}
+{% import "pages/landing-4/_team.njk" as TeamSection %}
+{% import "pages/landing-4/_testimonial.njk" as TestimonialSection %}
 {% import "pages/landing-4/_price.njk" as PriceSection %}
-{# {% import "pages/landing-4/_feature.njk" as FeatureSection %}
-{% import "pages/landing-4/_content-01.njk" as ContentSectionOne %}
-{% import "pages/landing-4/_content-02.njk" as ContentSectionTwo %}
-{% import "pages/landing-4/_content-03.njk" as ContentSectionThree %}
-{% import "pages/landing-4/_about.njk" as AboutSection %}
-{% import "pages/landing-4/_testimonial.njk" as TestimonialSection %}
-{% import "pages/landing-4/_software-integrations.njk" as SoftwareintegrationsSection %}
-{% import "pages/landing-4/_cta.njk" as CtaSection %} #}
-{% import "pages/landing-4/_testimonial.njk" as TestimonialSection %}
 {% import "pages/landing-4/_blog.njk" as BlogSection %}
 {% import "components/Footer/_footer-02.njk" as FooterSection %}
 {% block main %}
@@ -28,33 +22,18 @@
   <!-- Service Section Start -->
   {{ServiceSection.render()}}
   <!-- Service Section End -->
-    <!-- Price Section Start -->
-  {{PriceSection.render()}}
-  <!-- Price Section End -->
-  {#   <!-- FeatureSection Section Start -->
-  {{FeatureSection.render()}}
-  <!-- FeatureSection Section End -->
-  <!-- Content Section One Section Start -->
-  {{ContentSectionOne.render()}}
-  <!-- Content Section One Section End -->
-  <!-- Content Section Two Section Start -->
-  {{ContentSectionTwo.render()}}
-  <!-- Content Section Two Section End -->
-  <!-- Content Section Three Section Start -->
-  {{ContentSectionThree.render()}}
-  <!-- Content Section Three Section End -->
-  <!-- About Section Start -->
-  {{AboutSection.render()}}
-  <!-- About Section End -->
-  <!-- Softwareintegrations Section Start -->
-  {{SoftwareintegrationsSection.render()}}
-  <!-- Softwareintegrations Section End -->
-  <!-- Cta Section Start -->
-  {{CtaSection.render()}}
-  <!-- Cta Section End --> #}
+  <!-- Content One Section Start -->
+  {{ContentOneSection.render()}}
+  <!-- Content One Section End -->
+  <!-- Team Section Start -->
+  {{TeamSection.render()}}
+  <!-- Team Section End -->
   <!-- Testimonial Section Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->
+      <!-- Price Section Start -->
+  {{PriceSection.render()}}
+  <!-- Price Section End -->
   <!-- Blog Section Start -->
   {{BlogSection.render()}}
   <!-- Blog Section End --> 

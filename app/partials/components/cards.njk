@@ -93,3 +93,22 @@
         </div>
     </div>
 {% endmacro %}
+{% macro TeamOne(obj) %}
+    <div class="card-team-01 {{obj.modifier}}">
+        <div class="card-img">
+            <img src="{{obj.img}}" alt="img" class="w-100">
+            <div class="card-social">
+                <ul class="list-unstyled list-group">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-body">
+            <h6 class="name">{{obj.name}}</h6>
+            <h6 class="position">{{obj.position}}</h6>
+        </div>
+    </div>
+{% endmacro %}
