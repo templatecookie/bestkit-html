@@ -181,9 +181,21 @@ button {
 .w-140{
   width: 140px !important;
 }
+.w-198{
+  width: 198px !important;
+}
 .video-btn{
   display: block;
   @include square(50px,500px);
   @include flexAllCenter;
   background: white;
+}
+.video-btn-two{
+  display: block;
+  @include square(60px,500px);
+  @include flexAllCenter;
+  background: var(--bs-primary);
+  @media (min-width:575px) {
+    @include square(100px,500px);
+  }
 }

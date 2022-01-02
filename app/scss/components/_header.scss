@@ -208,6 +208,9 @@ div#loading img {
     }
   }
   &__brand {
+    .logo-white-black {
+      display: none;
+    }
     .logo-white {
       display: none;
     }
@@ -328,6 +331,20 @@ div#loading img {
   .site-header__brand {
     .logo-white {
       display: block;
+    }
+    .logo-black {
+      display: none;
+    }
+  }
+}
+/* Header Logo Dark */
+.logo-dark-white {
+  .site-header__brand {
+    .logo-white-black {
+      display: block;
+    }
+    .logo-white {
+      display: none;
     }
     .logo-black {
       display: none;
