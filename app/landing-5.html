@@ -4,6 +4,7 @@
 {% import "pages/landing-5/_feature.njk" as FeatureSection %}
 {% import "pages/landing-5/_about.njk" as AboutSection %}
 {% import "pages/landing-5/_content-01.njk" as ContentSectionOne %}
+{% import "pages/landing-5/_content-02.njk" as ContentSectionTwo %}
 {# {% import "pages/landing-5/_brand.njk" as BrandSection %}
 {% import "pages/landing-5/_service.njk" as ServiceSection %}
 {% import "pages/landing-5/_counter.njk" as CounterSection %}
@@ -26,9 +27,12 @@
   <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
-  <!-- Counter One Section Start -->
+  <!-- Content One Section Start -->
   {{ContentSectionOne.render()}}
-  <!-- Counter One Section End -->
+  <!-- Content One Section End -->
+  <!-- Content Two Section Start -->
+  {{ContentSectionTwo.render()}}
+  <!-- Content Two Section End -->
   {# <!-- Brand Section Start -->
   {{BrandSection.render()}}
   <!-- Brand Section End -->

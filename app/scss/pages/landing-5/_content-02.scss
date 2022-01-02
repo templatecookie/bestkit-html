@@ -1,0 +1,132 @@
+.content-section-06{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    .section-title-block{
+        margin-bottom: 35px;
+        @media (min-width:992px) {
+            margin-bottom: 70px;
+        }
+    }
+    &__card{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 0;
+        }
+        @media (min-width:1200px) {
+            margin-right: 55px;
+        }
+    }
+}
+.accordion-02{
+    .accordion-item{
+        border: 0;
+        &:not(&:last-child){
+            margin-bottom: 15px;
+        }
+        .accordion-header{
+            .accordion-button{
+                padding: 25px 20px;
+                @media (min-width:575px) {
+                padding: 25px 30px;
+            }
+            flex-direction: row-reverse;
+            &::after{
+                margin-right: auto !important;
+                margin-left: unset;
+                background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 1L7 7L1 1' stroke='%23222D39' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                background-size: unset;
+                transform: translateY(5.5px) !important;
+            }
+            &:not(.collapsed){
+                box-shadow: none;
+                background: var(--bs-white-lilac);
+                border: 1px solid #8492A7;
+                &::after{
+                    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 7L7 1L1 7' stroke='%23222D39' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    transform: unset;
+                }
+            }
+            .content{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-left: 10px;
+                @media (min-width:480px) {
+                    margin-left: 18px;
+                }
+                span{
+                    font-size: 16px;
+                    line-height: 1.222222222222222;
+                    color: var(--bs-black);
+                    font-weight: bold;
+                    @media (min-width:480px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+       } 
+       .accordion-collapse{
+           &.show{
+               border:1px solid #8492A7;
+               border-top: 0;
+               border-bottom-left-radius: 3px;
+               border-bottom-right-radius: 3px;
+           }
+       }
+       .accordion-body{
+        padding: 25px 20px;
+        @media (min-width:575px) {
+        padding: 25px 30px;
+    }
+          .class-list{
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              li{
+                  padding-bottom: 20px;
+                  &:last-child{
+                      padding-bottom: 0;
+                  }
+                  a{
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      .text-wrapper{
+                          display: flex;
+                          align-items: center;
+                          .icon{
+                              margin-right: 15px;
+                              @media (min-width:575px) {
+                                  margin-right: 25px;
+                              }
+                          }
+                        }
+                        .time,
+                        .text{
+                            padding-right: 8px;
+                            color: var(--bs-gray);
+                            font-size: 14px;
+                            line-height: 1.2;
+                            @media (min-width:575px) {
+                                font-size: 16px;
+                            }
+                            @media (miin-width:768px) {
+                                font-size: 18px;
+                            }
+                        }
+                        .time{
+                            padding: 0;
+                        }
+                  }
+              }
+          } 
+       }
+    }
+}
