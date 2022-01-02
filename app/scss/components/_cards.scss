@@ -826,3 +826,23 @@
     }
   }
 }
+.faq-card{
+  h6{
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: var(--bs-black);
+    @media (min-width:575px) {
+      font-size: 24px;
+    }
+  }
+  p{
+    color: var(--bs-gray);
+    line-height: 1.555555555555556;
+    font-weight: 500;
+    font-size: 16px;
+    @media (min-width:575px) {
+      font-size: 18px;
+    }
+  }
+}
