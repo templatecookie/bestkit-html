@@ -510,6 +510,28 @@
       }
     }
   }
+  &--04{
+    background: transparent;
+    padding: 0;
+    .card-img{
+      @include square(70px,3px);
+      @include flexAllCenter;
+      margin-bottom: 25px;
+      background: var(--bs-solitude);
+      &::before{
+        display: none;
+      }
+      @media (min-width:992px) {
+        margin-bottom: 35px;
+      }
+    }
+    .card-content{
+      h6{
+      line-height: 1.2;
+      margin-bottom: 15px;
+      }
+    }
+  }
 }
 .testimonial-card-02{
   &__content{
