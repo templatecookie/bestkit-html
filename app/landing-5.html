@@ -7,14 +7,7 @@
 {% import "pages/landing-5/_content-02.njk" as ContentSectionTwo %}
 {% import "pages/landing-5/_faq.njk" as FaqSection %}
 {% import "pages/landing-5/_testimonial.njk" as TestimonialSection %}
-{# {% import "pages/landing-5/_brand.njk" as BrandSection %}
-{% import "pages/landing-5/_service.njk" as ServiceSection %}
-{% import "pages/landing-5/_counter.njk" as CounterSection %}
-{% import "pages/landing-5/_content-02.njk" as ContentTwoSection %}
-{% import "pages/landing-5/_team.njk" as TeamSection %}
-{% import "pages/landing-5/_price.njk" as PriceSection %}
-{% import "pages/landing-5/_blog.njk" as BlogSection %}
-{% import "components/Footer/_footer-02.njk" as FooterSection %} #}
+{% import "components/Footer/_footer-04.njk" as FooterSection %} 
 {% block main %}
   <!-- Header Section Start -->
   {{Header.render(siteHeaderFive)}}
@@ -40,28 +33,7 @@
   <!-- Testimonial Section Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->
-  {# <!-- Brand Section Start -->
-  {{BrandSection.render()}}
-  <!-- Brand Section End -->
-  <!-- Service Section Start -->
-  {{ServiceSection.render()}}
-  <!-- Service Section End -->
-  <!-- Content One Section Start -->
-  {{ContentOneSection.render()}}
-  <!-- Content One Section End -->
-  <!-- Content Two Section Start -->
-  {{ContentTwoSection.render()}}
-  <!-- Content Two Section End -->
-  <!-- Team Section Start -->
-  {{TeamSection.render()}}
-  <!-- Team Section End -->
-      <!-- Price Section Start -->
-  {{PriceSection.render()}}
-  <!-- Price Section End -->
-  <!-- Blog Section Start -->
-  {{BlogSection.render()}}
-  <!-- Blog Section End --> 
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
-  <!-- Footer Section End -->  #}
+  <!-- Footer Section End -->
 {% endblock %}
