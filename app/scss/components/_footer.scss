@@ -367,6 +367,11 @@
             margin-left: 88px;
         }
     }
+    &--modifiar-01{
+        @media (min-width:992px) {
+            padding: 130px 0;  
+        }  
+    }
 }
 .footer-section-04{
     position: relative;

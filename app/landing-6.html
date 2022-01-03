@@ -1,0 +1,36 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/landing-6/_hero.njk" as HeroSection %}
+{% import "components/Footer/_footer-03.njk" as FooterSection %} 
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(siteHeaderSix)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  {# <!-- Feature Section Start -->
+  {{FeatureSection.render()}}
+  <!-- Feature Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Content One Section Start -->
+  {{ContentSectionOne.render()}}
+  <!-- Content One Section End -->
+  <!-- Content Two Section Start -->
+  {{ContentSectionTwo.render()}}
+  <!-- Content Two Section End -->
+  <!-- Faq Two Section Start -->
+  {{FaqSection.render()}}
+  <!-- Faq Two Section End -->
+  <!-- Price Section Start -->
+  {{PriceSection.render()}}
+  <!-- Price Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Footer Section Start --> #}
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
+{% endblock %}
