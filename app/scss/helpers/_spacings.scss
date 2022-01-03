@@ -35,6 +35,21 @@
     margin-bottom: 50px;
   }
 }
+.featre-card-bottom-two {
+  margin-bottom: -35px;
+  @media (min-width:992px) {
+    margin-bottom: -50px;
+    
+  }
+
+  [class^="col"] {
+    margin-bottom: 35px;
+    @media (min-width:992px) {
+      margin-bottom: 50px;
+      
+    }
+  }
+}
 
 .gallery-row {
   margin-bottom: -24px;

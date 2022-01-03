@@ -1,0 +1,70 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/l-6/money.svg",
+        bgWrapper:"bg-primary",
+        title:"Transfer Your Balances",
+        text:"Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices."
+        },
+        {
+        id:2,
+        img:"./image/l-6/credit-card.svg",
+        bgWrapper:"bg-secondary",
+        title:"Request a Payment",
+        text:"Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices."
+        },
+        {
+        id:3,
+        img:"./image/l-6/money-growth.svg",
+        bgWrapper:"bg-yellow",
+        title:"Receiving Payments",
+        text:"Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices."
+        },
+        {
+        id:4,
+        img:"./image/l-6/building.svg",
+        bgWrapper:"bg-purple",
+        title:"Withdraw to Your Bank",
+        text:"Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices."
+        }
+
+
+]%}
+    <div class="feature-section-04">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="feature-section-04__image">
+                        <img src="./image/l-6/moble.png" alt="moble" class="w-100">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-section-04__content">
+                        <div class="section-content-block">
+                            <h6 class="subtitle text-primary mb-10">Great Features</h6>
+                            <h2 class="titel">What Make’s Us Special</h2>
+                        </div>
+                        <div class="feature-section-04__content--card">
+                            <div class="row featre-card-bottom-two justify-content-center">
+                                {% for item in cardData%}
+                                    <div class="col-xs-6 col-10" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                                            {{Card.FeatureCard({
+                                                modifier:"feature-card--04",
+                                                img:item.img,
+                                                bgWrapper:item.bgWrapper,
+                                                text:item.text,
+                                                title:item.title
+                                            })}}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

@@ -1,6 +1,7 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "pages/landing-6/_hero.njk" as HeroSection %}
+{% import "pages/landing-6/_feature.njk" as FeatureSection %}
 {% import "components/Footer/_footer-03.njk" as FooterSection %} 
 {% block main %}
   <!-- Header Section Start -->
@@ -9,10 +10,10 @@
   <!-- Hero Section Start -->
   {{HeroSection.render()}}
   <!-- Hero Section End -->
-  {# <!-- Feature Section Start -->
+ <!-- Feature Section Start -->
   {{FeatureSection.render()}}
   <!-- Feature Section End -->
-  <!-- About Section Start -->
+  {#  <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
   <!-- Content One Section Start -->
