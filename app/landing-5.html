@@ -6,6 +6,7 @@
 {% import "pages/landing-5/_content-01.njk" as ContentSectionOne %}
 {% import "pages/landing-5/_content-02.njk" as ContentSectionTwo %}
 {% import "pages/landing-5/_faq.njk" as FaqSection %}
+{% import "pages/landing-5/_price.njk" as PriceSection %}
 {% import "pages/landing-5/_testimonial.njk" as TestimonialSection %}
 {% import "components/Footer/_footer-04.njk" as FooterSection %} 
 {% block main %}
@@ -30,6 +31,9 @@
   <!-- Faq Two Section Start -->
   {{FaqSection.render()}}
   <!-- Faq Two Section End -->
+  <!-- Price Section Start -->
+  {{PriceSection.render()}}
+  <!-- Price Section End -->
   <!-- Testimonial Section Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section End -->
