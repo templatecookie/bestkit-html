@@ -136,8 +136,8 @@ $(".counter").counterUp({
         ],
       });
   }
-  if (jQuery(".testimonial-slider--04").length > 0) {
-    $(".testimonial-slider--04")
+  if (jQuery(".testimonial-slider--05").length > 0) {
+    $(".testimonial-slider--05")
       .not(".slick-initialized")
       .slick({
         dots: true,
@@ -149,8 +149,8 @@ $(".counter").counterUp({
         fade: true,
       });
   }
-  if (jQuery(".testimonial-slider--05").length > 0) {
-    $(".testimonial-slider--05")
+  if (jQuery(".testimonial-slider--06").length > 0) {
+    $(".testimonial-slider--06")
       .not(".slick-initialized")
       .slick({
         dots: false,
@@ -160,8 +160,8 @@ $(".counter").counterUp({
         slidesToScroll: 1,
         arrows: true,
         fade: true,
-        prevArrow: $(".testimonial-slider--05__control-buttons .button--prev"),
-        nextArrow: $(".testimonial-slider--05__control-buttons .button--next"),
+        prevArrow: $(".testimonial-slider--06__control-buttons .button--prev"),
+        nextArrow: $(".testimonial-slider--06__control-buttons .button--next"),
       });
   }
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
