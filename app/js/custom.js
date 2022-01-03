@@ -149,7 +149,21 @@ $(".counter").counterUp({
         fade: true,
       });
   }
-
+  if (jQuery(".testimonial-slider--05").length > 0) {
+    $(".testimonial-slider--05")
+      .not(".slick-initialized")
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        prevArrow: $(".testimonial-slider--05__control-buttons .button--prev"),
+        nextArrow: $(".testimonial-slider--05__control-buttons .button--next"),
+      });
+  }
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Price Deck Trigger
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
