@@ -509,6 +509,11 @@
         display: none;
       }
     }
+    &.bg-modifier{
+      .card-img{
+        background: transparent;
+      }
+    }
   }
   &--04{
     background: transparent;
