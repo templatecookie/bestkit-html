@@ -8,6 +8,7 @@
 {% import "pages/landing-6/_screenshot.njk" as ScreenshotSection %}
 {% import "pages/landing-6/_content-02.njk" as ContentSectionTwo %}
 {% import "pages/landing-6/_content-03.njk" as ContentSectionThree %}
+{% import "pages/landing-6/_cta.njk" as CtaSection %}
 {% import "components/Footer/_footer-03.njk" as FooterSection %} 
 {% block main %}
   <!-- Header Section Start -->
@@ -31,12 +32,15 @@
   <!-- Screenshot Section Start -->
   {{ScreenshotSection.render()}}
   <!-- Screenshot Section End -->
-    <!-- Counter Section Two Start -->
+  <!-- Counter Section Two Start -->
   {{ContentSectionTwo.render()}}
   <!-- Counter Section Two End -->
     <!-- Counter Section Three Start -->
   {{ContentSectionThree.render()}}
   <!-- Counter Section Three End -->
+    <!-- Cta Section Three Start -->
+  {{CtaSection.render()}}
+  <!-- Cta Section Three End -->
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
   <!-- Footer Section End -->
