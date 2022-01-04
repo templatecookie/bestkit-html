@@ -164,6 +164,132 @@ $(".counter").counterUp({
         nextArrow: $(".testimonial-slider--06__control-buttons .button--next"),
       });
   }
+  if (jQuery(".screenshot-slider").length > 0) {
+    $(".screenshot-slider")
+      .not(".slick-initialized")
+      .slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: "130px",
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
+        easing: "linear",
+        speed: 800,
+        appendDots: ".screenshots-dots",
+        responsive: [
+          {
+            breakpoint: 1800,
+            settings: {
+              slidesToShow: 5,
+              centerPadding: "100px",
+            },
+          },
+          {
+            breakpoint: 1750,
+            settings: {
+              slidesToShow: 5,
+              centerPadding: "20px",
+            },
+          },
+          {
+            breakpoint: 1670,
+            settings: {
+              slidesToShow: 5,
+              centerPadding: "60px",
+            },
+          },
+          {
+            breakpoint: 1640,
+            settings: {
+              slidesToShow: 5,
+              centerPadding: "20px",
+            },
+          },
+          {
+            breakpoint: 1450,
+            settings: {
+              slidesToShow: 5,
+              centerPadding: "10px",
+            },
+          },
+          {
+            breakpoint: 1350,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "20px",
+            },
+          },
+          {
+            breakpoint: 1250,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "10px",
+            },
+          },
+          {
+            breakpoint: 1150,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "0px",
+            },
+          },
+          {
+            breakpoint: 1050,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "10px",
+            },
+          },
+          {
+            breakpoint: 950,
+            settings: {
+              slidesToShow: 3,
+              centerPadding: "0",
+            },
+          },
+          {
+            breakpoint: 830,
+            settings: {
+              fade: true,
+              slidesToShow: 1,
+              centerPadding: "20px",
+            },
+          },
+          {
+            breakpoint: 650,
+            settings: {
+              fade: true,
+              slidesToShow: 1,
+              centerPadding: "10px",
+            },
+          },
+          {
+            breakpoint: 515,
+            settings: {
+              fade: true,
+              slidesToShow: 1,
+              autoplay: true,
+              centerPadding: "0px",
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              fade: true,
+              slidesToShow: 1,
+              autoplay: true,
+              centerPadding: "0px",
+              arrows: false,
+            },
+          },
+        ],
+      });
+  }
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Price Deck Trigger
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

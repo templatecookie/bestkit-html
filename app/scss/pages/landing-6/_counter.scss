@@ -1,4 +1,7 @@
 .counter-section-04{
+    @media (min-width:992px) {
+        background: var(--bs-white-lilac)
+    }
     &__wrapper{
         display: flex;
         align-items: center;
@@ -11,7 +14,7 @@
         @media (min-width:992px) {
             justify-content: space-around;
             background: white;
-            box-shadow: 0px 15px 30px rgba(210, 217, 224, 0.35);
+            border-radius: 3px;
         }
         border-radius: 3px;
         .count-block{
