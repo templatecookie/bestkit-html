@@ -1,0 +1,38 @@
+.content-section-08{
+    overflow: hidden;
+    padding: 60px 0 30px;
+    @media (min-width:575px) {
+        padding: 80px 0 40px;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0 65px;
+    }
+    &__image-group{
+        @media (max-width:992px) {
+            margin-bottom: 30px;
+        }
+        img{
+            filter: drop-shadow(0px 15px 40px rgba(181, 188, 194, 0.1));   
+        }
+        @media (min-width:1200px) {
+            margin-right: 85px;
+        }
+    }
+    &__content{
+        .title{
+            margin-bottom: 20px;
+            @media (min-width:575px) {
+                margin-bottom: 25px;
+            }
+        }
+        &--list{
+            margin-top: 25px;
+        }
+        .btn{
+            margin-top: 30px;
+            @media (min-width:992px) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
