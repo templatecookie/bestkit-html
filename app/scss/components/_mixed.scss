@@ -320,3 +320,43 @@
         }
     }
 }
+.about-wdidget-03{
+    display: flex;
+    align-items: flex-start;
+    .widget-icon{
+        @include flexAllCenter;
+        background: white;
+        box-shadow: 0px 15px 30px rgba(210, 217, 224, 0.35);
+        margin-right: 20px;
+        @include square(50px,500px);
+        @media (min-width:575px) {
+            margin-right: 25px;
+            @include square(65px,500px);
+            
+        }
+    }
+    .widget-content{
+        h6{
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: var(--bs-dark);
+            line-height: 1.302916666666667;
+            @media (min-width:575px) {
+                font-size: 20px;
+            }
+            @media (min-width:992px) {
+                font-size: 24px;
+            }
+        }
+        p{
+            font-weight: 500;
+            color: var(--bs-gray);
+            line-height: 1.555555555555556;
+            font-size: 16px;
+            @media (min-width:575px) {
+                font-size: 18px;
+            }
+        }
+    } 
+}

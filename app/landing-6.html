@@ -3,6 +3,7 @@
 {% import "pages/landing-6/_hero.njk" as HeroSection %}
 {% import "pages/landing-6/_feature.njk" as FeatureSection %}
 {% import "pages/landing-6/_content-01.njk" as ContentSection %}
+{% import "pages/landing-6/_about.njk" as AboutSection %}
 {% import "components/Footer/_footer-03.njk" as FooterSection %} 
 {% block main %}
   <!-- Header Section Start -->
@@ -17,10 +18,10 @@
   <!-- Content Section Start -->
   {{ContentSection.render()}}
   <!-- Content Section End -->
-  {#  <!-- About Section Start -->
+  <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
-  <!-- Content One Section Start -->
+  {#  <!-- Content One Section Start -->
   {{ContentSectionOne.render()}}
   <!-- Content One Section End -->
   <!-- Content Two Section Start -->
