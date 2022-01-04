@@ -290,6 +290,29 @@ $(".counter").counterUp({
         ],
       });
   }
+  if (jQuery(".testimonial-slider--07").length > 0) {
+    $(".testimonial-slider--07")
+      .not(".slick-initialized")
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        prevArrow: $(".testimonial-slider--07__control-buttons .button--prev"),
+        nextArrow: $(".testimonial-slider--07__control-buttons .button--next"),
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              dots: true,
+            },
+          },
+        ],
+      });
+  }
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Price Deck Trigger
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

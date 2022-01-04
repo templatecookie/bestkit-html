@@ -969,3 +969,54 @@
     }
   }
 }
+.testimonial-card-07{
+  position: relative;
+  background: var(--bs-white-lilac);
+  padding: 40px 20px;
+  @media (min-width:480px) {
+    padding: 50px 30px;
+  }
+  @media (min-width:992px) {
+    padding: 70px 50px;
+  }
+  .card-img{
+    @media (max-width:992px) {
+      display: none;
+    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .card-content{
+    text-align: center;
+    .icon{
+      img{
+        margin: auto;
+      }
+      margin-bottom: 20px;
+      @media (min-width:992px) {
+        margin-bottom: 40px;
+      }
+    }
+    p{
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--bs-black);
+        line-height: 1.5;
+        @media (min-width:575px) {
+          font-size: 20px;
+        }
+        @media (min-width:992px) {
+          font-size: 24px;
+        }
+    }
+    span{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      color: var(--bs-gray);
+    }
+  }
+}

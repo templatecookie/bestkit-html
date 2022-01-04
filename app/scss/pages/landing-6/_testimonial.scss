@@ -1,0 +1,72 @@
+@use "../../abstracts/mixins" as *;
+.testimonial-section-07{
+    padding: 60px 0;
+    overflow: hidden;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    .section-title-block{
+        margin-bottom: 35px;
+        @media (min-width:575px) {
+            margin-bottom: 50px;
+        }
+        @media (min-width:992px) {
+            margin-bottom: 92px;
+        }
+    }
+    &__slider{
+        position: relative;
+        .testimonial-slider--07{
+            &__control-buttons{
+                @media (max-width:992px) {
+                    display: none;
+                }
+                .button{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: transparent;
+                    border: 0;
+                    padding: 0;
+                    @include square(50px,3px);
+                    @include flexAllCenter;
+                    background: #EBF6FF;
+                    transition: .3s;
+                    svg{
+                        path{
+                            transition: .3s;
+                            stroke: var(--bs-primary);
+                        }
+                    }
+                    &:hover{
+                        background: var(--bs-primary);
+                        svg{
+                            path{
+                                stroke: white;
+                            }
+                        }
+                    }
+                    &--prev{
+                        left: -95px;
+                        cursor: pointer;
+                    }
+                    &--next{
+                        right: -95px;
+                        cursor: pointer;           
+                    }
+               } 
+            }
+        }
+        .slick-dots-style-1{
+            .slick-dots {
+                margin-top: 25px;
+                @media (min-width:992px) {
+                    margin-top: 45px;
+                }
+            }
+        }
+    }
+}
