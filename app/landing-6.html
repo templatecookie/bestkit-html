@@ -4,6 +4,7 @@
 {% import "pages/landing-6/_feature.njk" as FeatureSection %}
 {% import "pages/landing-6/_content-01.njk" as ContentSection %}
 {% import "pages/landing-6/_about.njk" as AboutSection %}
+{% import "pages/landing-6/_counter.njk" as CounterSection %}
 {% import "components/Footer/_footer-03.njk" as FooterSection %} 
 {% block main %}
   <!-- Header Section Start -->
@@ -21,6 +22,9 @@
   <!-- About Section Start -->
   {{AboutSection.render()}}
   <!-- About Section End -->
+  <!-- Counter Section Start -->
+  {{CounterSection.render()}}
+  <!-- Counter Section End -->
   {#  <!-- Content One Section Start -->
   {{ContentSectionOne.render()}}
   <!-- Content One Section End -->
