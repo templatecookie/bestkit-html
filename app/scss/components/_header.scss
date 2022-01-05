@@ -47,11 +47,10 @@ div#loading img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
+  padding: 0px;
   @media (min-width: 992px) {
     flex-flow: row nowrap;
     justify-content: flex-start;
-    padding: 0px;
     align-items: center;
   }
 

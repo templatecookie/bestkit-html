@@ -309,7 +309,7 @@
                     padding-left: 60px;
                     padding-right: 20px;
                     font-weight: 500;
-                    color: var(--bs-gray);
+                    color: var(--bs-black);
                     transition: .3s;
                     line-height: 1.555555555555556;
                     &::placeholder{
@@ -371,6 +371,44 @@
         @media (min-width:992px) {
             padding: 130px 0;  
         }  
+    }
+    &__v2{
+        background: var(--bs-white-lilac);
+        @media (min-width:992px) {
+            padding-top: 130px;
+        }
+        .footer-section-03__wrapper{
+            &--button-group{
+                margin-top: 10px;
+                @media (min-width:575px) {
+                    margin-top: 20px;
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 -10px;
+                    li{
+                        margin: 0 10px;
+                        a{
+                            display: block;
+                            @include square(36px,500px);
+                            @include flexAllCenter;
+                            transition: .3s;
+                            color: var(--bs-gray);
+                            border: 1px solid var(--bs-gray);
+                            &:hover{
+                                border-color: var(--bs-primary);
+                                color: var(--bs-white);
+                                background: var(--bs-primary);
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .footer-section-04{
@@ -659,5 +697,11 @@
     }
     &--modifi-03{
         background: var(--bs-black);
+    }
+    &--modifi-04{
+        background: var(--bs-white-lilac);
+        .copyright-block__wrapper{
+            border-top: 1px solid #DEE7EE;
+        }
     }
 }
