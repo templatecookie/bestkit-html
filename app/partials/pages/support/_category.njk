@@ -1,0 +1,70 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/support/icon-1.png",
+        btnText:"Browse Airticle",
+        title:"Getting Started",
+        text:"Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis"
+        },
+        {
+        id:2,
+        img:"./image/support/icon-2.png",
+        btnText:"Browse Airticle",
+        title:"My Account",
+        text:"Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis"
+        },
+        {
+        id:3,
+        img:"./image/support/icon-1.png",
+        btnText:"Browse Airticle",
+        title:"Sales Questions",
+        text:"Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis"
+        },
+        {
+        id:4,
+        img:"./image/support/icon-2.png",
+        btnText:"Browse Airticle",
+        title:"Payment & Billing",
+        text:"Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis"
+        },
+        {
+        id:5,
+        img:"./image/support/icon-3.png",
+        btnText:"Browse Airticle",
+        title:"Uses Guides",
+        text:"Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis"
+        },
+        {
+        id:6,
+        img:"./image/support/icon-4.png",
+        btnText:"Browse Airticle",
+        title:"Knowledgebase",
+        text:"Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis"
+        }
+
+
+]%}
+<div class="category-section">
+    <div class="container">
+        <div class="section-title-block text-center">
+            <h2 class="title">Browse Questions by Category</h2>
+        </div>
+        <div class="row justify-content-center card-row">
+            {% for item in cardData%}
+            <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                {{Card.SerciceCard({
+                    modifier:"card-service--04",
+                    img:item.img,
+                    title:item.title,
+                    btnText:item.btnText,
+                    text:item.text
+                })}}
+            </div>
+            {% endfor %}
+        </div>
+    </div>              
+</div>
+{% endmacro %}

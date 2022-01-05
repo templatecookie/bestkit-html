@@ -13,7 +13,7 @@
     padding-top: 37px;
   }
   .card-image{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     @include square(60px,500px);
     @include flexAllCenter;
     background: #EBF6FF;
@@ -195,6 +195,32 @@
       &::before{
         visibility: visible;
         opacity: 1;
+      }
+    }
+  }
+  &--04{
+    background: var(--bs-white-lilac);
+    border: 0;
+    padding: 40px 25px;
+    @media (min-width:575px) {
+      padding: 50px 30px;
+    }
+    @media (min-width:1400px) {
+      padding: 50px;
+      padding-top: 42px;
+    }
+    .card-image{
+      background: transparent;
+      margin-right: 20px;
+      @media (min-width:1200px) {
+        margin-right: 30px;
+      }
+    }
+    &:hover{
+        box-shadow: 0px 15px 30px rgba(210, 217, 224, 0.35);
+        border-radius: 3px;
+      .card-image{
+        background: transparent;
       }
     }
   }
