@@ -1,6 +1,7 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
+{% import "pages/support/_search.njk" as SearchSection %}
 {% import "components/Footer/_footer-03__v2.njk" as FooterSection %}
 {% block main %}
 <!-- Header Section Start -->
@@ -13,6 +14,9 @@
     "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
 })}}
 <!-- Breadcrumb Section End --> 
+<!-- Search Section Start -->
+{{SearchSection.render()}}
+<!-- Search Section End --> 
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End --> 
