@@ -983,11 +983,24 @@
     @media (max-width:992px) {
       display: none;
     }
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      .mask-img{
+        margin: 0;
+        mask-image: url(../../image/l-6/t-rectagle.png);
+        mask-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        mask-position: left center;
+        mask-size: contain;
+      }
+      img{
+        object-fit: cover;
+      }
+    
   }
   .card-content{
     text-align: center;
