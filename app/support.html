@@ -1,12 +1,19 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/landing-3/_hero.njk" as HeroSection %}
+{% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
 {% import "components/Footer/_footer-03__v2.njk" as FooterSection %}
 {% block main %}
-  <!-- Header Section Start -->
-  {{Header.render(innerHeader)}}
-  <!-- Header Section End -->
-  <!-- Footer Section Start -->
-  {{FooterSection.render()}}
-  <!-- Footer Section End --> 
+<!-- Header Section Start -->
+{{Header.render(innerHeader)}}
+<!-- Header Section End -->
+<!-- Breadcrumb Section Start -->
+{{Breadcrumb.render({
+    "pageName":"Support",
+    "title":"Help Center",
+    "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+})}}
+<!-- Breadcrumb Section End --> 
+<!-- Footer Section Start -->
+{{FooterSection.render()}}
+<!-- Footer Section End --> 
 {% endblock %}

@@ -58,7 +58,7 @@
 	"innerHeader": {
 		"additional_header_class": "site-header--menu-right logo-dark mobile-menu-trigger-dark",
 		"header_double_button": false,
-		"absolute_header": false,
+		"absolute_header": true,
 		"header_button": true,
 		"additional_button_classes": "site-header__btns--01",
 		"header_button_class": "btn-primary w-225",
