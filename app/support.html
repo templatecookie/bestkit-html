@@ -3,6 +3,7 @@
 {% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
 {% import "pages/support/_search.njk" as SearchSection %}
 {% import "pages/support/_category.njk" as CategorySection %}
+{% import "pages/support/_asistant.njk" as AsistantSection %}
 {% import "components/Footer/_footer-03__v2.njk" as FooterSection %}
 {% block main %}
 <!-- Header Section Start -->
@@ -21,6 +22,9 @@
 <!-- Category Section Start -->
 {{CategorySection.render()}}
 <!-- Category Section End --> 
+<!-- Asistant Section Start -->
+{{  AsistantSection.render()}}
+<!-- Asistant Section End --> 
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End --> 
