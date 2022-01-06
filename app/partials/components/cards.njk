@@ -82,6 +82,25 @@
         </div>
     </div>
 {% endmacro %}
+{% macro BlogCardThree(obj) %}
+    <div class="card-blog card-blog--03">
+        <div class="card-image">
+            <img src="{{obj.img}}" alt="card">
+        </div>
+        <div class="card-body">
+            <div class="meta">
+                <div class="meta__date">
+                    <span class="date text-dark">{{obj.date | safe}} </span>
+                </div>
+                <div class="meta__time">
+                    <span class="time text-dark">{{obj.time | safe}} </span>
+                </div>
+            </div>
+            <h6 class="titel">{{obj.title}}</h6>
+            <p class="text text-dark">{{obj.text}}</p>
+        </div>
+    </div>
+{% endmacro %}
 {% macro FeatureCard(obj) %}
     <div class="card feature-card {{obj.modifier}}">
         <div class="card-img {{obj.bgWrapper}}">
