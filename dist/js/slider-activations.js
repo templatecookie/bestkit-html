@@ -39,13 +39,6 @@ jQuery(document).ready(function() {
                 arrows: false,
                 mobileFirst: true,
                 responsive: [{
-                        breakpoint: 575,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        },
-                    },
-                    {
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 2,
@@ -60,7 +53,7 @@ jQuery(document).ready(function() {
                         },
                     },
                     {
-                        breakpoint: 1200,
+                        breakpoint: 1400,
                         settings: "unslick",
                     },
                 ],

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Portfolio
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden">
+    <!-- Header Section Start -->
+    <!-- Preloader -->
+    <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader-3.gif" alt="preloader">
+   </div>
+   </div>   -->
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-right logo-dark mobile-menu-trigger-dark site-header--absolute">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="site-header__brand">
+            <a href="index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-dark-white.png" alt="logo" class="logo-white-black">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-dark.png" alt="logo" class="logo-white">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo/logo-white.png" alt="logo" class="logo-black">
+            </a>
+          </div>
+          <div class="menu-block-wrapper ">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block menu-block-inner" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Home <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="index.html">Landing 1</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-2.html">Landing 2</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-3.html">Landing 3</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-4.html">Landing 4</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-5.html">Landing 5</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-6.html">Landing 6</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="about-us.html">About Us</a>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Case Studies<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-9">
+                        <li class="sub-menu--item">
+                          <a href="case-study.html">Case Study</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="case-study-details.html">Case Study Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Services<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-10">
+                        <li class="sub-menu--item">
+                          <a href="service.html">Service</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="service-details.html">Service Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Utility<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-10">
+                        <li class="sub-menu--item">
+                          <a href="support.html">Support</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Blogs <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-11">
+                    <li class="sub-menu--item">
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="blog-details.html">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="contact.html" class="nav-link-item drop-trigger">Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-button header-btn site-header__btns--01">
+              <a class="btn btn-primary w-225" href="#">
+                Get Started Now <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>
+              </a>
+            </div>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!-- Header Section End -->
+    <!-- Breadcrumb Section Start -->
+    <div class="breadcrumb bg-white-lilac ">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-8 col-xs-10">
+            <div class="page-title-block-two breadcrumb__content text-center">
+              <h1 class="title">Help Center</h1>
+              <p class="text-dark">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrumb__navigation">
+        <p class="breadcrumb__navigation--text">Home<span class="dot"></span><span class="page-text">Support</span></p>
+      </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+    <!-- Search Section Start -->
+    <div class="search-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-8 col-md-10">
+            <div class="section-title-block text-center">
+              <h6 class="subtitle mb-10 text-primary">Bye bye bank fees, hello world.</h6>
+              <h2 class="title mb-10">How Can We Help You Today?</h2>
+              <p class="text-dark px-lg-7">Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis</p>
+            </div>
+          </div>
+          <div class="col-xl-8">
+            <div class="search-section__newsletter">
+              <div class="search-newsletter-01">
+                <form action="#">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search for answer...">
+                    <div class="icon">
+                      <img src="./image/support/search.png" alt="mail">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Search Now
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search Section End -->
+    <!-- Category Section Start -->
+    <div class="category-section">
+      <div class="container">
+        <div class="section-title-block text-center">
+          <h2 class="title">Browse Questions by Category</h2>
+        </div>
+        <div class="row justify-content-center card-row">
+          <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div class="card card-service card-service--04">
+              <div class="card-image ">
+                <img src="./image/support/icon-1.png" alt="card" class="mw-100 make-it-inline">
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title heading-dark">Getting Started</h4>
+                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis</p>
+                <a href="#">Browse Airticle</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <div class="card card-service card-service--04">
+              <div class="card-image ">
+                <img src="./image/support/icon-2.png" alt="card" class="mw-100 make-it-inline">
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title heading-dark">My Account</h4>
+                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis</p>
+                <a href="#">Browse Airticle</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+            <div class="card card-service card-service--04">
+              <div class="card-image ">
+                <img src="./image/support/icon-1.png" alt="card" class="mw-100 make-it-inline">
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title heading-dark">Sales Questions</h4>
+                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis</p>
+                <a href="#">Browse Airticle</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+            <div class="card card-service card-service--04">
+              <div class="card-image ">
+                <img src="./image/support/icon-2.png" alt="card" class="mw-100 make-it-inline">
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title heading-dark">Payment & Billing</h4>
+                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis</p>
+                <a href="#">Browse Airticle</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+            <div class="card card-service card-service--04">
+              <div class="card-image ">
+                <img src="./image/support/icon-3.png" alt="card" class="mw-100 make-it-inline">
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title heading-dark">Uses Guides</h4>
+                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis</p>
+                <a href="#">Browse Airticle</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000">
+            <div class="card card-service card-service--04">
+              <div class="card-image ">
+                <img src="./image/support/icon-4.png" alt="card" class="mw-100 make-it-inline">
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title heading-dark">Knowledgebase</h4>
+                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis</p>
+                <a href="#">Browse Airticle</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Category Section End -->
+    <!-- Asistant Section Start -->
+    <div class="asistant-section">
+      <div class="container">
+        <div class="asistant-section__wrapeer">
+          <div class="section-title-block text-center">
+            <h6 class="text-primary mb-10 subtitle">Didn’t find an answer?</h6>
+            <h2 class="title">Need an Asistant?</h2>
+          </div>
+          <div class="row justify-content-center card-row">
+            <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10">
+              <div class="support-widget-card">
+                <div class="card-image">
+                  <img src="./image/support/icon-5.png" alt="card" class="w-100">
+                </div>
+                <div class="card-body p-0">
+                  <h4 class="heading-dark">Call Us</h4>
+                  <p class="text-dark px-sm-7 px-lg-0">We are available online from 9:30am to 5:30pm GMT95:45). Chat with us</p>
+                  <a class="btn btn-primary" href="#">
+                    Call Now
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10">
+              <div class="support-widget-card">
+                <div class="card-image">
+                  <img src="./image/support/icon-5.png" alt="card" class="w-100">
+                </div>
+                <div class="card-body p-0">
+                  <h4 class="heading-dark">Chat with Us</h4>
+                  <p class="text-dark px-sm-7 px-lg-0">We are available online from 9:30am to 5:30pm GMT95:45). Chat with us</p>
+                  <a class="btn btn-primary" href="#">
+                    Call Now
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Asistant Section End -->
+    <!-- Footer Section Start -->
+    <div class="footer-section-03 footer-section-03__v2">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-sm-6  col-xs-6">
+            <div class="footer-section-03__wrapper">
+              <div class="logo">
+                <img src="./image/logo/logo-dark.png" alt="logo">
+              </div>
+              <div class="text">
+                <p class=" text-dark">In the fast-paced world of modern technology,
+                  many leadership executives and organizations understand that building.</p>
+              </div>
+              <div class="footer-section-03__wrapper--button-group">
+                <ul>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                  <li><a href="#"><i class="fab fa-github"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-xs-6 col-sm-6">
+            <div class="footer-section-03__widget widget-01">
+              <h6 class="title">Company</h6>
+              <ul class="list-group list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Privacy Poilcy</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-2 col-sm-6 col-xs-6">
+            <div class="footer-section-03__widget widget-02">
+              <h6 class="title">Get Help</h6>
+              <ul class="list-group list-unstyled">
+                <li><a href="#">Video Tutorials</a></li>
+                <li><a href="#">Faq Questions</a></li>
+                <li><a href="#">Documentations</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Bestkit Forum</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 order-lg-4 col-xs-6">
+            <div class="footer-section-03__newsletter">
+              <h6>Newsletter</h6>
+              <p>Sign up and receive the latest tips via email.</p>
+              <div class="footer-section-03__newsletter--form">
+                <form action="#">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter your mail address">
+                    <div class="icon">
+                      <img src="./image/l-2/mail.png" alt="mail">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Subscribe Now
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_0_3856)">
+                        <path d="M6.56226 13.209V16.6875C6.56226 16.9305 6.71826 17.1457 6.94925 17.2222C7.007 17.241 7.06625 17.25 7.12475 17.25C7.30025 17.25 7.46975 17.1675 7.57775 17.0205L9.6125 14.2515L6.56226 13.209Z" fill="white" />
+                        <path d="M17.7633 0.10334C17.5908 -0.0189101 17.3643 -0.0354101 17.1768 0.0628399L0.301795 8.87534C0.102295 8.97959 -0.0154549 9.19259 0.00104508 9.41684C0.0182951 9.64184 0.167545 9.83384 0.379795 9.90659L5.07105 11.5101L15.0618 2.96759L7.3308 12.2818L15.193 14.9691C15.2515 14.9886 15.313 14.9991 15.3745 14.9991C15.4765 14.9991 15.5778 14.9713 15.667 14.9173C15.8095 14.8303 15.9063 14.6841 15.931 14.5198L17.9935 0.64484C18.0243 0.43484 17.9358 0.22634 17.7633 0.10334Z" fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_0_3856">
+                          <rect width="18" height="18" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-block copyright-block--modifi-04">
+      <div class="container">
+        <div class="row">
+          <div class="copyright-block__wrapper justify-content-center">
+            <div class="copyright-block__content">
+              <p class="text-dark">© 2021 Zakirsoft. Powered by Bestkit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/slider-activations.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

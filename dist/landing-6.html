@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Portfolio
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden">
+    <!-- Header Section Start -->
+    <!-- Preloader -->
+    <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader-3.gif" alt="preloader">
+   </div>
+   </div>   -->
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-center logo-dark mobile-menu-trigger-dark">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="site-header__brand">
+            <a href="index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-dark-white.png" alt="logo" class="logo-white-black">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-dark.png" alt="logo" class="logo-white">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo/logo-white.png" alt="logo" class="logo-black">
+            </a>
+          </div>
+          <div class="menu-block-wrapper ">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block menu-block-inner" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Home <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="index.html">Landing 1</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-2.html">Landing 2</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-3.html">Landing 3</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-4.html">Landing 4</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-5.html">Landing 5</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="landing-6.html">Landing 6</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="about-us.html">About Us</a>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Case Studies<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-9">
+                        <li class="sub-menu--item">
+                          <a href="case-study.html">Case Study</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="case-study-details.html">Case Study Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Services<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-10">
+                        <li class="sub-menu--item">
+                          <a href="service.html">Service</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="service-details.html">Service Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Utility<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-10">
+                        <li class="sub-menu--item">
+                          <a href="support.html">Support</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Blogs <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-11">
+                    <li class="sub-menu--item">
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="blog-details.html">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="contact.html" class="nav-link-item drop-trigger">Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-button header-btn site-header__btns--01">
+              <a class="btn btn-primary w-210" href="#">
+                Download Now <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>
+              </a>
+            </div>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!-- Header Section End -->
+    <!-- Hero Section Start -->
+    <div class="hero-section-06 bg-white-lilac">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-xl-6">
+            <div class="hero-section-06__content page-title-block-two">
+              <h6 class="text-primary subtitle mb-10">
+                <span>
+                                <svg class="d-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.8166 2.51918C16.7843 2.2871 16.6173 2.0962 16.3916 2.03345L9.15709 0.0215294C9.05395 -0.00717647 8.94501 -0.00717647 8.84179 0.0215294L1.60728 2.03345C1.38156 2.0962 1.21458 2.28702 1.18226 2.51918C1.1403 2.8209 0.183048 9.95 2.63834 13.4965C5.09073 17.0388 8.70854 17.9465 8.86132 17.9835C8.90673 17.9945 8.95301 17.9999 8.99944 17.9999C9.04587 17.9999 9.09215 17.9944 9.13756 17.9835C9.29042 17.9465 12.9082 17.0388 15.3605 13.4965C17.8158 9.95008 16.8586 2.82098 16.8166 2.51918ZM13.6648 6.68122L8.73011 11.6159C8.61528 11.7307 8.4647 11.7882 8.31419 11.7882C8.16368 11.7882 8.01309 11.7308 7.89826 11.6159L4.84721 8.56482C4.73685 8.45455 4.67489 8.3049 4.67489 8.1489C4.67489 7.9929 4.73693 7.84326 4.84721 7.73298L5.45301 7.12718C5.68273 6.89753 6.05521 6.89745 6.28485 7.12718L8.31419 9.15651L12.2271 5.24349C12.3374 5.13314 12.487 5.07118 12.643 5.07118C12.799 5.07118 12.9487 5.13314 13.059 5.24349L13.6648 5.84929C13.8945 6.07902 13.8945 6.45149 13.6648 6.68122Z" fill="#008AFF"/>
+                                </svg>
+                            </span>
+                100% Secure Payments
+              </h6>
+              <h1 class="title">
+                Make Online Payment Easily And Increase Your Business
+              </h1>
+              <P class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendis <br class="d-none d-xl-block"> varius enim in eros elementum tristique.</P>
+              <div class="hero-section-06__content--button">
+                <div class="google-play">
+                  <a href="#">
+                    <img src="./image/l-6/google-play.png" alt="google-play" class="mw-100">
+                  </a>
+                  <ul class="rating">
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#FFAB2E" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#FFAB2E" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#FFAB2E" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#FFAB2E" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#FFAB2E" />
+                      </svg>
+                    </li>
+                    <li class="rating__text">(4.9)</li>
+                  </ul>
+                </div>
+                <div class="app-store">
+                  <a href="#">
+                    <img src="./image/l-6/app-store.png" alt="app-store" class="mw-100">
+                  </a>
+                  <ul class="rating">
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#FFAB2E" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#FFAB2E" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#FFAB2E" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#FFAB2E" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.7385 6.04621C16.6286 5.70813 16.3272 5.46802 15.9706 5.43605L11.1268 4.99849L9.21143 0.538446C9.0702 0.211582 8.74856 0 8.39119 0C8.03383 0 7.71219 0.211582 7.57096 0.53921L5.65559 4.99849L0.811012 5.43605C0.455057 5.46878 0.154416 5.70813 0.0439161 6.04621C-0.0665837 6.38428 0.0354654 6.75509 0.304736 6.98884L3.96608 10.1833L2.88644 14.9147C2.80743 15.2626 2.94316 15.6222 3.2333 15.8308C3.38925 15.9429 3.57171 16 3.75571 16C3.91435 16 4.07172 15.9575 4.21295 15.8734L8.39119 13.389L12.5679 15.8734C12.8735 16.0563 13.2588 16.0396 13.5483 15.8308C13.8386 15.6215 13.9742 15.2618 13.8952 14.9147L12.8155 10.1833L16.4769 6.98947C16.7462 6.75509 16.849 6.38492 16.7385 6.04621Z" fill="#ADB7C2" />
+                      </svg>
+                    </li>
+                    <li class="rating__text">(4.5)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-6">
+            <div class="hero-section-06__image-group d-none d-lg-block">
+              <img src="./image/l-6/hero.png" alt="hero" class="w-100">
+              <div class="hero-section-06__image-group--icon">
+                <div class="icon-1 floating-Y-animation">
+                  <img src="./image/l-6/🔥.png" alt="skill-icon">
+                </div>
+                <div class="icon-2 floating-Y-animation-reverse">
+                  <img src="./image/l-6/paypal.png" alt="skill-icon">
+                </div>
+                <div class="icon-3 floating-Y-animation">
+                  <img src="./image/l-6/🎉.png" alt="icon">
+                </div>
+                <div class="icon-4 floating-Y-animation-reverse">
+                  <img src="./image/l-6/graphic.png" alt="graphic-icon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+    <!-- Feature Section Start -->
+    <div class="feature-section-04">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 col-sm-9  col-10 col-md-8">
+            <div class="feature-section-04__image">
+              <img src="./image/l-6/mobile.png" alt="moble" class="w-100">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-section-04__content">
+              <div class="section-content-block">
+                <h6 class="subtitle text-primary mb-10">Great Features</h6>
+                <h2 class="titel">What Make’s Us Special</h2>
+              </div>
+              <div class="feature-section-04__content--card">
+                <div class="row featre-card-bottom-two">
+                  <div class="col-xs-6 col-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="card feature-card feature-card--04">
+                      <div class="card-img bg-primary">
+                        <img src="./image/l-6/money.svg" alt="feature" class="make-it-inline">
+                      </div>
+                      <div class="card-content">
+                        <h6>Transfer Your Balances</h6>
+                        <p>Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-10" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card feature-card feature-card--04">
+                      <div class="card-img bg-secondary">
+                        <img src="./image/l-6/credit-card.svg" alt="feature" class="make-it-inline">
+                      </div>
+                      <div class="card-content">
+                        <h6>Request a Payment</h6>
+                        <p>Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-10" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="card feature-card feature-card--04">
+                      <div class="card-img bg-yellow">
+                        <img src="./image/l-6/money-growth.svg" alt="feature" class="make-it-inline">
+                      </div>
+                      <div class="card-content">
+                        <h6>Receiving Payments</h6>
+                        <p>Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-10" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                    <div class="card feature-card feature-card--04">
+                      <div class="card-img bg-purple">
+                        <img src="./image/l-6/building.svg" alt="feature" class="make-it-inline">
+                      </div>
+                      <div class="card-content">
+                        <h6>Withdraw to Your Bank</h6>
+                        <p>Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature Section End -->
+    <!-- Content Section One Start -->
+    <div class="content-section-07">
+      <div class="container">
+        <div class="content-section-07__wrapper">
+          <div class="row">
+            <div class="section-title-block text-center">
+              <h6 class="subtitle text-primary mb-10">How Does It Works?</h6>
+              <h2 class="title">Follow Some Simple Steps <br class="d-none d-xs-block"> For Using Bestkit</h2>
+            </div>
+          </div>
+          <div class="content-section-07__card-wrapper">
+            <div class="row featre-card-bottom-two justify-content-center">
+              <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-xs-10">
+                <div class="card feature-card feature-card--03 bg-modifier">
+                  <div class="card-img ">
+                    <img src="./image/l-6/w-1.svg" alt="feature" class="make-it-inline">
+                  </div>
+                  <div class="card-content">
+                    <h6>Install Our The App</h6>
+                    <p>Use community groups to motivate and inspire, or promote your services and drive revenue.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-xs-10">
+                <div class="card feature-card feature-card--03 bg-modifier">
+                  <div class="card-img ">
+                    <img src="./image/l-6/w-2.svg" alt="feature" class="make-it-inline">
+                  </div>
+                  <div class="card-content">
+                    <h6>Set Up Your Account</h6>
+                    <p>Use community groups to motivate and inspire, or promote your services and drive revenue.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-xs-10">
+                <div class="card feature-card feature-card--03 bg-modifier">
+                  <div class="card-img ">
+                    <img src="./image/l-6/w-3.svg" alt="feature" class="make-it-inline">
+                  </div>
+                  <div class="card-content">
+                    <h6>Secure Payments</h6>
+                    <p>Use community groups to motivate and inspire, or promote your services and drive revenue.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="arrow d-none d-xl-block">
+              <img src="./image/l-6/m-arrow.png" alt="arrow" class="mw-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content Section One End -->
+    <!-- About Section Start -->
+    <div class="about-section-06 bg-white-lilac">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-6 col-sm-9  col-10 col-md-8 order-lg-2">
+            <div class="about-section-06__image-group">
+              <img src="./image/l-6/mobile.png" alt="mobile" class="w-100">
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="about-section-06__content">
+              <div class="section-content-block">
+                <h6 class="subtitle mb-10 text-primary">About Bestkit</h6>
+                <h2 class="title">Connecting All Your Daily Payment Needs Easily With Bestkit</h2>
+              </div>
+              <div class="about-section-06__content--widget">
+                <div class="about-wdidget-03">
+                  <div class="widget-icon">
+                    <img src="./image/l-6/a-w-1.svg" alt="">
+                  </div>
+                  <div class="widget-content">
+                    <h6>A New Global Payment System</h6>
+                    <p>Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices.</p>
+                  </div>
+                </div>
+                <div class="about-wdidget-03">
+                  <div class="widget-icon">
+                    <img src="./image/l-6/a-w-2.svg" alt="">
+                  </div>
+                  <div class="widget-content">
+                    <h6>Your Money Arrives Instantly</h6>
+                    <p>Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices.</p>
+                  </div>
+                </div>
+                <div class="about-wdidget-03">
+                  <div class="widget-icon">
+                    <img src="./image/l-6/a-w-3.svg" alt="">
+                  </div>
+                  <div class="widget-content">
+                    <h6>Payment Faster Than Others</h6>
+                    <p>Lorem ipsum dolor sit a Captivate your guests with seamls, browsing experience across all devices.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section End -->
+    <!-- Counter Section Start -->
+    <div class="counter-section-04">
+      <div class="container">
+        <div class="counter-section-04__wrapper">
+          <div class="count-block section-content-block text-center">
+            <div class="icon">
+              <img src="./image/l-6/c-1.svg" alt="svg-icon">
+            </div>
+            <h3 class="title heading-dark"><span class="counter">47,595</span></h3>
+            <p class="text-dark">Users</p>
+          </div>
+          <div class="count-block section-content-block text-center">
+            <div class="icon">
+              <img src="./image/l-6/c-2.svg" alt="svg-icon">
+            </div>
+            <h3 class="title heading-dark"><span class="counter">34,797</span></h3>
+            <p class="text-dark">Years of Experience</p>
+          </div>
+          <div class="count-block section-content-block text-center">
+            <div class="icon">
+              <img src="./image/l-6/c-3.svg" alt="svg-icon">
+            </div>
+            <h3 class="title heading-dark"><span class="counter">895</span></h3>
+            <p class="text-dark">Winning Award</p>
+          </div>
+          <div class="count-block section-content-block text-center">
+            <div class="icon">
+              <img src="./image/l-6/c-4.svg" alt="svg-icon">
+            </div>
+            <h3 class="title heading-dark"><span class="counter">50,927</span></h3>
+            <p class="text-dark">Happy Customer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Section End -->
+    <!-- Screenshot Section Start -->
+    <div class="screenshot-slider-section bg-white-lilac">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="section-title-block text-center">
+            <h6 class="subtitle text-primary mb-10">App Interface</h6>
+            <h2 class="titel">Choose The Offering That <br class=" d-none d-xs-block">
+                        Works Best For You.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="screenshot-slider-wrapper">
+        <div class="screenshot-slider">
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/l-6/screen-1.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/l-6/screen-2.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/l-6/screen-3.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/l-6/screen-2.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- single-slide Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/l-6/screen-1.png" alt="" />
+            </div>
+          </div>
+          <!-- / .single-slide Area -->
+          <!-- Screenshot Area -->
+          <div class="single-slide focus-reset">
+            <div class="screenshot-image">
+              <img src="./image/l-6/screen-2.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="phone-bg-img">
+          <img src="./image/l-6/frame.png" alt="" />
+        </div>
+      </div>
+      <div class="screenshots-dots"></div>
+    </div>
+    <!-- Screenshot Section End -->
+    <!-- Counter Section Two Start -->
+    <div class="content-section-08">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-5 col-lg-6 col-sm-8">
+            <div class="content-section-08__image-group">
+              <img src="./image/l-6/conten-2.png" alt="content" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-sm-10 col-sx-11 offset-xl-1">
+            <div class="content-section-08__content section-content-block">
+              <h2 class="title">Easy to Sign Up & Can Make Transactions Yourself</h2>
+              <p class="text-dark">We design & build brand, campaigns & digital projects for business large & small with customer experiences. Due to its fo widespread use as filler text for layouts, non-readability is of great importance human perception.</p>
+              <div class="content-section-08__content--list content-list-01">
+                <ul class="list-group list-unstyled">
+                  <li><span>
+
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#36CD77"/>
+                                    <path d="M13.3337 7.5L8.75033 12.0833L6.66699 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </span>Manage tasks with task lists without changing the overall project schedule.</li>
+                  <li><span>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="10" fill="#36CD77"/>
+                                    <path d="M13.3337 7.5L8.75033 12.0833L6.66699 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>Your team members can view their tasks, update their progress</li>
+                </ul>
+              </div>
+              <a class="btn btn-1 btn-primary" href="#">
+                Learn More
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Section Two End -->
+    <!-- Counter Section Three Start -->
+    <div class="content-section-09">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-sm-8 order-lg-2">
+            <div class="content-section-09__image-group">
+              <img src="./image/l-6/content-3.png" alt="content" class="w-100">
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-10 col-sx-11 order-lg-1">
+            <div class="content-section-09__content section-content-block">
+              <h2 class="title">Easy to Sign Up & Can Make Transactions Yourself</h2>
+              <p class="text-dark">We design & build brand, campaigns & digital projects for business large & small with customer experiences.</p>
+              <div class="content-section-09__content--widget">
+                <div class="row card-row">
+                  <div class="col-xs-6 col-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="card feature-card feature-card--04">
+                      <div class="card-img bg-narvik">
+                        <img src="./image/l-6/icon-1.svg" alt="feature" class="make-it-inline">
+                      </div>
+                      <div class="card-content">
+                        <h6>Fast &amp; Simple</h6>
+                        <p>Projects for business large &amp; small with customer experiences.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-10" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card feature-card feature-card--04">
+                      <div class="card-img bg-sazerac">
+                        <img src="./image/l-6/icon-2.svg" alt="feature" class="make-it-inline">
+                      </div>
+                      <div class="card-content">
+                        <h6>Easy to Sign Up</h6>
+                        <p>Projects for business large &amp; small with customer experiences.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Section Three End -->
+    <!-- Cta Section Three Start -->
+    <div class="cta-section-04" style="background-image: url('./image/l-6/cta.png');">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-9">
+            <div class="cta-section-04__content section-content-block">
+              <h6 class="subtitle text-primary mb-10">About Bestkit</h6>
+              <h2 class="title">Connecting All Your Daily Payment Needs Easily With Bestkit</h2>
+              <div class="cta-section-04__content--button-group">
+                <div class="google-play">
+                  <a href="#">
+                    <img src="./image/l-6/google-play.png" alt="google-play" class="mw-100">
+                  </a>
+                </div>
+                <div class="app-store">
+                  <a href="#">
+                    <img src="./image/l-6/app-store.png" alt="app-store" class="mw-100">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cta Section Three End -->
+    <!-- Testimonial Section Three Start -->
+    <div class="testimonial-section-07">
+      <div class="container">
+        <div class="row">
+          <div class="section-title-block text-center">
+            <h6 class="subtitle text-primary mb-10">Testimonial</h6>
+            <h2 class="titel">What Say Our Clients<br class=" d-none d-xs-block">About Bestkit</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="testimonial-section-07__slider">
+              <div class="testimonial-slider--07 slick-dots-style-1">
+                <div class="slide">
+                  <div class="testimonial-card-07">
+                    <div class="row">
+                      <div class="col-lg-5 col-xl-6">
+                        <div class="card-img">
+                          <figure class="mask-img">
+                            <img src="./image/l-6/t-1.png" alt="testimoni" class="mw-100">
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 offset-lg-1 col-xl-6 offset-xl-0">
+                        <div class="card-content">
+                          <div class="icon">
+                            <img src="./image/l-6/google.png" alt="google" class="mw-100">
+                          </div>
+                          <p>“Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, many web sites.</p>
+                          <span>Michle D. Collins</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="testimonial-card-07">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="card-img">
+                          <figure class="mask-img">
+                            <img src="./image/l-6/t-1.png" alt="testimoni" class="mw-100">
+                          </figure>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="card-content">
+                          <div class="icon">
+                            <img src="./image/l-6/google.png" alt="google" class="mw-100">
+                          </div>
+                          <p>“Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, many web sites.</p>
+                          <span>Michle D. Collins</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slider--07__control-buttons">
+                <button class="button button--prev">
+                  <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 6.5H1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M6.43066 1L0.99963 6.5L6.43066 12" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button class="button button--next">
+                  <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 6.5H16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M10.5693 1L16.0004 6.5L10.5693 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial Section Three End -->
+    <!-- Footer Section Start -->
+    <div class="footer-section-03 bg-white-lilac footer-section-03--modifiar-01">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-sm-6  col-xs-6">
+            <div class="footer-section-03__wrapper">
+              <div class="logo">
+                <img src="./image/logo/logo-dark.png" alt="logo">
+              </div>
+              <div class="text">
+                <p class=" text-dark">In the fast-paced world of modern technology,
+                  many leadership executives and organizations understand that building.</p>
+              </div>
+              <div class="footer-section-03__wrapper--button-group">
+                <div class="text">
+                  <h6>Get Our Mobile Apps From:</h6>
+                </div>
+                <div class="button-group">
+                  <a class="btn btn-primary" href="#">
+                    Apple Store
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_0_3889)">
+                        <path d="M12.3745 0C11.4149 0.0663746 10.2932 0.680621 9.63963 1.48049C9.04338 2.20611 8.55289 3.28386 8.74414 4.33122C9.79263 4.36385 10.876 3.73498 11.5037 2.92161C12.091 2.16449 12.5353 1.09349 12.3745 0Z" fill="" />
+                        <path d="M16.1667 6.039C15.2454 4.88363 13.9505 4.21313 12.7276 4.21313C11.1133 4.21313 10.4304 4.98601 9.30877 4.98601C8.15228 4.98601 7.27366 4.21538 5.87754 4.21538C4.50618 4.21538 3.04594 5.0535 2.12007 6.48675C0.81845 8.50498 1.0412 12.2996 3.15056 15.5317C3.90543 16.6882 4.91343 17.9887 6.23192 17.9999C7.40529 18.0112 7.73603 17.2473 9.32565 17.2394C10.9153 17.2304 11.2168 18.0101 12.3879 17.9977C13.7075 17.9876 14.7706 16.5464 15.5255 15.3899C16.0666 14.5608 16.268 14.1435 16.6876 13.2075C13.6355 12.0453 13.1461 7.70511 16.1667 6.039Z" fill="" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_0_3889">
+                          <rect width="18" height="18" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  <a class="btn btn-primary" href="#">
+                    Play Store
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_0_3884)">
+                        <path d="M16.3131 7.71686L3.15286 0.194229C2.92597 0.0646286 2.67337 0 2.42077 0C2.41563 0 2.41057 0.000685714 2.40551 0.000685714C2.37157 0.00102857 2.33771 0.00274286 2.30394 0.0054C2.28868 0.0066 2.27351 0.00822857 2.25826 0.00994286C2.23186 0.0128571 2.20554 0.0165429 2.17931 0.0209143C2.1698 0.0225429 2.1602 0.0230571 2.15068 0.0248571L2.1512 0.0255429C1.98723 0.0558 1.8272 0.113571 1.67848 0.199886C1.223 0.464143 0.942627 0.950914 0.942627 1.47746V16.5226C0.942627 17.0492 1.223 17.5359 1.67848 17.8002C1.82711 17.8865 1.98714 17.9444 2.15111 17.9746L2.15068 17.9752C2.15926 17.9769 2.16791 17.9774 2.1764 17.9787C2.2046 17.9835 2.23288 17.9875 2.26126 17.9905C2.27548 17.992 2.28963 17.9936 2.30386 17.9947C2.3372 17.9973 2.37046 17.9989 2.40388 17.9993C2.40954 17.9994 2.41511 18.0001 2.42077 18.0001C2.67337 18.0001 2.92597 17.9355 3.15286 17.8059L16.3131 10.2831C16.7732 10.0201 17.0572 9.53083 17.0572 9.00069C17.0572 9.00069 17.0572 9.00043 17.0572 9.00034C17.0572 9.00034 17.0572 9.00008 17.0572 9C17.0572 9 17.0572 8.99974 17.0572 8.99966C17.0572 8.99966 17.0572 8.9994 17.0572 8.99931C17.0572 8.46926 16.7732 7.98 16.3131 7.71686ZM11.1087 6.22294L9.80017 7.93954L6.47103 3.57189L11.1087 6.22294ZM15.675 9.16689L6.47103 14.4281L12.2339 6.8676L15.6749 8.83449C15.7345 8.86851 15.7715 8.93229 15.7715 9.0006C15.7715 9.06917 15.7344 9.13294 15.675 9.16689Z" fill="" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_0_3884">
+                          <rect width="18" height="18" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-xs-6 col-sm-6">
+            <div class="footer-section-03__widget widget-01">
+              <h6 class="title">Company</h6>
+              <ul class="list-group list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Privacy Poilcy</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-2 col-sm-6 col-xs-6">
+            <div class="footer-section-03__widget widget-02">
+              <h6 class="title">Get Help</h6>
+              <ul class="list-group list-unstyled">
+                <li><a href="#">Video Tutorials</a></li>
+                <li><a href="#">Faq Questions</a></li>
+                <li><a href="#">Documentations</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Bestkit Forum</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 order-lg-4 col-xs-6">
+            <div class="footer-section-03__newsletter">
+              <h6>Newsletter</h6>
+              <p>Sign up and receive the latest tips via email.</p>
+              <div class="footer-section-03__newsletter--form">
+                <form action="#">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter your mail address">
+                    <div class="icon">
+                      <img src="./image/l-2/mail.png" alt="mail">
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">
+                    Subscribe Now
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_0_3856)">
+                        <path d="M6.56226 13.209V16.6875C6.56226 16.9305 6.71826 17.1457 6.94925 17.2222C7.007 17.241 7.06625 17.25 7.12475 17.25C7.30025 17.25 7.46975 17.1675 7.57775 17.0205L9.6125 14.2515L6.56226 13.209Z" fill="white" />
+                        <path d="M17.7633 0.10334C17.5908 -0.0189101 17.3643 -0.0354101 17.1768 0.0628399L0.301795 8.87534C0.102295 8.97959 -0.0154549 9.19259 0.00104508 9.41684C0.0182951 9.64184 0.167545 9.83384 0.379795 9.90659L5.07105 11.5101L15.0618 2.96759L7.3308 12.2818L15.193 14.9691C15.2515 14.9886 15.313 14.9991 15.3745 14.9991C15.4765 14.9991 15.5778 14.9713 15.667 14.9173C15.8095 14.8303 15.9063 14.6841 15.931 14.5198L17.9935 0.64484C18.0243 0.43484 17.9358 0.22634 17.7633 0.10334Z" fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_0_3856">
+                          <rect width="18" height="18" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-block copyright-block--modifi-02">
+      <div class="container">
+        <div class="row">
+          <div class="copyright-block__wrapper">
+            <ul class="list-unstyled copyright-block__social">
+              <li class="list-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-item"><a href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a></li>
+              <li class="list-item"><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
+              <li class="list-item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            <div class="copyright-block__content">
+              <p class="text-dark">© 2021 Zakirsoft. Powered by Bestkit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/slider-activations.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
