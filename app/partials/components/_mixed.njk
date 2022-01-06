@@ -1,37 +1,48 @@
-{% macro LikePost(args) %}
-<div class="like-post-block">
-  <div class="content-block">
-    <h5 class="title text-24">Like the post?</h5>
-    <p class="text-dark text-18">Share the post with</p>
+{% macro SearchBox(args) %}
+  <div class="search-block">
+      <h6 class="content-title heading-dark">Search Anything</h6>
+      <div class="search-block__form">
+        <div class="search-newsletter-02">
+          <form action="#">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter keywords...">
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Search
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+            </button>
+        </form>
+        </div>
+      </div>
   </div>
-  <div class="social-block">
-    <ul class="social-react">
-      <li class="active">
-        <a href="#">
-          <svg class="stroke" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M5.25 0.900879C3.17925 0.900879 1.5 2.56288 1.5 4.61338C1.5 6.26863 2.15625 10.1971 8.616 14.1684C8.73171 14.2388 8.86455 14.276 9 14.276C9.13545 14.276 9.26829 14.2388 9.384 14.1684C15.8438 10.1971 16.5 6.26863 16.5 4.61338C16.5 2.56288 14.8207 0.900879 12.75 0.900879C10.6793 0.900879 9 3.15088 9 3.15088C9 3.15088 7.32075 0.900879 5.25 0.900879Z"
-              stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-          <span>14</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <svg class="fill" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M3.01275 13.133C3.12952 13.2586 3.219 13.4102 3.27481 13.5771C3.33062 13.7441 3.35138 13.9221 3.33562 14.0986C3.25656 14.9154 3.10666 15.7226 2.88787 16.5096C4.45725 16.1202 5.41575 15.6694 5.85113 15.4331C6.09807 15.2991 6.38245 15.2673 6.64987 15.3439C7.41649 15.5629 8.20661 15.6731 9 15.6718C13.4955 15.6718 16.875 12.2879 16.875 8.43866C16.875 4.59063 13.4955 1.20552 9 1.20552C4.5045 1.20552 1.125 4.59063 1.125 8.43866C1.125 10.2084 1.81912 11.8503 3.01275 13.133ZM2.45812 17.8405C2.19158 17.8972 1.92416 17.949 1.656 17.996C1.431 18.0346 1.26 17.7839 1.34888 17.5596C1.44877 17.3072 1.54032 17.0511 1.62337 16.7917L1.62675 16.7797C1.90575 15.9117 2.133 14.9135 2.21625 13.9841C0.835875 12.5013 0 10.5604 0 8.43866C0 3.77811 4.02975 0 9 0C13.9703 0 18 3.77811 18 8.43866C18 13.0992 13.9703 16.8773 9 16.8773C8.10861 16.8786 7.22091 16.7546 6.35962 16.5084C5.77462 16.8255 4.51575 17.4029 2.45812 17.8405Z"
-              fill="" />
-          </svg>
-          <span>1</span>
-        </a>
-      </li>
-    </ul>
-    <ul class="social-list">
-      <li><a href="#">Facebook</a></li>
-      <li class="active"><a href="#">Twitter</a></li>
-      <li><a href="#">Instagram</a></li>
-    </ul>
-  </div>
-</div>
+{% endmacro %}
+{% macro Categories(args) %}
+    <div class="categories-block">
+      <h6 class="content-title heading-dark">Categories</h6>
+      <ul>
+        <li><a href="#"><span class="text">Design</span> <span class="number">(60)</span></a></li>
+        <li><a href="#"><span class="text">Marketing Strategy</span> <span class="number">(05)</span></a></li>
+        <li><a href="#"><span class="text">Web Development</span> <span class="number">(08)</span></a></li>
+        <li><a href="#"><span class="text">Business Startegy</span> <span class="number">(04)</span></a></li>
+        <li><a href="#"><span class="text">Startup</span> <span class="number">(02)</span ></a></li>
+      </ul>
+    </div>
+{% endmacro %}
+{% macro Tags(args) %}
+    <div class="tags-block">
+      <h6 class="content-title heading-dark">Tags</h6>
+      <ul>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Sass</a></li>
+        <li><a href="#">Landing Page</a></li>
+        <li><a href="#">Website</a></li>
+        <li><a href="#">Agency</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">UI/UX</a></li>
+        <li><a href="#">Development</a></li>
+      </ul>
+    </div>
 {% endmacro %}

@@ -1,4 +1,5 @@
 {% macro render(args) %}
+{% import "components/_mixed.njk" as MixtComponent %}
 {% import "components/cards.njk" as Card %}
 
 {% set cardData =[
@@ -52,10 +53,109 @@
         }
 
 ]%}
+{% set postCardData =[
+    {
+    id:1,
+    img:"./image/blog/post-1.png",
+    date:"<img src='./image/svg/calendar-2.svg'/> March 18, 2021",
+    title:"5 Tips to Be Prepared for Digital Marketing Trends"
+    },
+    {
+    id:2,
+    img:"./image/blog/post-2.png",
+    date:"<img src='./image/svg/calendar-2.svg'/> March 18, 2021",
+    title:"How to Start Your Career As a UI/UX Designer"
+    }
+
+
+]%}
+{% set shotsCardData =[
+    {
+    id:1,
+    img:"./image/innerpage/shots-1.png"
+    },
+    {
+    id:2,
+    img:"./image/innerpage/shots-2.png"
+    },
+    {
+    id:3,
+    img:"./image/innerpage/shots-3.png"
+    },
+    {
+    id:4,
+    img:"./image/innerpage/shots-4.png"
+    },
+    {
+    id:5,
+    img:"./image/innerpage/shots-5.png"
+    },
+    {
+    id:6,
+    img:"./image/innerpage/shots-6.png"
+    },
+    {
+    id:7,
+    img:"./image/innerpage/shots-7.png"
+    },
+    {
+    id:8,
+    img:"./image/innerpage/shots-8.png"
+    }
+
+
+]%}
     <div class="blog-content-area">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-8">
+                <div class="col-lg-4 col-md-8 col-xs-10 order-lg-2">
+                    <div class="blog-content-area__search">
+                        {{MixtComponent.SearchBox()}}
+                    </div>
+                    <div class="blog-content-area__post">
+                        <div class="blog-post-box">
+                            <h3 class="content-title">Recent Post</h3>
+                            <div class="blog-post-box__single-post overflow-hidden">
+                                {% for item in postCardData%}
+                                <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}"
+                                data-aos-duration="1000">
+                                    <a href="#" class="d-block">
+                                        {{Card.PostCard({
+                                            img:item.img,
+                                            title:item.title,
+                                            date:item.date
+                                        })}}
+                                    </a>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-content-area__categories">
+                        {{MixtComponent.Categories()}}
+                    </div>
+                    <div class="blog-content-area__tags">
+                        {{MixtComponent.Tags()}}
+                    </div>
+                        <div class="blog-content-area__shots">
+                        <div class="shots-box">
+                            <h3 class="content-title">Instagram Shots</h3>
+                            <div class="shots-box__single-post overflow-hidden">
+                                {% for item in shotsCardData%}
+                                <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}"
+                                data-aos-duration="1000">
+                                    <a href="#" class="d-block">
+                                        {{Card.InstagramShots({
+                                            img:item.img
+                                        })}}
+                                    </a>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 order-lg-1">
                     <div class="blog-content-area__card">
                         <div class="row card-row">
                             {% for item in cardData%}
@@ -74,7 +174,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4"></div>
             </div>
             <div class="blog-content-area__button">
                 <a class="btn btn-1 btn-primary" href="#">
