@@ -1,0 +1,51 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/landing-6/_hero.njk" as HeroSection %}
+{% import "pages/landing-6/_feature.njk" as FeatureSection %}
+{% import "pages/landing-6/_content-01.njk" as ContentSectionOne %}
+{% import "pages/landing-6/_about.njk" as AboutSection %}
+{% import "pages/landing-6/_counter.njk" as CounterSection %}
+{% import "pages/landing-6/_screenshot.njk" as ScreenshotSection %}
+{% import "pages/landing-6/_content-02.njk" as ContentSectionTwo %}
+{% import "pages/landing-6/_content-03.njk" as ContentSectionThree %}
+{% import "pages/landing-6/_cta.njk" as CtaSection %}
+{% import "pages/landing-6/_testimonial.njk" as TestimonialSection %}
+{% import "components/Footer/_footer-03.njk" as FooterSection %} 
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(siteHeaderSix)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+ <!-- Feature Section Start -->
+  {{FeatureSection.render()}}
+  <!-- Feature Section End -->
+  <!-- Content Section One Start -->
+  {{ContentSectionOne.render()}}
+  <!-- Content Section One End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Counter Section Start -->
+  {{CounterSection.render()}}
+  <!-- Counter Section End -->
+  <!-- Screenshot Section Start -->
+  {{ScreenshotSection.render()}}
+  <!-- Screenshot Section End -->
+  <!-- Counter Section Two Start -->
+  {{ContentSectionTwo.render()}}
+  <!-- Counter Section Two End -->
+    <!-- Counter Section Three Start -->
+  {{ContentSectionThree.render()}}
+  <!-- Counter Section Three End -->
+    <!-- Cta Section Three Start -->
+  {{CtaSection.render()}}
+  <!-- Cta Section Three End -->
+  <!-- Testimonial Section Three Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section Three End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
+{% endblock %}

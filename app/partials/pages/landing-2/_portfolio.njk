@@ -1,0 +1,91 @@
+{% macro render(args) %}
+    <div class="portfolio-section-02">
+        <div class="container">
+            <div class="row">
+                <div class="section-title-block text-center">
+                    <h6 class="subtitle mb-10 text-primary">Portfolio Works</h6>
+                    <h2 class="title">Some of My Latest Projects</h2>
+                </div>
+            </div>
+            <div class="row align-items-center portfolio-section-02__tab-wrapper">
+                <div class="col-lg-8">
+                    <div class="portfolio-section-02__tab justify-content-center justify-content-lg-start">
+                        <div class="filter-text">
+                            <h6 class="heading-dark">Filter by:</h6>
+                        </div>
+                        <div class="portfolio-filter-menu modifi-01 text-center text-lg-start">
+                            <button class="btn active text-dark" data-filter="*">All</button>
+                            <button class="btn text-dark" data-filter=".portfolio-1">Development</button>
+                            <button class="btn text-dark" data-filter=".portfolio-2">Design</button>
+                            <button class="btn text-dark" data-filter=".portfolio-3">UI/UX Branding</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="button-group mt-3 mt-lg-0 text-center text-lg-end">
+                    <a class="btn btn-1 btn-primary" href="#">
+                        See More Work
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row card-row portfolio-masonry portfolio-active">
+                <div class="col-lg-6 grid-item portfolio-1 portfolio-2">
+                    <a href="#"  class="portfolio-card portfolio-card--02">
+                        <div class="portfolio-img">
+                            <img src="./image/l-2/project-1.png" alt="portfolio" class="w-100">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="content">
+                                <span>Web Development</span>
+                                <h6>Beskit Website Development</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 grid-item portfolio-2 portfolio-3 portfolio-4">
+                    <a href="#" class="portfolio-card portfolio-card--02">
+                        <div class="portfolio-img">
+                            <img src="./image/l-2/project-2.png" alt="portfolio" class="w-100">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="content">
+                                <span>Web Design</span>
+                                <h6>Beskit Website Development</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 grid-item portfolio-3 portfolio-2">
+                    <a href="#" class="portfolio-card portfolio-card--02 active">
+                        <div class="portfolio-img">
+                            <img src="./image/l-2/project-3.png" alt="portfolio" class="w-100">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="content">
+                                <span>UI/UX Design</span>
+                                <h6>Beskit Website Development</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 grid-item portfolio-1 portfolio-4">
+                    <a href="#" class="portfolio-card portfolio-card--02">
+                        <div class="portfolio-img">
+                            <img src="./image/l-2/project-4.png" alt="portfolio" class="w-100">
+                        </div>
+                        <div class="portfolio-body">
+                            <div class="content">
+                                <span>Web Design</span>
+                                <h6>Beskit Website Development</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

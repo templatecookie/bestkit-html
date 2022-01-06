@@ -1,0 +1,79 @@
+.pricing-section-02{
+    padding:60px 0;
+    @media (min-width:575px) {
+        padding:80px 0;
+    }
+    @media (min-width:992px) {
+        padding:130px 0;
+    }
+    .section-title-block{
+        margin-bottom: 35px;
+        @media (min-width:992px) {
+            margin-bottom: 70px;
+        }
+    }
+    &__wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 -12px;
+      .card-price-02{
+        margin: 0 12px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        @media (max-width:1400px) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+      .slideToggle{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        @media (min-width:992px) {
+            margin-bottom: 50px;
+        }
+        i {
+          margin: 0 15px;
+        }
+      }
+      .form-switch {
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        justify-content: space-between;
+        padding: 0;
+        span{
+          font-weight: 500;
+          font-size: 16px;
+          @media (min-width:480px) {
+              font-size: 18px;
+          }  
+        }
+      }
+      .form-switch i {
+        position: relative;
+        display: inline-block;
+        width: 45px;
+        height: 24px;
+        border: 2px solid #008AFF;
+        border-radius: 15px;
+        transition: all 0.3s linear;
+      }
+      .form-switch i::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-color: #008AFF;
+        border-radius: 15px;
+        transform: translate3d(4px, 2px, 0);
+        transition: all 0.2s ease-in-out;
+      }
+      .form-switch input { display: none; }
+      .form-switch input:checked + i::after { transform: translate3d(21px, 2px, 0); }
+}

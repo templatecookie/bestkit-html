@@ -1,0 +1,43 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/landing-5/_hero.njk" as HeroSection %}
+{% import "pages/landing-5/_feature.njk" as FeatureSection %}
+{% import "pages/landing-5/_about.njk" as AboutSection %}
+{% import "pages/landing-5/_content-01.njk" as ContentSectionOne %}
+{% import "pages/landing-5/_content-02.njk" as ContentSectionTwo %}
+{% import "pages/landing-5/_faq.njk" as FaqSection %}
+{% import "pages/landing-5/_price.njk" as PriceSection %}
+{% import "pages/landing-5/_testimonial.njk" as TestimonialSection %}
+{% import "components/Footer/_footer-04.njk" as FooterSection %} 
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(siteHeaderFive)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  <!-- Feature Section Start -->
+  {{FeatureSection.render()}}
+  <!-- Feature Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Content One Section Start -->
+  {{ContentSectionOne.render()}}
+  <!-- Content One Section End -->
+  <!-- Content Two Section Start -->
+  {{ContentSectionTwo.render()}}
+  <!-- Content Two Section End -->
+  <!-- Faq Two Section Start -->
+  {{FaqSection.render()}}
+  <!-- Faq Two Section End -->
+  <!-- Price Section Start -->
+  {{PriceSection.render()}}
+  <!-- Price Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
+{% endblock %}

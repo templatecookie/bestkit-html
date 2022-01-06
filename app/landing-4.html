@@ -1,0 +1,59 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/landing-4/_hero.njk" as HeroSection %}
+{% import "pages/landing-4/_brand.njk" as BrandSection %}
+{% import "pages/landing-4/_service.njk" as ServiceSection %}
+{% import "pages/landing-4/_about.njk" as AboutSection %}
+{% import "pages/landing-4/_counter.njk" as CounterSection %}
+{% import "pages/landing-4/_content-01.njk" as ContentOneSection %}
+{% import "pages/landing-4/_content-02.njk" as ContentTwoSection %}
+{% import "pages/landing-4/_testimonial-01.njk" as TestimonialSectionOne %}
+{% import "pages/landing-4/_team.njk" as TeamSection %}
+{% import "pages/landing-4/_testimonial-02.njk" as TestimonialSectionTwo %}
+{% import "pages/landing-4/_price.njk" as PriceSection %}
+{% import "pages/landing-4/_blog.njk" as BlogSection %}
+{% import "components/Footer/_footer-02.njk" as FooterSection %}
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(siteHeaderFour)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  <!-- Brand Section Start -->
+  {{BrandSection.render()}}
+  <!-- Brand Section End -->
+  <!-- Service Section Start -->
+  {{ServiceSection.render()}}
+  <!-- Service Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Counter One Section Start -->
+  {{CounterSection.render()}}
+  <!-- Counter One Section End -->
+  <!-- Content One Section Start -->
+  {{ContentOneSection.render()}}
+  <!-- Content One Section End -->
+  <!-- Content Two Section Start -->
+  {{ContentTwoSection.render()}}
+  <!-- Content Two Section End -->
+  <!-- Testimonial One Section Start -->
+  {{TestimonialSectionOne.render()}}
+  <!-- Testimonial One Section End -->
+  <!-- Team Section Start -->
+  {{TeamSection.render()}}
+  <!-- Team Section End -->
+  <!-- Testimonial Tow Section Start -->
+  {{TestimonialSectionTwo.render()}}
+  <!-- Testimonial Tow Section End -->
+      <!-- Price Section Start -->
+  {{PriceSection.render()}}
+  <!-- Price Section End -->
+  <!-- Blog Section Start -->
+  {{BlogSection.render()}}
+  <!-- Blog Section End --> 
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End --> 
+{% endblock %}

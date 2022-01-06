@@ -1,0 +1,99 @@
+@use "../../abstracts/mixins" as *;
+.testimonial-section-05{
+    background: var(--bs-black);
+    position: relative;
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    &__image-01{
+        @media (max-width:992px) {
+            display: none;
+        }
+        position: absolute;
+        top: 18%;
+        left: 20%;
+        img{
+            object-fit: cover;
+            @include square(80px,500px);
+            border-bottom-right-radius: 0;
+        }
+    }
+    &__image-02{
+        @media (max-width:992px) {
+            display: none;
+        }
+        position: absolute;
+        top: 17%;
+        right: 8%;    
+        img{
+            object-fit: cover;
+            @include square(70px,500px);
+        }
+    }
+    &__image-03{
+        @media (max-width:992px) {
+            display: none;
+        }
+        position: absolute;
+        bottom: 12%;
+        left: 6.5%;
+        img{
+            object-fit: cover;
+            @include square(60px,3px);
+            border-bottom-right-radius: 0;
+        }
+    }
+    &__image-04{
+        @media (max-width:992px) {
+            display: none;
+        }
+        position: absolute;
+        bottom: 9%;
+        right: 15%;
+        img{
+            object-fit: cover;
+            @include square(100px,500px);
+            border-bottom-right-radius: 0;
+        }
+    }
+    &__quote{
+        @media (max-width:992px) {
+            display: none;
+        }
+        position: absolute;
+        bottom: 58px;
+        right: 73px;
+    }
+    .section-title-block{
+        margin-bottom: 35px;
+        @media (min-width:992px) {
+        margin-bottom: 70px;
+        }
+    }
+    &__slider{
+        .slick-list{
+            overflow: unset;
+            &::before{
+                position: absolute;
+                border-radius: 3px;
+                content: "";
+                left: 50%;
+                width: 105%;
+                height: 100%;
+                bottom: -20px;
+                transform: translateX(-50%);
+                background: rgba(255, 255, 255,0.1);
+            }
+        }
+        .slick-dots {
+            margin-top: 40px;
+            @media (min-width:992px) {
+                margin-top: 75px;
+            }
+        }
+    }
+}

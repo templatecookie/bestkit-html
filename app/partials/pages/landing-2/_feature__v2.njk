@@ -1,0 +1,73 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/l-2/f-1.svg",
+        title:"Team work",
+        text:"Lorem ipsum dolor sit amet, consectetu adipiscing elit eque dolor."
+        },
+        {
+        id:2,
+        img:"./image/l-2/f-2.svg",
+        title:"Comapny Growth",
+        text:"Lorem ipsum dolor sit amet, consectetu adipiscing elit eque dolor."
+        },
+        {
+        id:3,
+        img:"./image/l-2/f-3.svg",
+        title:"Move Like a Startup",
+        text:"Lorem ipsum dolor sit amet, consectetu adipiscing elit eque dolor."
+        },
+        {
+        id:4,
+        img:"./image/l-2/f-4.svg",
+        title:"Take Ownership",
+        text:"Lorem ipsum dolor sit amet, consectetu adipiscing elit eque dolor."
+        },
+        {
+        id:5,
+        img:"./image/l-2/f-5.svg",
+        title:"Results Matter",
+        text:"Lorem ipsum dolor sit amet, consectetu adipiscing elit eque dolor."
+        },
+        {
+        id:6,
+        img:"./image/l-2/f-6.svg",
+        title:"Innovation",
+        text:"Lorem ipsum dolor sit amet, consectetu adipiscing elit eque dolor."
+        }
+
+
+]%}
+<div class="feature-section-01 bg-white-lilac overflow-hidden">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="section-title-block text-center">
+                <h6 class="subtitle text-primary mb-10">Our core values & principles</h6>
+                <h2 class="title">The Values That Shape Everything<br class=" d-none d-xs-block">We Do at Bestkit</h2>
+            </div>
+        </div>
+        <div class="row card-row justify-content-center overflow-hidden">
+            {% for item in cardData%}
+                <div class="col-md-6 col-xl-4 single-slider" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                        {{Card.FeatureCard({
+                            img:item.img,
+                            text:item.text,
+                            title:item.title
+                        })}}
+                </div>
+            {% endfor %}
+        </div>
+        <div class="feature-section-01__button">
+            <a class="btn btn-primary" href="#">
+                Get In Touch
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+    </div>              
+</div>
+{% endmacro %}

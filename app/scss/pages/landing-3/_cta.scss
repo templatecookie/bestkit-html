@@ -1,0 +1,64 @@
+.cta-section-03{
+    overflow: hidden;
+    @media (min-width:992px) {
+        margin-bottom: -130px;
+    }
+    .container{
+        @media (max-width:992px) {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+    &__wrapper{
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        background: var(--bs-primary);
+        z-index: 1;
+        padding: 60px 0 60px;
+        @media (min-width:575px) {
+            padding: 78px;
+            padding-bottom: 78px;
+        }
+        @media (min-width:992px) {
+            border-radius: 5px;
+            flex-direction: row;
+        }
+        .content-button{
+            .btn{
+                background: white;
+                color: var(--bs-primary);
+                border-color: white;
+                svg{
+                    path{
+                        stroke: var(--bs-primary);
+                    }
+                }
+                &:hover{
+                    background: transparent;
+                    color: white;
+                    svg{
+                        path{
+                            stroke: var(--bs-white);
+                        }
+                    }
+                }
+            }
+        }
+        &--shape{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+}

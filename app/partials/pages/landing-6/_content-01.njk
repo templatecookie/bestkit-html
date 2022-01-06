@@ -1,0 +1,55 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/l-6/w-1.svg",
+        title:"Install Our The App",
+        text:"Use community groups to motivate and inspire, or promote your services and drive revenue."
+        },
+        {
+        id:2,
+        img:"./image/l-6/w-2.svg",
+        title:"Set Up Your Account",
+        text:"Use community groups to motivate and inspire, or promote your services and drive revenue."
+        },
+        {
+        id:3,
+        img:"./image/l-6/w-3.svg",
+        title:"Secure Payments",
+        text:"Use community groups to motivate and inspire, or promote your services and drive revenue."
+        }
+
+
+]%}
+    <div class="content-section-07">
+        <div class="container">
+            <div class="content-section-07__wrapper">
+                <div class="row">
+                    <div class="section-title-block text-center">
+                        <h6 class="subtitle text-primary mb-10">How Does It Works?</h6>
+                        <h2 class="title">Follow Some Simple Steps <br class="d-none d-xs-block"> For Using Bestkit</h2>
+                    </div>
+                </div>
+                <div class="content-section-07__card-wrapper">
+                    <div class="row featre-card-bottom-two justify-content-center">
+                        {% for item in cardData%}
+                            <div class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-xs-10">
+                                    {{Card.FeatureCard({
+                                        modifier:"feature-card--03 bg-modifier",
+                                        img:item.img,
+                                        text:item.text,
+                                        title:item.title
+                                    })}}
+                            </div>
+                        {% endfor %}
+                    </div>
+                        <div class="arrow d-none d-xl-block">
+                            <img src="./image/l-6/m-arrow.png" alt="arrow" class="mw-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

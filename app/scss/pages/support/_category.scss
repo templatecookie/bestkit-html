@@ -1,0 +1,16 @@
+.category-section{
+    overflow: hidden;
+    padding: 27px 0 60px;
+    @media (min-width:575px) {
+        padding: 35px 0 80px;
+    }
+    @media (min-width:992px) {
+        padding: 60px 0 130px;
+    }
+    .section-title-block{
+        margin-bottom: 35px;
+        @media (min-width:992px) {
+            margin-bottom: 70px;
+        }
+    }
+}

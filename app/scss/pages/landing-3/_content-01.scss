@@ -1,0 +1,36 @@
+.content-section-01{
+    padding: 50px 0 60px;
+    @media (min-width:575px) {
+        padding: 65px 0 80px;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    @media (min-width:1200px) {
+        padding-top: 113px;
+    }
+    &__image-group{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+       margin-bottom: 0;
+        } 
+        @media (min-width:1200px) {
+        margin-right: 35px;
+        } 
+    }
+    &__content{
+       .title{
+           margin-bottom: 20px;
+           @media (min-width:768px) {
+               margin-bottom: 25px;
+           }
+       } 
+       &--list{
+           margin-top: 25px;
+           margin-bottom: 30px;
+           @media (min-width:992px) {
+               margin-bottom: 40px;
+           }
+       }
+    }
+}

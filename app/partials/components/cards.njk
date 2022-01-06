@@ -1,103 +1,135 @@
 {% macro SerciceCard(obj) %}
-<a href="#" class="d-block">
-    <div class="card card-service">
-        <div class="card-image">
-            <img src="{{obj.img}}" alt="card" class="mw-100">
+<div class="card card-service {{obj.modifier}}">
+    <div class="card-image {{obj.bgWrapper}}">
+        <img src="{{obj.img}}" alt="card" class="mw-100 make-it-inline">
+    </div>
+    <div class="card-body p-0">
+        <h4 class="card-title heading-dark">{{obj.title | safe}}</h4>
+        <p class="text-dark">{{obj.text}}</p>
+        <a href="#">{{obj.btnText | safe}}</a>
+    </div>
+</div>
+{% endmacro %}
+{% macro SerciceCardTwo(obj) %}
+<div class="card card-service {{obj.modifier}}">
+    <div class="card-service-wrapper">
+        <div class="card-image {{obj.bgWrapper}}">
+            <img src="{{obj.img}}" alt="card" class="mw-100 make-it-inline">
         </div>
         <div class="card-body p-0">
-            <h4 class="card-title">{{obj.title | safe}}</h4>
-            <span class="card-btn-link">
-                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.6667 7.4165L1 7.4165" stroke="#020C17" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M9.25 13.8333L15.6667 7.41659L9.25 0.99992" stroke="#020C17" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </span>
+            <h4 class="card-title heading-dark">{{obj.title | safe}}</h4>
         </div>
     </div>
-</a>
+    <p class="text-dark">{{obj.text}}</p>
+</div>
 {% endmacro %}
-{% macro StyleOne(obj) %}
-<div class="card card-category-one {{obj.className}}">
-    <div class="card-body">
-        <span class="meta">{{obj.meta}}<small>{{obj.date}}</small></span>
-        <h4 class="card-title" title="{{obj.title}}"><a href="#">{{obj.title}}</a></h4>
-    </div>
-    <div class="card-image">
-        <a href="#"><img src="{{obj.img}}" alt="card" class="w-100"></a>
-    </div>
-    <div class="card-btn">
-        <a href="#" class="card-btn-link"><span> Read More</span>
-            <div class="icon">
-                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.6667 7.4165L1 7.4165" stroke="" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M9.25 13.8333L15.6667 7.41659L9.25 0.99992" stroke="" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+{% macro BlogCardOne(obj) %}
+    <div class="card-blog">
+        <div class="card-image">
+            <img src="{{obj.img}}" alt="cad" class="w-100">
+        </div>
+        <div class="card-body">
+            <div class="date">
+                <span class="text-dark">{{obj.date}}</span>
             </div>
-        </a>
-    </div>
-</div>
-{% endmacro %}
-{% macro StyleTwo(obj) %}
-<div class="card card-category-two {{obj.className}}">
-    <div class="card-image">
-        <a href="{{obj.link}}"><img src="{{obj.img}}" alt="card" class="w-100"></a>
-    </div>
-    <div class="card-body">
-        <p class="text-see-green text">{{obj.category}}</p>
-        <h4 class="card-title" title="{{obj.title}}"><a href="{{obj.link}}">{{obj.title}}</a></h4>
-        <span class="meta">{{obj.date}}<small>{{obj.comment}}</small></span>
-        <div class="card-btn">
-            <a href="{{obj.link}}" class="card-btn-link"><span> Read More</span>
-                <div class="icon">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.6667 7.4165L1 7.4165" stroke="" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M9.25 13.8333L15.6667 7.41659L9.25 0.99992" stroke="" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+            <h6 class="titel">{{obj.title}}</h6>
+            <div class="author-block">
+                <div class="d-flex align-items-center">
+                    <div class="author">
+                        <img src="./image/l-1/author.png" alt="author">
+                    </div>
+                    <div class="author-name">
+                        <h6 class="text-dark">Souja Flora</h6>
+                    </div>
                 </div>
-            </a>
+                <div class="comment">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 10.3333C15 10.7459 14.8361 11.1416 14.5444 11.4333C14.2527 11.725 13.857 11.8889 13.4444 11.8889H4.11111L1 15V2.55556C1 2.143 1.16389 1.74733 1.45561 1.45561C1.74733 1.16389 2.143 1 2.55556 1H13.4444C13.857 1 14.2527 1.16389 14.5444 1.45561C14.8361 1.74733 15 2.143 15 2.55556V10.3333Z" stroke="#8492A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text-dark">{{obj.comment}}</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 {% endmacro %}
-{% macro StyleThree(obj) %}
-<div class="card card-category-three {{obj.className}}">
-    <div class="card-image">
-        <a href="{{obj.link}}"><img src="{{obj.img}}" alt="card" class="w-100"></a>
-    </div>
-    <div class="card-body">
-        <h6 class="subtitle text-see-green">{{obj.category}}</h6>
-        <h4 class="card-title" title="{{obj.title}}"><a href="#">{{obj.title}}</a></h4>
-        <span class="meta">{{obj.date}}<small>{{obj.comment}}</small></span>
-        <p class="text text-18 text-dark">{{obj.text}}</p>
-        <div class="card-btn">
-            <a href="{{obj.link}}" class="card-btn-link"><span> Read More</span>
-                <div class="icon">
-                    <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.6667 7.4165L1 7.4165" stroke="" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M9.25 13.8333L15.6667 7.41659L9.25 0.99992" stroke="" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
+{% macro BlogCardTwo(obj) %}
+    <div class="card-blog card-blog--02">
+        <div class="card-image">
+            <img src="{{obj.img}}" alt="cad" class="w-100">
+            <div class="meta">
+                <span class="text-dark">{{obj.date}}</span>
+            </div>
+        </div>
+        <div class="card-body">
+            <h6 class="titel">{{obj.title}}</h6>
+            <p class="text-dark">{{obj.text}}</p>
+            <div class="author-block">
+                <div class="d-flex align-items-center">
+                    <div class="author">
+                        <img src="./image/l-1/author.png" alt="author">
+                    </div>
+                    <div class="author-name">
+                        <h6 class="text-dark">Souja Flora</h6>
+                    </div>
                 </div>
-            </a>
+                <div class="comment">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.75 8.62502C15.7526 9.61492 15.5213 10.5914 15.075 11.475C14.5458 12.5338 13.7323 13.4244 12.7256 14.047C11.7189 14.6696 10.5587 14.9996 9.375 15C8.3851 15.0026 7.40859 14.7713 6.525 14.325L2.25 15.75L3.675 11.475C3.2287 10.5914 2.99742 9.61492 3 8.62502C3.00046 7.44134 3.33046 6.28116 3.95304 5.27443C4.57562 4.26771 5.46619 3.4542 6.525 2.92502C7.40859 2.47872 8.3851 2.24744 9.375 2.25002H9.75C11.3133 2.33627 12.7898 2.99609 13.8969 4.10317C15.0039 5.21024 15.6638 6.68676 15.75 8.25002V8.62502Z" stroke="#8492A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text-dark">{{obj.comment}}</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 {% endmacro %}
-{% macro Team(obj) %}
-<div class="team-member {{obj.ClassName}}">
-    <img src="{{obj.img}}" alt="team" class="w-100 rounded-5">
-    <div class="team-info">
-        <h4 class="text-24 text-white">{{obj.name}}</h4>
-        <p class="text-white">{{obj.position}}</p>
+{% macro BlogCardThree(obj) %}
+    <div class="card-blog card-blog--03">
+        <div class="card-image">
+            <img src="{{obj.img}}" alt="card">
+        </div>
+        <div class="card-body">
+            <div class="meta">
+                <div class="meta__date">
+                    <span class="date text-dark">{{obj.date | safe}} </span>
+                </div>
+                <div class="meta__time">
+                    <span class="time text-dark">{{obj.time | safe}} </span>
+                </div>
+            </div>
+            <h6 class="titel">{{obj.title}}</h6>
+            <p class="text text-dark">{{obj.text}}</p>
+        </div>
     </div>
-</div>
+{% endmacro %}
+{% macro FeatureCard(obj) %}
+    <div class="card feature-card {{obj.modifier}}">
+        <div class="card-img {{obj.bgWrapper}}">
+            <img src="{{obj.img}}" alt="feature" class="make-it-inline">
+        </div>
+        <div class="card-content">
+            <h6>{{obj.title}}</h6>
+            <p>{{obj.text}}</p>
+        </div>
+    </div>
+{% endmacro %}
+{% macro TeamOne(obj) %}
+    <div class="card-team-01 {{obj.modifier}}">
+        <div class="card-img">
+            <img src="{{obj.img}}" alt="img" class="w-100">
+            <div class="card-social">
+                <ul class="list-unstyled list-group">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-body">
+            <h6 class="name">{{obj.name}}</h6>
+            <h6 class="position">{{obj.position}}</h6>
+        </div>
+    </div>
 {% endmacro %}
 {% macro PostCard(obj) %}
   <div class="card-post">
@@ -105,8 +137,26 @@
       <img src="{{obj.img}}" alt="card-img">
     </div>
       <div class="post-content">
-          <h6 class="subtitle text-see-green">{{obj.subtitle}}</h6>
-          <p class="text"><a href="{{obj.link}}">{{obj.text}}</a></p>
+        <div class="meta">
+            <span>{{obj.date | safe}}</span>
+        </div>
+          <h6 class="post-title">{{obj.title}}</h6>
       </div>
+  </div>
+{% endmacro %}
+{% macro InstagramShots(obj) %}
+  <div class="card-shots">
+    <div class="shots-img">
+      <img src="{{obj.img}}" alt="card-img">
+      <div class="shots-img__icon">
+        
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16.0002 11.3703C16.1236 12.2025 15.9815 13.0525 15.594 13.7993C15.2065 14.5461 14.5933 15.1517 13.8418 15.53C13.0903 15.9082 12.2386 16.0399 11.408 15.9062C10.5773 15.7726 9.80996 15.3804 9.21503 14.7855C8.62011 14.1905 8.22793 13.4232 8.09426 12.5925C7.9606 11.7619 8.09226 10.9102 8.47052 10.1587C8.84878 9.40716 9.45438 8.79404 10.2012 8.40654C10.948 8.01904 11.7979 7.87689 12.6302 8.0003C13.4791 8.12619 14.265 8.52176 14.8719 9.12861C15.4787 9.73545 15.8743 10.5214 16.0002 11.3703Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17.5 6.5H17.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+      </div>
+    </div>
   </div>
 {% endmacro %}

@@ -1,0 +1,93 @@
+.skill-section-02{
+    position: relative;
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    &__image-group{
+        @media (min-width:992px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 50%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+    }
+    &__content{
+        @media (min-width:1400px) {
+            margin-left: 85px;
+        }
+        .title{
+            margin-bottom: 20px;
+            @media (min-width:575px) {
+                margin-bottom: 25px;
+            }
+        }
+        &--skill-bar{
+            margin-top: 30px;
+            @media (min-width:992px) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+.skill-bar-02{
+    &__item{
+        margin-bottom: 25px;
+        @media (min-width:992px) {
+            margin-bottom: 30px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .skill-bar-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .skill-bar-count{
+                margin-left: 10px;
+                span{
+                    font-weight: 600;
+                    line-height: 1.555555555555556;
+                    font-size: 16px;
+                    color: var(--bs-black);
+                    @media (min-width:575px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .skill-bar{
+            margin-top: 10px;
+            width: 100%;
+            height: 3px;
+            background: #DEE7EE;
+            .skill-per{
+                position: relative;
+                height: 3px;
+                background: var(--bs-azure-radiance);
+                animation: fillbars 8s 1;
+                &::before{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    width: 3px;
+                    height: 15px;
+                    content: "";
+                    background: var(--bs-azure-radiance);
+                }
+            }
+        }
+    }
+}

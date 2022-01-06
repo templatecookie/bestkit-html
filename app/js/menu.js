@@ -69,7 +69,7 @@ function showSubMenu(hasChildren) {
   menu.querySelector(".mobile-menu-head").classList.add("active");
 }
 window.onresize = function () {
-  if (this.innerWidth > 991) {
+  if (this.innerWidth > 992) {
     if (menu.classList.contains("active")) {
       toggleMenu();
     }

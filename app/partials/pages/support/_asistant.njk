@@ -1,0 +1,66 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/support/icon-5.png",
+        btnText:"Browse Airticle",
+        title:"Getting Started",
+        text:"Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis"
+        },
+        {
+        id:2,
+        img:"./image/support/icon-5.png",
+        btnText:"Browse Airticle",
+        title:"My Account",
+        text:"Lorem ipsum dolor sit amet consectetur adipisci venenatis venenatis eget tellus diam ante facilisis"
+        }
+]%}
+<div class="asistant-section">
+    <div class="container">
+        <div class="asistant-section__wrapeer">
+            <div class="section-title-block text-center">
+                <h6 class="text-primary mb-10 subtitle">Didn’t find an answer?</h6>
+                <h2 class="title">Need an Asistant?</h2>
+            </div>
+            <div class="row justify-content-center card-row">
+                <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10">
+                    <div class="support-widget-card">
+                        <div class="card-image">
+                            <img src="./image/support/icon-5.png" alt="card" class="w-100">
+                        </div>
+                        <div class="card-body p-0">
+                            <h4 class="heading-dark">Call Us</h4>
+                            <p class="text-dark px-sm-7 px-lg-0">We are available online from 9:30am to 5:30pm GMT95:45). Chat with us</p>
+                            <a class="btn btn-primary" href="#">
+                            Call Now
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-10 col-sm-11 col-xs-10">
+                    <div class="support-widget-card">
+                        <div class="card-image">
+                            <img src="./image/support/icon-5.png" alt="card" class="w-100">
+                        </div>
+                        <div class="card-body p-0">
+                            <h4 class="heading-dark">Chat with Us</h4>
+                            <p class="text-dark px-sm-7 px-lg-0">We are available online from 9:30am to 5:30pm GMT95:45). Chat with us</p>
+                            <a class="btn btn-primary" href="#">
+                            Call Now
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>              
+</div>
+{% endmacro %}

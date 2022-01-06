@@ -1,0 +1,54 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/l-5/globe.svg",
+        title:"100% online courses",
+        text:"Start instantly and learn at your own schedule. User interface and user experience design is a field."
+        },
+        {
+        id:2,
+        img:"./image/l-5/award.svg",
+        title:"Shareable Certificate",
+        text:"Start instantly and learn at your own schedule. User interface and user experience design is a field."
+        },
+        {
+        id:3,
+        img:"./image/l-5/clock.svg",
+        title:"Flexible Schedule",
+        text:"Start instantly and learn at your own schedule. User interface and user experience design is a field."
+        },
+        {
+        id:4,
+        img:"./image/l-5/bar-chart.svg",
+        title:"For Beginner Level",
+        text:"Start instantly and learn at your own schedule. User interface and user experience design is a field."
+        }
+
+
+]%}
+<div class="feature-section-03">
+    <div class="container">
+        <div class="row">
+            <div class="section-title-block">
+                <h6 class="subtitle text-primary mb-10">Some Awesome Features</h6>
+                <h2 class="title">Why This Course Suitable For You?</h2>
+            </div>
+        </div>
+        <div class="row card-row justify-content-center">
+            {% for item in cardData%}
+                <div class="col-lg-4 col-sm-6 col-xl-3 single-slider" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                        {{Card.FeatureCard({
+                            modifier:"feature-card--04",
+                            img:item.img,
+                            text:item.text,
+                            title:item.title
+                        })}}
+                </div>
+            {% endfor %}
+        </div>
+    </div>              
+</div>
+{% endmacro %}

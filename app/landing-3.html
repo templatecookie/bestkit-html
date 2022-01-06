@@ -1,0 +1,55 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/landing-3/_hero.njk" as HeroSection %}
+{% import "pages/landing-3/_brand.njk" as BrandSection %}
+{% import "pages/landing-3/_feature.njk" as FeatureSection %}
+{% import "pages/landing-3/_content-01.njk" as ContentSectionOne %}
+{% import "pages/landing-3/_content-02.njk" as ContentSectionTwo %}
+{% import "pages/landing-3/_content-03.njk" as ContentSectionThree %}
+{% import "pages/landing-3/_about.njk" as AboutSection %}
+{% import "pages/landing-3/_testimonial.njk" as TestimonialSection %}
+{% import "pages/landing-3/_software-integrations.njk" as SoftwareintegrationsSection %}
+{% import "pages/landing-3/_price.njk" as PriceSection %}
+{% import "pages/landing-3/_cta.njk" as CtaSection %}
+{% import "components/Footer/_footer-03.njk" as FooterSection %}
+{% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(siteHeaderThree)}}
+  <!-- Header Section End -->
+  <!-- Hero Section Start -->
+  {{HeroSection.render()}}
+  <!-- Hero Section End -->
+  <!-- Brand Section Start -->
+  {{BrandSection.render()}}
+  <!-- Brand Section End -->
+  <!-- FeatureSection Section Start -->
+  {{FeatureSection.render()}}
+  <!-- FeatureSection Section End -->
+  <!-- Content Section One Section Start -->
+  {{ContentSectionOne.render()}}
+  <!-- Content Section One Section End -->
+  <!-- Content Section Two Section Start -->
+  {{ContentSectionTwo.render()}}
+  <!-- Content Section Two Section End -->
+  <!-- Content Section Three Section Start -->
+  {{ContentSectionThree.render()}}
+  <!-- Content Section Three Section End -->
+  <!-- About Section Start -->
+  {{AboutSection.render()}}
+  <!-- About Section End -->
+  <!-- Testimonial Section Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section End -->
+  <!-- Softwareintegrations Section Start -->
+  {{SoftwareintegrationsSection.render()}}
+  <!-- Softwareintegrations Section End -->
+  <!-- Price Section Start -->
+  {{PriceSection.render()}}
+  <!-- Price Section End -->
+  <!-- Cta Section Start -->
+  {{CtaSection.render()}}
+  <!-- Cta Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End --> 
+{% endblock %}

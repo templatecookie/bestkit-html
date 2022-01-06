@@ -47,11 +47,10 @@ div#loading img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
+  padding: 0px;
   @media (min-width: 992px) {
     flex-flow: row nowrap;
     justify-content: flex-start;
-    padding: 0px;
     align-items: center;
   }
 
@@ -188,6 +187,12 @@ div#loading img {
     &-right {
       .menu-block {
         margin-left: auto;
+        @media (min-width:992px) {
+          margin-right: 30px;
+        }
+        @media (min-width:1200px) {
+          margin-right: 40px;
+        }
       }
 
       > .container-fluid {
@@ -208,6 +213,9 @@ div#loading img {
     }
   }
   &__brand {
+    .logo-white-black {
+      display: none;
+    }
     .logo-white {
       display: none;
     }
@@ -294,13 +302,13 @@ div#loading img {
 
 .site-header--dark {
   .nav-link-item {
-    color: #fff;
+    color: #fff !important;
   }
   .mobile-menu-trigger span {
-    background-color: rgba(#fff, 0.8);
+    background-color: #fff;
     &:before,
     &:after {
-      background-color: rgba(#fff, 0.8);
+      background-color: #fff;
     }
   }
 }
@@ -318,7 +326,7 @@ div#loading img {
 }
 
 .menu-block:not(.active) {
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     opacity: 0;
   }
 }
@@ -328,6 +336,20 @@ div#loading img {
   .site-header__brand {
     .logo-white {
       display: block;
+    }
+    .logo-black {
+      display: none;
+    }
+  }
+}
+/* Header Logo Dark */
+.logo-dark-white {
+  .site-header__brand {
+    .logo-white-black {
+      display: block;
+    }
+    .logo-white {
+      display: none;
     }
     .logo-black {
       display: none;

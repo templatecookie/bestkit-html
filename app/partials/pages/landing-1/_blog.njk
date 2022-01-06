@@ -1,53 +1,64 @@
-{% macro render(options) %}
+{% macro render(args) %}
 {% import "components/cards.njk" as Card %}
 
 {% set cardData =[
         {
         id:1,
-        className:"active",
-        meta:"Asset management",
-        date:"24 June 2021",
-        img:"./image/home/blog-1.png",
-        title:"How to manage your financial assets and investment"
+        comment:"56",
+        date:"08 Feb, 21",
+        img:"./image/l-1/blog-1.png",
+        title:"Determing Marketing Budget Can be Frustrating."
         },
         {
         id:2,
-        meta:"Currency & economy",
-        date:"24 June 2021",
-        img:"./image/home/blog-2.png",
-        title:"How to manage your financial assets and investment"
+        comment:"56",
+        date:"08 Feb, 21",
+        img:"./image/l-1/blog-2.png",
+        title:"How to Win The Attention of New Clients: Tips & Tricks"
         },
         {
         id:3,
-        meta:"Asset management",
-        date:"24 June 2021",
-        img:"./image/home/blog-3.png",
-        title:"How to manage your financial assets and investment"
+        comment:"56",
+        date:"08 Feb, 21",
+        img:"./image/l-1/blog-3.png",
+        title:"Business Agencies vs Advertising Agencies"
         }
 
 
 ]%}
-<div class="blog-section">
+<div class="blog-section-01">
     <div class="container">
-        <div class="section-content-block text-center text-xl-start">
-            <h2 class="title">Enrich your marketing knowledge <br class="d-none d-xl-block"> with latest article and blogs</h2>
-        </div>
-        <div class="row justify-content-center">
-            <div class=" col-xxl-12 col-xl-10 col-md-12 col-xs-10">
-                <div class="row three-row-mobile-slider mobile-slider">
-                    {% for item in cardData%}
-                    <div class="col-lg-4 single-slider" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
-                        {{Card.StyleOne({
-                        img:item.img,
-                        className:item.className,
-                        date:item.date,
-                        meta:item.meta,
-                        title:item.title
-                        })}}
-                    </div>
-                    {% endfor %}
+        <div class="row align-items-center justify-content-center blog-section-01__content">
+            <div class="col-sm-6">
+                <div class="section-content-block text-center text-sm-start">
+                    <h6 class="subtitle text-primary mb-10">Blog & News</h6>
+                    <h2 class="title">Our Latest Blogs</h2>
                 </div>
             </div>
+            <div class="col-sm-6">
+                <div class="section-button text-center mt-4 mt-sm-0 text-sm-end">
+                    <a class="btn btn-1 btn-primary" href="#">
+                        Read Our Blogs
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row card-row justify-content-center">
+            {% for item in cardData%}
+                <div class="col-md-6 col-xl-4 single-slider" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                    <a href="#" class="d-block">
+                        {{Card.BlogCardOne({
+                        img:item.img,
+                        date:item.date,
+                        comment:item.comment,
+                        title:item.title
+                        })}}
+                    </a>
+                </div>
+            {% endfor %}
         </div>
     </div>              
 </div>

@@ -1,0 +1,53 @@
+@use "../../abstracts/mixins" as *;
+.testimonial-section-02{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    &__content{
+        margin-bottom: 35px;
+        @media (min-width:992px) {
+            margin-bottom: 70px;
+        }
+    }
+}
+.testimonial-slider--02{
+    .slick-list {
+        margin: 0 -12px;
+    }
+    .slick-slide {
+        margin: 0 12px;
+    }
+    &__control-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0 -10px;
+        .button{
+            margin: 0 10px;
+            @include square(50px,500px);
+            @include flexAllCenter;
+            background: #EBF6FF;
+            border-radius: 3px;
+            transition: .3s;
+            border: 0;
+            svg{
+                path{
+                    transition: .3s;
+                    stroke: var(--bs-primary);
+                }
+            }
+            &:hover{
+                background: var(--bs-primary);
+                svg{
+                    path{
+                        stroke: var(--bs-white);
+                    }
+                }
+            }
+        }
+    }
+}

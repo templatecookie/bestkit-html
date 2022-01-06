@@ -1,0 +1,71 @@
+@use "../../abstracts/mixins" as *;
+.testimonial-section-06{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    &__slider{
+        position: relative;
+        .section-content-block{
+            margin-bottom: 25px;
+            @media (min-width:1200px) {
+                margin-bottom: 50px;
+            }
+        }
+        &--buttons{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &__image-group{
+        margin-top: 30px;
+        @media (min-width:992px) {
+            margin-top: 0;
+        }
+        @media (min-width:1400px) {
+            margin-left: 75px;
+            margin-right: -30%;
+        }
+    }
+}
+
+.testimonial-slider--06{
+    &__control-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .btn-group{
+            background: #EBF6FF;
+            padding: 8px;
+        }
+        .button{
+            @include square(30px,3px);
+            @include flexAllCenter;
+            background: #EBF6FF;
+            border-radius: 3px;
+            transition: .3s;
+            border: 0;
+            @media (min-width:575px) {
+                @include square(50px,3px);
+            }
+            svg{
+                path{
+                    transition: .3s;
+                    stroke: var(--bs-gray);
+                }
+            }
+            &:hover{
+                background: var(--bs-primary);
+                svg{
+                    path{
+                        stroke: var(--bs-white);
+                    }
+                }
+            }
+        }
+    }
+}

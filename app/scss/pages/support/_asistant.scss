@@ -1,0 +1,26 @@
+.asistant-section{
+    overflow: hidden;
+    padding-bottom: 60px;
+    @media (min-width:575px) {
+        padding-bottom: 80px;
+    }
+    @media (min-width:992px) {
+        padding-bottom: 125px;
+    }
+    &__wrapeer{
+        border-top: 1px solid #DEE7EE;
+        padding-top: 60px;
+        @media (min-width:575px) {
+            padding-top: 80px;
+        }
+        @media (min-width:992px) {
+            padding-top: 125px;
+        }  
+    }
+    .section-title-block{
+        margin-bottom: 35px;
+        @media (min-width:992px) {
+            margin-bottom: 70px;
+        }
+    }
+}

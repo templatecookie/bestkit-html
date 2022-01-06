@@ -1,0 +1,117 @@
+.screenshot-slider-section {
+    padding: 60px 0;
+    overflow: hidden;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+  .section-title-block{
+        margin-bottom: 35px;
+      @media (min-width:992px) {
+       margin-bottom: 85px;
+      }
+  }
+  .screenshot-slider-wrapper {
+    position: relative;
+    .phone-bg-img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 11;
+      width: 256px;
+      transform: translate(-50%, -50%);
+      @media (min-width: 690px) {
+          transform: translate(-50%, -50%);
+        display: block;
+      }
+      > img {
+        width: 100%;
+      }
+    }
+  
+  
+    .screenshot-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      overflow: hidden;
+      width: 230px;
+
+  
+      > img {
+        max-width: 100%;
+        filter: drop-shadow(0px 15px 40px rgba(206, 210, 218, 0.3));
+        border-radius: 25px;
+      }
+  
+      .screenshot-slider {
+        .slick-list {
+          margin: 0 -23.5px;
+        }
+  
+        .slick-slide {
+          opacity: 0.5;
+          transition: 0.4s;
+        }
+  
+        .slick-center {
+          opacity: 1;
+          border-radius: 10px;
+          @media (min-width: 850px) {
+              transform: scale(1.1);
+          }
+          img {
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  .screenshots-dots {
+    margin-top: 35px;
+    @media (min-width:992px) {
+      margin-top: 68px;
+    }
+    .slick-dots {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0 6px;
+        button {
+          border: none;
+          list-style: none;
+          width: 10px;
+          height: 10px;
+          padding: 0;
+          border-radius: 500px;
+          background: var(--bs-primary)!important;
+          opacity: 0.3;
+          color: transparent;
+          font-size: 0;
+          
+          &:focus {
+              outline: none;
+              box-shadow: none;
+          }
+      }
+
+      &.slick-active {
+          width: 10px;
+          background: var(--bs-primary)!important;
+          height: 10px;
+          border-radius: 500px;
+      }
+      }
+    }
+  }
+}
