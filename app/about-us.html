@@ -1,0 +1,32 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
+{% import "pages/blog/_content.njk" as BlogContent %}
+{% import "pages/landing-4/_team.njk" as TeamSection %}
+{% import "pages/landing-2/_feature__v2.njk" as FeatureSection %}
+{% import "pages/landing-2/_testimonial.njk" as TestimonialSection %}
+{% import "components/Footer/_footer-03__v2.njk" as FooterSection %}
+{% block main %}
+<!-- Header Section Start -->
+{{Header.render(innerHeader)}}
+<!-- Header Section End -->
+<!-- Breadcrumb Section Start -->
+{{Breadcrumb.render({
+    "pageName":"About Us",
+    "title":"About Us",
+    "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+})}}
+<!-- Breadcrumb Section End --> 
+<!-- Team Section Start -->
+{{TeamSection.render()}}
+<!-- Team Section End -->
+<!-- FeatureSection Section Start -->
+{{FeatureSection.render()}}
+<!-- FeatureSection Section End -->
+<!-- Testimonial Section Start -->
+{{TestimonialSection.render()}}
+<!-- Testimonial Section End -->
+<!-- Footer Section Start -->
+{{FooterSection.render()}}
+<!-- Footer Section End --> 
+{% endblock %}
