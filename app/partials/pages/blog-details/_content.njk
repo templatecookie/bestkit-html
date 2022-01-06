@@ -1,0 +1,247 @@
+{% macro render(args) %}
+{% import "components/_mixed.njk" as MixtComponent %}
+{% import "components/cards.njk" as Card %}
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/blog/blog-1.png",
+        date:"<img src='./image/svg/calendar.svg'/> March 18, 2021",
+        time:"<img src='./image/svg/clock.svg'/> 3 min read",
+        title:"3 Interviewing Tips That Can Help You Find Right Candidate",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, lorem tristique In laoreet morbi morbi lorem maecenas."
+        },
+        {
+        id:2,
+        img:"./image/blog/blog-2.png",
+        date:"<img src='./image/svg/calendar.svg'/> March 18, 2021",
+        time:"<img src='./image/svg/clock.svg'/> 3 min read",
+        title:"How to Easily Manage with Designer as a Web Based Developer",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, lorem tristique In laoreet morbi morbi lorem maecenas."
+        },
+        {
+        id:3,
+        img:"./image/blog/blog-3.png",
+        date:"<img src='./image/svg/calendar.svg'/> March 18, 2021",
+        time:"<img src='./image/svg/clock.svg'/> 3 min read",
+        title:"Top 5 Fastest Growing Digital Agency Marketing Jobs Today",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, lorem tristique In laoreet morbi morbi lorem maecenas."
+        },
+        {
+        id:4,
+        img:"./image/blog/blog-4.png",
+        date:"<img src='./image/svg/calendar.svg'/> March 18, 2021",
+        time:"<img src='./image/svg/clock.svg' /> 3 min read",
+        title:"8 Innovative Design Ideas to Make Your Design Superb",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, lorem tristique In laoreet morbi morbi lorem maecenas."
+        },
+        {
+        id:5,
+        img:"./image/blog/blog-5.png",
+        date:"<img src='./image/svg/calendar.svg'/> March 18, 2021",
+        time:"<img src='./image/svg/clock.svg'/> 3 min read",
+        title:"How to Buy Stocks: Step-by-Step Guide for Beginner Investors",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, lorem tristique In laoreet morbi morbi lorem maecenas."
+        },
+        {
+        id:6,
+        img:"./image/blog/blog-6.png",
+        date:"<img src='./image/svg/calendar.svg'/> March 18, 2021",
+        time:"<img src='./image/svg/clock.svg'/> 3 min read",
+        title:"6 Great Productivity Apps You Can Download for Free This Week",
+        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, lorem tristique In laoreet morbi morbi lorem maecenas."
+        }
+
+]%}
+{% set postCardData =[
+    {
+    id:1,
+    img:"./image/blog/post-1.png",
+    date:"<img src='./image/svg/calendar-2.svg'/> March 18, 2021",
+    title:"5 Tips to Be Prepared for Digital Marketing Trends"
+    },
+    {
+    id:2,
+    img:"./image/blog/post-2.png",
+    date:"<img src='./image/svg/calendar-2.svg'/> March 18, 2021",
+    title:"How to Start Your Career As a UI/UX Designer"
+    }
+
+
+]%}
+{% set shotsCardData =[
+    {
+    id:1,
+    img:"./image/innerpage/shots-1.png"
+    },
+    {
+    id:2,
+    img:"./image/innerpage/shots-2.png"
+    },
+    {
+    id:3,
+    img:"./image/innerpage/shots-3.png"
+    },
+    {
+    id:4,
+    img:"./image/innerpage/shots-4.png"
+    },
+    {
+    id:5,
+    img:"./image/innerpage/shots-5.png"
+    },
+    {
+    id:6,
+    img:"./image/innerpage/shots-6.png"
+    },
+    {
+    id:7,
+    img:"./image/innerpage/shots-7.png"
+    },
+    {
+    id:8,
+    img:"./image/innerpage/shots-8.png"
+    }
+
+
+]%}
+<div class="blog-details-area">
+    <div class="container">
+        <div class="blog-details-area__wrapper">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-8 col-xs-10 order-lg-2">
+                    <div class="blog-details-area__search">
+                        {{MixtComponent.SearchBox()}}
+                    </div>
+                    <div class="blog-details-area__post">
+                        <div class="blog-post-box">
+                            <h3 class="content-title">Recent Post</h3>
+                            <div class="blog-post-box__single-post overflow-hidden">
+                                {% for item in postCardData%}
+                                <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}"
+                                data-aos-duration="1000">
+                                    <a href="#" class="d-block">
+                                        {{Card.PostCard({
+                                            img:item.img,
+                                            title:item.title,
+                                            date:item.date
+                                        })}}
+                                    </a>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-details-area__categories">
+                        {{MixtComponent.Categories()}}
+                    </div>
+                    <div class="blog-details-area__tags">
+                        {{MixtComponent.Tags()}}
+                    </div>
+                        <div class="blog-details-area__shots">
+                        <div class="shots-box">
+                            <h3 class="content-title">Instagram Shots</h3>
+                            <div class="shots-box__single-post overflow-hidden">
+                                {% for item in shotsCardData%}
+                                <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}"
+                                data-aos-duration="1000">
+                                    <a href="#" class="d-block">
+                                        {{Card.InstagramShots({
+                                            img:item.img
+                                        })}}
+                                    </a>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 order-lg-1">
+                    <div class="blog-details-area__content">
+                        <div class="blog-details-area__content--card">
+                            <div class="blog-details-card">
+                                <div class="card-img">
+                                    <img src="./image/blog/big-blog.png" alt="blog-image" class="w-100">
+                                </div>
+                                <div class="card-body">
+                                    <div class="meta">
+                                        <div class="meta__date">
+                                            <span class="date text-dark"><img src="./image/svg/calendar.svg"> March 18, 2021 </span>
+                                        </div>
+                                        <div class="meta__time">
+                                            <span class="time text-dark"><img src="./image/svg/clock.svg"> 3 min read </span>
+                                        </div>
+                                    </div>
+                                    <h3 class="title">3 Interviewing Tips That Can Help You Find The Right Candidate</h3>
+                                    <p class="text text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel ut congue varius congue aliquet leo. Netus neque nibh semper in diam viverra nibh aliquam elit. Amet orci et dolor, faucibus a leo malesuada ullamcorper. Amet pellentesque velit felis mollis turpis pellentesque donec. Cursus consectetur mattis molestie nibh no.
+                                    </p>
+                                    <ul class="content-list-05">
+                                        <li>1.  Tortor id aliquet lectus proin nibh nisl condimentum congue quisque egestas diam in arculom</li>
+                                        <li>2.  Pharetra vel turpis nunc eget lorem dolor. Iaculis eu non diam phasellus vestibulum lorem sed.
+                                        </li>
+                                        <li>3.  Viverra mauris in aliquam sem fringilla. Aliquam etiam erat velit scelerisque</li>
+                                    </ul>
+                                    <p class="text text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel ut congue varius congue aliquet leo. Netus neque nibh semper in diam viverra nibh aliquam elit. Amet orci et dolor, faucibus a leo malesuada ullamcorper. Amet pellentesque velit felis mollis turpis pellentesque donec. Cursus consectetur mattis molestie nibh no.
+                                    </p>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="blog-details-area__content--quote">
+                            <div class="blog-quote">
+                                <p>"I have worked with different themes, but this one stands out in terms of beautiful organization. The theme also has many example pages and a host of components to choose from.”</p>
+                                <div class="name-block">
+                                    <h6>Michle Jhon Smith <span class="text-primary"> - CEO & Founder</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-details-area__content--two">
+                            <div class="content-two">
+                                <h6>How to Choose The Right Tech Stack for Company?</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel ut congue varius congue aliquet leo. Netus neque nibh semper in diam viverra nibh aliquam elit. Amet orci et dolor, faucibus a leo malesuada ullamcorper. Amet pellentesque velit felis mollis turpis pellentesque donec. Cursus consectetur mattis molestie nibh no. Nor in the warm-up posuere urna rutrum lacus feugiat tristique.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blog-details-area__content--group">
+                            <div class="popular-tags">
+                                <h6>Popular Tags:</h6>
+                                <ul>
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Sass</a></li>
+                                </ul>
+                            </div>
+                            <div class="share-block">
+                                <h6>Share With:</h6>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog-details-area__content--admin">
+                            <div class="admin-block">
+                                <div class="admin-img">
+                                    <img src="./image/blog/admin.png" alt="admin" class="w-100">
+                                </div>
+                                <div class="admin-body">
+                                    <div class="admin-info">
+                                        <h6>Sophie George</h6>
+                                        <p>CEO & Founder</p>
+                                    </div>
+                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, lorem tristique In laoreet morbi morbi lorem maecenas. But the whole environment, now Tortor . Vestibulum tortor tellus velit id and the set effective user or not God Himself.</p>
+                                    <ul class="social-area">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
