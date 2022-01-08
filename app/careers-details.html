@@ -1,7 +1,8 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
-{% import "pages/blog/_content.njk" as BlogContent %}
+{% import "pages/careers-details/_content.njk" as CareersContent %}
+{% import "pages/careers-details/_positions.njk" as PositionSection %}
 {% import "components/Footer/_footer-03__v2.njk" as FooterSection %}
 {% block main %}
 <!-- Header Section Start -->
@@ -14,7 +15,12 @@
     "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
 })}}
 <!-- Breadcrumb Section End --> 
-
+<!-- Careers Content Section Start -->
+{{CareersContent.render()}}
+<!-- Careers Content Section End --> 
+<!-- Position Section Start -->
+{{PositionSection.render()}}
+<!-- Position Section End --> 
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End --> 
