@@ -1,0 +1,20 @@
+.cta-section-05{
+    padding: 28px 0 60px;
+    @media (min-width:575px) {
+        padding: 35px 0 80px;
+    }
+    @media (min-width:992px) {
+        padding: 62px 0 130px;
+    }
+    .cta-section-title{
+        .title{
+            padding-bottom: 8px;
+            @media (min-width:575px) {
+                padding-bottom: 15px;
+            }
+        }
+        .text{
+            padding-bottom: 30px;
+        }
+    }
+}

@@ -2,6 +2,7 @@
 {% import "components/Header/_header.njk" as Header %}
 {% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
 {% import "pages/careers/_content.njk" as CareersContent %}
+{% import "pages/careers/_cta.njk" as CtaSection %}
 {% import "components/Footer/_footer-03__v2.njk" as FooterSection %}
 {% block main %}
 <!-- Header Section Start -->
@@ -17,6 +18,9 @@
 <!-- Careers Content Section Start -->
 {{CareersContent.render()}}
 <!-- Careers Content Section End --> 
+<!-- Cta Section Start -->
+{{CtaSection.render()}}
+<!-- Cta Section End --> 
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End --> 
