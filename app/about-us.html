@@ -3,6 +3,8 @@
 {% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
 {% import "pages/blog/_content.njk" as BlogContent %}
 {% import "pages/about/_content-01.njk" as ContentSectionOne %}
+{% import "pages/about/_content-02.njk" as ContentSectionTow %}
+{% import "pages/landing-2/_counter.njk" as CounterSection %}
 {% import "pages/landing-4/_team.njk" as TeamSection %}
 {% import "pages/landing-2/_feature__v2.njk" as FeatureSection %}
 {% import "pages/landing-2/_testimonial.njk" as TestimonialSection %}
@@ -21,6 +23,12 @@
 <!-- Content Section One Start -->
 {{ContentSectionOne.render()}}
 <!-- Content Section One End -->
+<!-- Counter Section Start -->
+{{CounterSection.render()}}
+<!-- Counter Section End -->
+<!-- Content Section Two Start -->
+{{ContentSectionTow.render()}}
+<!-- Content Section Two End -->
 <!-- Team Section Start -->
 {{TeamSection.render()}}
 <!-- Team Section End -->
