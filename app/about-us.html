@@ -4,6 +4,7 @@
 {% import "pages/blog/_content.njk" as BlogContent %}
 {% import "pages/about/_content-01.njk" as ContentSectionOne %}
 {% import "pages/about/_content-02.njk" as ContentSectionTow %}
+{% import "pages/about/_faq.njk" as FaqSection %}
 {% import "pages/landing-2/_counter.njk" as CounterSection %}
 {% import "pages/landing-4/_team.njk" as TeamSection %}
 {% import "pages/landing-2/_feature__v2.njk" as FeatureSection %}
@@ -29,6 +30,9 @@
 <!-- Content Section Two Start -->
 {{ContentSectionTow.render()}}
 <!-- Content Section Two End -->
+<!-- Faq Section Start -->
+{{FaqSection.render()}}
+<!-- Faq Section End -->
 <!-- Team Section Start -->
 {{TeamSection.render()}}
 <!-- Team Section End -->
