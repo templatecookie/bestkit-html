@@ -363,3 +363,8 @@ $(".slider-arrow-click-active .slick-arrow").on("click", function (e) {
     $(this).siblings().removeClass("active");
   }
 });
+
+$('.service-category').on('click', 'li', function() {
+  $('.service-category li.active').removeClass('active');
+  $(this).addClass('active');
+});
