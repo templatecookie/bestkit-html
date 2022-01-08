@@ -787,3 +787,12 @@
         }
     }
 }
+.map-area{
+    height: 300px;
+    @media (min-width:575px) {
+        height: 350px;
+    }
+    @media (min-width:992px) {
+        height: 450px;
+    }
+}

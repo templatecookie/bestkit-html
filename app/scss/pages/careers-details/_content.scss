@@ -1,10 +1,20 @@
 .careers-details-contetn{
-    padding-top: 30px;
+    padding-top: 86px;
     @media (min-width:575px) {
-        padding-top: 80px;
+        padding-top: 106px;
     }
     @media (min-width:992px) {
-        padding-top: 130px;
+        padding-top: 157px;
+    }
+    &__wrapper{
+        border-bottom: 1px solid #DEE7EE;
+        padding-bottom: 60px;
+        @media (min-width:575px) {
+            padding-bottom: 80px;
+        }
+        @media (min-width:992px) {
+            padding-bottom: 130px;
+        }
     }
     .job-details{
         @media (min-width:1200px) {
