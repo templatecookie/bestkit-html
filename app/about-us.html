@@ -2,6 +2,7 @@
 {% import "components/Header/_header.njk" as Header %}
 {% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
 {% import "pages/blog/_content.njk" as BlogContent %}
+{% import "pages/about/_content-01.njk" as ContentSectionOne %}
 {% import "pages/landing-4/_team.njk" as TeamSection %}
 {% import "pages/landing-2/_feature__v2.njk" as FeatureSection %}
 {% import "pages/landing-2/_testimonial.njk" as TestimonialSection %}
@@ -17,6 +18,9 @@
     "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
 })}}
 <!-- Breadcrumb Section End --> 
+<!-- Content Section One Start -->
+{{ContentSectionOne.render()}}
+<!-- Content Section One End -->
 <!-- Team Section Start -->
 {{TeamSection.render()}}
 <!-- Team Section End -->

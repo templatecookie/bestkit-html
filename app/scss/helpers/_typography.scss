@@ -54,10 +54,13 @@
 .section-title-block,
 .section-content-block {
   .subtitle{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.2;
     text-transform: uppercase;
+    @media (min-width:575px) {
+      font-size: 18px;
+    }
   }
   .title {
     font-weight: 600;

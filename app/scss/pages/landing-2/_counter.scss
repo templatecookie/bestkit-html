@@ -19,11 +19,30 @@
                 width: 50%;
             }
             display: flex;
+            position: relative;
             align-items: center;
             flex-direction: column;
             margin-bottom: 24px;
             @media (min-width:992px) {
                 flex-direction: row;
+                &:not(&:first-child){
+                    &::before{
+                        position: absolute;
+                        top: 50%;
+                        content: "";
+                        right: 138%;
+                        transform: translateY(-50%);
+                        height: 59px;
+                        width: 1px;
+                        background:#DEE7EE;
+                        @media (min-width:1200px) {
+                            right: 156%;
+                        }
+                        @media (min-width:1400px) {
+                            right: 172%;
+                        }
+                    }
+                }
             }
             .icon{
                 margin-bottom: 20px;
