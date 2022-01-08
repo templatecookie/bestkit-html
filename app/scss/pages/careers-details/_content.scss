@@ -11,6 +11,11 @@
             padding-right: 67px;
         }
     }
+    &__sidebar{
+        @media (max-width:1200px) {
+            margin-bottom: 35px;
+        } 
+    }
 }
 .job-details{
     &__top-info{

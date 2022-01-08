@@ -1,8 +1,14 @@
+{% import "components/_mixed.njk" as MixtComponent %}
 {% macro render(args) %}
     <div class="careers-details-contetn">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-8">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-8 col-xs-10 order-lg-2">
+                    <div class="careers-details-contetn__sidebar">
+                        {{MixtComponent.ApplyCard()}}
+                    </div>
+                </div>
+                <div class="col-lg-8 order-lg-1">
                     <div class="job-details">
                         <div class="job-details__top-info">
                             <div class="back-btn">
