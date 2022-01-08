@@ -693,6 +693,12 @@
         transition: .3s;
       }
     }
+    &--v2{
+      background: var(--bs-solitude);
+      &::before{
+        border-color: var(--bs-solitude) transparent transparent transparent;
+      }
+    }
   }
   &__client{
     margin-left: 38px;
@@ -730,7 +736,7 @@
   &:hover{
     .testimonial-card-02{
       &__content{
-        background: var(--bs-primary);
+        background: var(--bs-primary) !important;
         .quote{
           svg{
             opacity: 0.3;
@@ -738,11 +744,11 @@
         }
         .text{
           p{
-            color: var(--bs-white);
+            color: var(--bs-white) !important;
           }
         }
         &::before{
-          border-color: var(--bs-primary) transparent transparent transparent;
+          border-color: var(--bs-primary) transparent transparent transparent !important;
         }
       }
     }
