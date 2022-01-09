@@ -1,4 +1,4 @@
-.signup-content{
+.forgot-content{
     position: relative;
     height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@
         background-size: cover;
         background-position: top center;
         top: 0;
-        right: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         z-index: -2;
@@ -61,10 +61,10 @@
             }
         }
         @media (min-width:992px) {
-            margin-right: 40px;
+            margin-left: 40px;
         }
         @media (min-width:1200px) {
-            margin-right: 70px;
+            margin-left: 70px;
         }
     }
 }

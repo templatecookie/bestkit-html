@@ -1,26 +1,18 @@
 {% macro render(args) %}
-    <div class="signup-content">
-        <div class="signup-content__bg">
-            <img src="./image/innerpage/signup.png" alt="signup">
+    <div class="signin-content">
+        <div class="signin-content__bg">
+            <img src="./image/innerpage/sign-in.png" alt="signup">
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 offset-lg-6">
                     <div class="account-form">
                         <div class="section-content-block">
-                            <h2 class="mb-10 title">Create An Account</h2>
-                            <p class=" text-dark">Create an account today and grow your business with Bestkit</p>
+                            <h2 class="mb-10 title">Sign In to your Account</h2>
+                            <p class=" text-dark">Enter your account details below to log in.</p>
                         </div>
                         <form action="#" class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Full Name">
-                                    <div class="icon">
-                                        <img src="./image/svg/user.svg" alt="user" class="make-it-inline">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="E-mail address">
                                     <div class="icon">
@@ -40,35 +32,23 @@
                                 <div class="form-check">
                                   <input class="form-check-input" type="checkbox" id="gridCheck">
                                   <label class="form-check-label" for="gridCheck">
-                                    I have read and agree to the Terms & Conditions.
+                                    Remember me
                                   </label>
                                 </div>
                               </div>
                             <div class="col-12">
                                 <div class="form-button">
-                                    <button type="submit" class=" btn btn-primary w-100">Create Account</button>
+                                    <button type="submit" class=" btn btn-primary w-100">Sign In</button>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-texts form-texts-one">
-                                    <p class="text-dark">or</p>
+                                    <a class=" text-link text-primary" href="forgot.html">Forgotten password?</a>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="form-button mb-15">
-                                    <a href="#" class=" btn-2 btn bg-white-lilac w-100">
-                                        <img src="./image/svg/google.png" alt="google" class="mr-15 mw-100">  Sign Up with Google</a>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-button">
-                                    <a href="#" class=" btn btn-2 bg-white-lilac w-100">
-                                        <img src="./image/svg/facebook.png" alt="facebook" class="mr-15 mw-100">  Sign Up with Facebook</a>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-texts form-texts-two">
-                                    <p class="heading-dark">Already have an account? <a class=" text-primary" href="signin.html">Sign in</a></p>
+                                <div class="form-texts">
+                                    <p class="heading-dark">Don’t have an account? <a class=" text-primary" href="signup.html">Create account</a></p>
                                 </div>
                             </div>
                         </form>
