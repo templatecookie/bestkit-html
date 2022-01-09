@@ -12660,44 +12660,44 @@ button:focus {
   }
 }
 
-.commingsoon-area {
+.comingsoon-area {
   padding: 60px 0;
 }
 @media (min-width: 575px) {
-  .commingsoon-area {
+  .comingsoon-area {
     padding: 80px 0;
   }
 }
 @media (min-width: 992px) {
-  .commingsoon-area {
+  .comingsoon-area {
     padding: 130px 0;
   }
 }
-.commingsoon-area__content .timer-block {
+.comingsoon-area__content .timer-block {
   margin: 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.commingsoon-area__content .timer-block .single-timer {
+.comingsoon-area__content .timer-block .single-timer {
   padding: 0 10px;
 }
-.commingsoon-area__content .timer-block .single-timer:last-child {
+.comingsoon-area__content .timer-block .single-timer:last-child {
   padding-right: 0;
 }
-.commingsoon-area__content .timer-block .single-timer:first-child {
+.comingsoon-area__content .timer-block .single-timer:first-child {
   padding-left: 0;
 }
 @media (min-width: 992px) {
-  .commingsoon-area__content .timer-block {
+  .comingsoon-area__content .timer-block {
     margin: 50px 0;
   }
 }
-.commingsoon-area__image-group {
+.comingsoon-area__image-group {
   margin-bottom: 35px;
 }
 @media (min-width: 992px) {
-  .commingsoon-area__image-group {
+  .comingsoon-area__image-group {
     margin-bottom: 0;
   }
 }
