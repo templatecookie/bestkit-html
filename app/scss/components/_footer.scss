@@ -704,4 +704,21 @@
             border-top: 1px solid #DEE7EE;
         }
     }
+    &--modifi-05{
+        background: transparent !important;
+        .copyright-block__wrapper{
+            padding: 25px 0;
+            border-top: 1px solid #DEE7EE;
+        }
+        .copyright-block__social{
+            li{
+                a{
+                    color: var(--bs-gray);
+                    &:hover{
+                        color: var(--bs-primary);
+                    }
+                }
+            }
+        }
+    }
 }

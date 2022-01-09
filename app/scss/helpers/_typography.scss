@@ -166,3 +166,28 @@ color: var(--bs-black);
     }
   }
 }
+.timer-title-block{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+    .time {
+      font-weight: 600;
+      line-height: 1.303;
+      font-size: 32px;
+      color: var(--bs-primary);
+      padding-bottom: 5px;
+      @media (min-width: 768px) {
+        font-size: 40px;
+      }
+    }
+    .label{
+      color: var(--bs-black);
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: capitalize;
+      line-height: 1.302777777777778;
+      @media (min-width: 575px) {
+        font-size: 18px;
+      }
+    }
+}
