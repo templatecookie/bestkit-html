@@ -1,55 +1,19 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
-{% import "pages/landing-1/_hero.njk" as HeroSection %}
-{% import "pages/landing-1/_brand.njk" as BrandSection %}
-{% import "pages/landing-1/_about.njk" as AboutSection %}
-{% import "pages/landing-1/_skill.njk" as SkillSection %}
-{% import "pages/landing-1/_service.njk" as ServiceSection %}
-{% import "pages/landing-1/_counter.njk" as CounterSection %}
-{% import "pages/landing-1/_qualification.njk" as QualificationSection %}
-{% import "pages/landing-1/_cta.njk" as CtaSection %}
-{% import "pages/landing-1/_portfolio.njk" as PortfolioSection %}
-{% import "pages/landing-1/_testimonial.njk" as TestimonialSection %}
-{% import "pages/landing-1/_blog.njk" as BlogSection %}
-{% import "components/Footer/_footer-01.njk" as FooterSection %}
+{% import "pages/preview/_hero.njk" as HeroSection %}
+{% import "pages/preview/_cta.njk" as CtaSection %}
+{% import "pages/landing-6/_testimonial.njk" as TestimonialSection %}
 {% block main %}
   <!-- Header Section Start -->
-  {{Header.render(siteHeaderOne)}}
+  {{Header.render(previewHeader)}}
   <!-- Header Section End -->
   <!-- Hero Section Start -->
-  {{HeroSection.render()}}
+  {{HeroSection.render()}} 
   <!-- Hero Section End -->
-  <!-- Brand Section Start -->
-  {{BrandSection.render()}}
-  <!-- Brand Section End -->
-  <!-- About Section Start -->
-  {{AboutSection.render()}}
-  <!-- About Section End -->
-  <!-- Skill Section Start -->
-  {{SkillSection.render()}}
-  <!-- Skill Section End -->
-  <!-- Service Section Start -->
-  {{ServiceSection.render()}}
-  <!-- Service Section End -->
-  <!-- Counter Section Start -->
-  {{CounterSection.render()}}
-  <!-- Counter Section End -->
-  <!-- Qualification Section Start -->
-  {{QualificationSection.render()}}
-  <!-- Qualification Section End -->
+  <!-- Testimonial Section  Start -->
+  {{TestimonialSection.render()}}
+  <!-- Testimonial Section  End -->
   <!-- Cta Section Start -->
   {{CtaSection.render()}}
   <!-- Cta Section End -->
-  <!-- Portfolio Section Start -->
-  {{PortfolioSection.render()}}
-  <!-- Portfolio Section End -->
-  <!-- Testimonial Section Start -->
-  {{TestimonialSection.render()}}
-  <!-- Testimonial Section End -->
-  <!-- Blog Section Start -->
-  {{BlogSection.render()}}
-  <!-- Blog Section End -->
-  <!-- Footer Section Start -->
-  {{FooterSection.render()}}
-  <!-- Footer Section End -->
 {% endblock %}
