@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Portfolio
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden">
+    <!-- Error Area Start -->
+    <div class="error-area">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xl-7 col-lg-7 col-md-8 col-xs-10 order-lg-2">
+            <div class="error-area__image-group">
+              <img src="./image/404.svg" alt="404" class="w-100">
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-5 col-md-9 col-xs-10 order-lg-1">
+            <div class="error-area__content text-center text-lg-start">
+              <div class="error-page-title">
+                <h1 class="big-title text-primary">404</h1>
+                <h3 class="title">Oops, that page can’t be found.</h3>
+                <p class="text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+              </div>
+              <a class="btn btn-primary" href="index.html">
+                Go Back to Hompage
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Error Area End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/slider-activations.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
