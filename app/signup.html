@@ -1,0 +1,12 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "pages/sign-up/_content.njk" as SignUpContent %}
+{% block main %}
+<!-- Header Section Start -->
+{{Header.render(nonabsoluteHeader)}}
+<!-- Header Section End -->
+<!-- Content Section Start -->
+{{SignUpContent.render()}}
+<!-- Content Section End -->
+{% endblock %}
+
