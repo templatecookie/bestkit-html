@@ -43,21 +43,9 @@
 span{
     display: inline-block;
 }
-
-/* About or Service Breadcrumb Css Start */
-.blog-details-breadcrumb,
-.about-breadcrumb,
-.service-breadcrumb{
-    padding-bottom: 115px !important;
-    @media (min-width:768px) {
-        padding-bottom: 312px !important;
-    }
+.mr-15{
+    margin-right: 15px;
 }
-/* About or Service  Hero Css Start */
-.about-hero-section,
-.service-hero-section{
-    margin-top: -75px;
-    @media (min-width:768px) {
-        margin-top: -229px;
-    }
+.mb-15{
+    margin-bottom: 15px;
 }

@@ -2,6 +2,10 @@
 {% import "components/Header/_header.njk" as Header %}
 {% import "components/Breadcrumb/_breadcrumb.njk" as Breadcrumb %}
 {% import "pages/blog/_content.njk" as BlogContent %}
+{% import "pages/about/_content-01.njk" as ContentSectionOne %}
+{% import "pages/about/_content-02.njk" as ContentSectionTow %}
+{% import "pages/about/_faq.njk" as FaqSection %}
+{% import "pages/landing-2/_counter.njk" as CounterSection %}
 {% import "pages/landing-4/_team.njk" as TeamSection %}
 {% import "pages/landing-2/_feature__v2.njk" as FeatureSection %}
 {% import "pages/landing-2/_testimonial.njk" as TestimonialSection %}
@@ -17,6 +21,18 @@
     "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
 })}}
 <!-- Breadcrumb Section End --> 
+<!-- Content Section One Start -->
+{{ContentSectionOne.render()}}
+<!-- Content Section One End -->
+<!-- Counter Section Start -->
+{{CounterSection.render()}}
+<!-- Counter Section End -->
+<!-- Content Section Two Start -->
+{{ContentSectionTow.render()}}
+<!-- Content Section Two End -->
+<!-- Faq Section Start -->
+{{FaqSection.render()}}
+<!-- Faq Section End -->
 <!-- Team Section Start -->
 {{TeamSection.render()}}
 <!-- Team Section End -->
@@ -24,7 +40,7 @@
 {{FeatureSection.render()}}
 <!-- FeatureSection Section End -->
 <!-- Testimonial Section Start -->
-{{TestimonialSection.render()}}
+{{TestimonialSection.render({bgClassName:"testimonial-card-02__content--v2"})}}
 <!-- Testimonial Section End -->
 <!-- Footer Section Start -->
 {{FooterSection.render()}}

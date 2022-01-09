@@ -1,0 +1,24 @@
+.preview-cta-section{
+    padding-top: 60px;
+    @media (min-width:575px) {
+        padding-top: 80px;
+    }
+    @media (min-width:992px) {
+        padding-top: 130px;
+    }
+    .section-title-block{
+        .button-group{
+            margin-top: 30px;
+            @media (min-width:992px) {
+                margin-top: 55px;
+            }
+    }
+
+    }
+    &__image{
+        margin-top: 30px;
+        @media (min-width:992px) {
+            margin-top: 65px;
+        }
+    }
+}

@@ -363,3 +363,12 @@ $(".slider-arrow-click-active .slick-arrow").on("click", function (e) {
     $(this).siblings().removeClass("active");
   }
 });
+
+$('.portfolio-filter-menu').on('click', 'button', function() {
+  $('.portfolio-filter-menu button.active').removeClass('active');
+  $(this).addClass('active');
+});
+$('.service-category').on('click', 'li', function() {
+  $('.service-category li.active').removeClass('active');
+  $(this).addClass('active');
+});

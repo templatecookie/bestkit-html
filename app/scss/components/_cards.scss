@@ -693,6 +693,12 @@
         transition: .3s;
       }
     }
+    &--v2{
+      background: var(--bs-solitude);
+      &::before{
+        border-color: var(--bs-solitude) transparent transparent transparent;
+      }
+    }
   }
   &__client{
     margin-left: 38px;
@@ -730,7 +736,7 @@
   &:hover{
     .testimonial-card-02{
       &__content{
-        background: var(--bs-primary);
+        background: var(--bs-primary) !important;
         .quote{
           svg{
             opacity: 0.3;
@@ -738,11 +744,11 @@
         }
         .text{
           p{
-            color: var(--bs-white);
+            color: var(--bs-white) !important;
           }
         }
         &::before{
-          border-color: var(--bs-primary) transparent transparent transparent;
+          border-color: var(--bs-primary) transparent transparent transparent !important;
         }
       }
     }
@@ -1377,6 +1383,164 @@
       font-weight: 500;
       @media (min-width:575px) {
         font-size: 18px;
+      }
+    }
+  }
+}
+.card-position{
+    padding: 40px 20px;
+    background: var(--bs-white-lilac);
+    border-radius: 3px;
+    transition: .3s;
+    @media (min-width:575px) {
+      padding: 40px 30px;
+    }
+    @media (min-width:992px) {
+      padding: 50px;
+    }
+    .top-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .title{
+          font-weight: 600;
+          color: var(--bs-black);
+          padding-right: 20px;
+          line-height: 1.302916666666667;
+          font-size: 18px;
+          @media (min-width:575px) {
+            font-size: 20px;
+          }
+          @media (min-width:768px) {
+            font-size: 24px;
+          }
+
+        }
+        .btn-text{
+          font-weight: 600;
+          color: 16px;
+          line-height: 1.302777777777778;
+          color: var(--bs-primary);
+          @media (min-width:575px) {
+            font-size: 18px;
+          }
+        }
+    }
+    .bottom-content{
+      .text{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.555555555555556;
+        padding: 20px 0 12.5px;
+        @media (min-width:575px) {
+          font-size: 18px;
+          padding: 25px 0 17.5px;
+        }
+        @media (min-width:992px) {
+          padding: 30px 0 22.5px;
+        }
+      }
+      .content-info{
+        margin: 0 -7.5px;
+        display: flex;
+        flex-wrap: wrap;
+        .info-btn{
+          transition: .3s;
+          margin:7.5px;
+          display: inline-flex;
+          align-items: center;
+          padding: 10px 18px;
+          border-radius: 3px;
+          border: 1px solid #DEE7EE;
+          svg{
+            display: block;
+            margin-right: 12px;
+          }
+          P{
+            white-space: nowrap;
+            line-height: 1.302777777777778;
+            font-weight: 500;
+            color: var(--bs-black);
+            font-size: 16px;
+            @media (min-width:575px) {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+    &:hover{
+      background: #FFFFFF;
+      box-shadow: 0px 15px 30px rgba(210, 217, 224, 0.35);
+      .bottom-content{
+        .content-info{
+          .info-btn{
+            border-color:var(--bs-solitude);
+            background: var(--bs-solitude); 
+          }
+        }
+      }
+    }
+}
+.apply-card{
+  border: 3px;
+  padding: 40px 25px;
+  @media (min-width:575px) {
+    padding: 50px;
+    
+  }
+  background: var(--bs-secondary);
+  .card-logo{
+    @include square(80px,3px);
+    @include flexAllCenter;
+    background: white;  
+    margin-bottom: 20px;
+    @media (min-width:575px) {
+      margin-bottom: 30px;
+    }
+  }
+  .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--bs-white);
+    line-height: 1.3;
+    padding-bottom: 27px;
+    @media (min-width:575px) {
+      font-size: 28px;
+    }
+    @media (min-width:992px) {
+      font-size: 30px;
+    } 
+  }
+  .text{
+    line-height: 1.555555555555556;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--bs-white);
+    @media (min-width:575px) {
+        font-size: 18px;
+    }
+  }
+  .btn{
+    margin-top: 20px;
+    @media (min-width:575px) {
+      margin-top: 30px;
+    }
+    width: 100%;
+    background: white;
+    color: var(--bs-secondary);
+    svg{
+      transition: .3s;
+      display: block;
+      path{
+        stroke: var(--bs-secondary);
+      }
+      margin-left: 15px;
+    }
+    &:hover{
+      svg{
+        transform: translateX(5px);
       }
     }
   }

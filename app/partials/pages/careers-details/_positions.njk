@@ -1,0 +1,60 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        title:"Wordpress Developer",
+        btnText:"Apply Now",
+        text:"Lorem Ipsum is simply dummy text of the printing and type a setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the seconds. Popularised in the 1960s with a the released for Letraset sheets, and more recently with desktop",
+        time:"Full-Time",
+        location:"Remote"
+        },
+        {
+        id:2,
+        title:"UI/UX Designer",
+        btnText:"Apply Now",
+        text:"Lorem Ipsum is simply dummy text of the printing and type a setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the seconds. Popularised in the 1960s with a the released for Letraset sheets, and more recently with desktop",
+        time:"Full-Time",
+        location:"San-Fransisco,Australia"
+        }
+
+
+]%}
+    <div class="position-section">
+        <div class="container">
+        <div class="row align-items-center justify-content-center position-section__content">
+            <div class="col-xl-6">
+                <div class="section-content-block text-center text-xl-start">
+                    <h2 class="title">More Job Openings</h2>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="section-button text-center mt-4 mt-xl-0 text-xl-end">
+                    <a class="btn btn-1 btn-primary" href="#">
+                        Browse All Jobs
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="row card-row justify-content-center">
+            {% for item in cardData%}
+                <div class="col-lg-8 col-md-10 col-xs-11 col-xl-6 single-slider" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                    <a href="careers-details.html" class="d-block">
+                        {{Card.PositionCard({
+                            title:item.title,
+                            btnText:item.btnText,
+                            text:item.text,
+                            time:item.time,
+                            location:item.location
+                        })}}
+                    </a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

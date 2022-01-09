@@ -1,0 +1,15 @@
+.careers-content-section{
+    padding: 83px 0 28px;  
+    @media (min-width:575px) {
+      padding: 102px 0 35px;  
+    }
+    @media (min-width:992px) {
+      padding: 155px 0 62px;  
+    }
+    .section-title-block{
+        margin-bottom: 35px; 
+        @media (min-width:992px) {
+            margin-bottom: 70px; 
+        }
+    }
+}

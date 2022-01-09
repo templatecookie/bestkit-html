@@ -1,0 +1,32 @@
+.error-area{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 130px 0;
+    }
+    &__image-group{
+        @media (min-width:1200px) {
+            margin-left: 50px;
+        }
+    }
+    &__content{
+        .error-page-title{
+            margin-bottom: 25px;
+            @media (min-width:1200px) {
+                margin-bottom: 50px;
+            }
+            .title{
+                padding-bottom: 15px;
+                @media (min-width:1200px) {
+                    padding-bottom: 22px;
+                }
+            }
+        }
+    }
+}

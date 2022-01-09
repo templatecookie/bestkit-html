@@ -160,3 +160,34 @@
     </div>
   </div>
 {% endmacro %}
+{% macro PositionCard(obj) %}
+    <div class="card-position">
+        <div class="top-content">
+            <h6 class="title">{{obj.title}}</h6>
+            <span class="btn-text">{{obj.btnText}}</span>
+        </div>
+        <div class="bottom-content">
+            <p class="text text-dark">{{obj.text}}</p>
+            <div class="content-info">
+                <div class="info-btn">
+                    <span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.667 5.83301H3.33366C2.41318 5.83301 1.66699 6.5792 1.66699 7.49967V15.833C1.66699 16.7535 2.41318 17.4997 3.33366 17.4997H16.667C17.5875 17.4997 18.3337 16.7535 18.3337 15.833V7.49967C18.3337 6.5792 17.5875 5.83301 16.667 5.83301Z" stroke="#008AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.3337 17.5V4.16667C13.3337 3.72464 13.1581 3.30072 12.8455 2.98816C12.5329 2.67559 12.109 2.5 11.667 2.5H8.33366C7.89163 2.5 7.46771 2.67559 7.15515 2.98816C6.84259 3.30072 6.66699 3.72464 6.66699 4.16667V17.5" stroke="#008AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <p>{{obj.time}}</p>
+                </div>
+                <div class="info-btn">
+                    <span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 8.33301C17.5 14.1663 10 19.1663 10 19.1663C10 19.1663 2.5 14.1663 2.5 8.33301C2.5 6.34388 3.29018 4.43623 4.6967 3.02971C6.10322 1.62318 8.01088 0.833008 10 0.833008C11.9891 0.833008 13.8968 1.62318 15.3033 3.02971C16.7098 4.43623 17.5 6.34388 17.5 8.33301Z" stroke="#008AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 10.833C11.3807 10.833 12.5 9.71372 12.5 8.33301C12.5 6.9523 11.3807 5.83301 10 5.83301C8.61929 5.83301 7.5 6.9523 7.5 8.33301C7.5 9.71372 8.61929 10.833 10 10.833Z" stroke="#008AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <p>{{obj.location}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

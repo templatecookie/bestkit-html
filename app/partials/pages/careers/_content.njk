@@ -1,0 +1,63 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        title:"Wordpress Developer",
+        btnText:"Apply Now",
+        text:"Lorem Ipsum is simply dummy text of the printing and type a setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the seconds. Popularised in the 1960s with a the released for Letraset sheets, and more recently with desktop",
+        time:"Full-Time",
+        location:"Remote"
+        },
+        {
+        id:2,
+        title:"UI/UX Designer",
+        btnText:"Apply Now",
+        text:"Lorem Ipsum is simply dummy text of the printing and type a setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the seconds. Popularised in the 1960s with a the released for Letraset sheets, and more recently with desktop",
+        time:"Full-Time",
+        location:"San-Fransisco,Australia"
+        },
+        {
+        id:3,
+        title:"Front End Specialist",
+        btnText:"Apply Now",
+        text:"Lorem Ipsum is simply dummy text of the printing and type a setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the seconds. Popularised in the 1960s with a the released for Letraset sheets, and more recently with desktop",
+        time:"Full-Time",
+        location:"Dhaka, Bangladesh"
+        },
+        {
+        id:4,
+        title:"Business Development",
+        btnText:"Apply Now",
+        text:"Lorem Ipsum is simply dummy text of the printing and type a setting industry. Lorem Ipsum has been the industry's standard dummy text ever since the seconds. Popularised in the 1960s with a the released for Letraset sheets, and more recently with desktop",
+        time:"Full-Time",
+        location:"Remote"
+        }
+
+
+]%}
+    <div class="careers-content-section">
+        <div class="container">
+            <div class="section-title-block text-center">
+                <h6 class="subtitle mb-10 text-primary">Careers opportunity</h6>
+                <h2 class="title">Start Your Future Today</h2>
+            </div>
+            <div class="row card-row justify-content-center">
+            {% for item in cardData%}
+                <div class="col-lg-8 col-md-10 col-xs-11 col-xl-6 single-slider" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                    <a href="careers-details.html" class="d-block">
+                        {{Card.PositionCard({
+                            title:item.title,
+                            btnText:item.btnText,
+                            text:item.text,
+                            time:item.time,
+                            location:item.location
+                        })}}
+                    </a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

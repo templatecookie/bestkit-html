@@ -1,0 +1,96 @@
+{% macro render(args) %}
+    <div class="contact-content-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="contact-info">
+                        <div class="contact-info__texts">
+                            <div class="section-content-block">
+                                <h2 class="title">Have a Project in Mind?</h2>
+                                <p class=" text-dark">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                            <div class="contact-info__texts--contact-info">
+                                <div class="email">
+                                    <h6 class=" text-dark">Email us</h6>
+                                    <p class="text-primary">mail@example.com</p>
+                                </div>
+                                <div class="call">
+                                    <h6 class=" text-dark">Call anytime</h6>
+                                    <p class="text-primary">(555) 389 - 277</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-info__client">
+                            <h6 class="title">Trusted By</h6>
+                            <div class="client-group">
+                                <div class="single-client">
+                                    <img src="./image/contact/logo-1.png" alt="logo">
+                                </div>
+                                <div class="single-client">
+                                    <img src="./image/contact/logo-3.png" alt="logo">
+                                </div>
+                                <div class="single-client">
+                                    <img src="./image/contact/logo-4.png" alt="logo">
+                                </div>
+                                <div class="single-client">
+                                    <img src="./image/contact/logo-5.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <div class="contact-form">
+                        <h6 class="title">General Enquires</h6>
+                        <form class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="What’s your email?">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-selector">
+                                    <label for="inputState" class="form-label">State</label>
+                                    <select id="inputState" class="nice-select">
+                                      <option selected>Estimate budget</option>
+                                      <option>$100-$200</option>
+                                      <option>$200-$300</option>
+                                      <option>$300-$400</option>
+                                      <option>$400-$400</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-textarea">
+                                    <label for="inputTextarea" class="form-label">Email</label>
+                                    <textarea id="inputTextarea" cols="30" placeholder="Write your message" rows="10"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-services">
+                                    <h6 class="list-title">Services</h6>
+                                    <ul class="list-group service-category list-unstyled">
+                                        <li class="list active">Web Design</li>
+                                        <li class="list">Web Development</li>
+                                        <li class="list">Logo Design</li>
+                                        <li class="list">Graphics Design</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
