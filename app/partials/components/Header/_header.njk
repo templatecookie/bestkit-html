@@ -89,16 +89,15 @@ Available variables
         {% endif %}
         {% if settings.header_double_button %}
           <div class="header-button site-header__btns {{  settings.additional_db_classes}}">
-            <a class="{{ settings.header_button_class_1}}" href="#">
+            <a class="{{ settings.header_button_class_1}}" href="{{settings.link-one}}">
               {{ settings.header_button_text_1 | safe}}
             </a>
-            <a class="{{ settings.header_button_class_2}}" href="#">
+            <a class="{{ settings.header_button_class_2}}" href="{{settings.link-two}}">
               {{ settings.header_button_text_2 | safe}}
             </a>
           </div>
         {% endif %}
         </div>
-        
 
         <!-- mobile menu trigger -->
         <div class="mobile-menu-trigger">

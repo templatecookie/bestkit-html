@@ -301,3 +301,46 @@
    60% { transform: rotate( 0.0deg) }
   100% { transform: rotate( 0.0deg) }
 }
+.sonar-emitter {
+  position: relative;
+}
+
+.sonar-emitter::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  background-color: var(--bs-primary);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sonar-emitter::after {
+  animation: sonarWave 2s linear infinite;
+}
+
+.sonar-emitter-2 {
+  position: relative;
+}
+
+.sonar-emitter-2::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  background-color: white;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sonar-emitter-2::after {
+  animation: sonarWave 2s linear infinite;
+}
