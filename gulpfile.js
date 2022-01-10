@@ -32,7 +32,7 @@ const destination = argv.clean
   : argv.pub
   ? "dist/publish/"
   : "dist/";
-const port = argv.demo ? 4002 : argv.pub ? 4003 : 4001;
+const port = argv.demo ? 4001 : argv.pub ? 4002 : 4000;
 
 var sourcemap = argv.demo ? false : argv.pub ? true : true;
 var minImg = argv.demo ? false : argv.pub ? true : false;
