@@ -1,0 +1,141 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set homeData =[
+        {
+        id:1,
+        linkText:"Personal Portfolio",
+        img:"./image/preview/home-1.png",
+        link:"personal-portfolio.html"
+        },
+        {
+        id:2,
+        linkText:"Startup Company",
+        img:"./image/preview/home-2.png",
+        link:"startup-company.html"
+        },
+        {
+        id:3,
+        linkText:"Project Management",
+        img:"./image/preview/home-3.png",
+        link:"project-management.html"
+        },
+        {
+        id:4,
+        linkText:"Marketing Agency",
+        img:"./image/preview/home-4.png",
+        link:"marketing-agency.html"
+        },
+        {
+        id:5,
+        linkText:"Online Course",
+        img:"./image/preview/home-5.png",
+        link:"online-course.html"
+        },
+        {
+        id:6,
+        linkText:"Mobile App",
+        img:"./image/preview/home-6.png",
+        link:"mobile-app.html"
+        }
+
+
+]%}
+{% set innerData =[
+        {
+        id:1,
+        linkText:"About Us",
+        img:"./image/preview/about.png",
+        link:"about-us.html"
+        },
+        {
+        id:2,
+        linkText:"Career",
+        img:"./image/preview/career.png",
+        link:"career.html"
+        },
+        {
+        id:3,
+        linkText:"Career Details",
+        img:"./image/preview/career-details.png",
+        link:"career-details.html"
+        },
+        {
+        id:4,
+        linkText:"Blog",
+        img:"./image/preview/blog.png",
+        link:"blog.html"
+        },
+        {
+        id:5,
+        linkText:"Blog Details",
+        img:"./image/preview/blog-details.png",
+        link:"blog-details.html"
+        },
+        {
+        id:6,
+        linkText:"Help & Support",
+        img:"./image/preview/support.png",
+        link:"support.html"
+        },
+        {
+        id:7,
+        linkText:"Contact Us",
+        img:"./image/preview/contact.png",
+        link:"contact.html"
+        },
+        {
+        id:8,
+        linkText:"404 Error",
+        img:"./image/preview/error.png",
+        link:"error.html"
+        },
+        {
+        id:9,
+        linkText:"Coming Soon",
+        img:"./image/preview/comingsoon.png",
+        link:"coming-soon.html"
+        }
+
+
+]%}
+<div class="page-preview-section bg-white-lilac">
+    <div class="container">
+        <div class="section-content-block text-center">
+            <h6 class="subtitle text-primary mb-10">Home Pages</h6>
+            <h2 class="title">Beautiful Homes</h2>
+        </div>
+        <div class="row preview-card-row justify-content-center">
+            {% for item in homeData%}
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                        {{Card.PreviewCard({
+                            img:item.img,
+                            link:item.link,
+                            linkText:item.linkText
+                        })}}
+                </div>
+            {% endfor %}
+        </div>
+    </div>              
+</div>
+<div class="page-preview-section">
+    <div class="container">
+        <div class="section-content-block text-center">
+            <h6 class="subtitle text-primary mb-10">Home Pages</h6>
+            <h2 class="title">Awesome Innerpages</h2>
+        </div>
+        <div class="row preview-card-row justify-content-center">
+            {% for item in innerData%}
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                        {{Card.PreviewCard({
+                            modifer:"preview-card--02",
+                            img:item.img,
+                            link:item.link,
+                            linkText:item.linkText
+                        })}}
+                </div>
+            {% endfor %}
+        </div>
+    </div>              
+</div>
+{% endmacro %}

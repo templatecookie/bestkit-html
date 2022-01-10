@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Bestkit - Multipurpose Landing Page Template
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/typography-font/typo.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden">
+    <!-- Header Section Start -->
+    <!-- Preloader -->
+    <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader-3.gif" alt="preloader">
+   </div>
+   </div>   -->
+    <!-- Header Area -->
+    <header class="site-header site-header--menu-center logo-dark mobile-menu-trigger-dark site-header--absolute">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="site-header__brand">
+            <a href="index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-dark-white.png" alt="logo" class="logo-white-black">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-dark.png" alt="logo" class="logo-white">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo/logo-white.png" alt="logo" class="logo-black">
+            </a>
+          </div>
+          <div class="menu-block-wrapper ">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block menu-block-inner" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Landing <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-1">
+                    <li class="sub-menu--item">
+                      <a href="personal-portfolio.html">Personal Portfolio</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="startup-company.html">Startup Company</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="project-management.html">Project Management</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="marketing-agency.html">Marketing Agency</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="online-course.html">Online Course</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="mobile-app.html">Mobile App</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-2">
+                    <li class="sub-menu--item">
+                      <a href="about-us.html">About Us</a>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Careers<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-9">
+                        <li class="sub-menu--item">
+                          <a href="career.html">Career</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="career-details.html">Career Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Account<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-9">
+                        <li class="sub-menu--item">
+                          <a href="sign-in.html">Sign In</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="sign-up.html">Sign Up</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="forgot.html">Reset Password</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" class="drop-trigger">Utility<i class="fas fa-angle-right"></i>
+                      </a>
+                      <ul class="sub-menu" id="submenu-10">
+                        <li class="sub-menu--item">
+                          <a href="error.html">404</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="coming-soon.html">Coming Soon</a>
+                        </li>
+                        <li class="sub-menu--item">
+                          <a href="support.html">Support</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Blogs <i class="fas fa-angle-down"></i>
+                  </a>
+                  <ul class="sub-menu" id="submenu-11">
+                    <li class="sub-menu--item">
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="sub-menu--item">
+                      <a href="blog-details.html">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="contact.html" class="nav-link-item drop-trigger">Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-button header-btn site-header__btns--01">
+              <a class="btn header-text" href="#">
+                <img src='./image/l-1/mail.png' alt='mail'>hi@bestkit.design
+              </a>
+            </div>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+    <!-- Header Section End -->
+    <!-- Hero Section Start -->
+    <div class="hero-section-01 bg-white-lilac">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 col-md-9">
+            <div class="hero-section-01__content page-title-block" data-aos="fade-right" data-aos-duration="800" data-aos-delay="1000">
+              <h6 class="subtitle">Hello Mate <span class="wave">👋</span></h6>
+              <h1 class="title">I’m Michle Smith a <span class="text-primary d-inline">Web Developer</span></h1>
+              <p class="text-dark">Hi, I'm Michle a freelance web designer from San-Francisco. I help brands turn their ideas into high quality products.</p>
+              <div class="hero-section-01__content--button-group">
+                <a class="btn btn-1 btn-primary" href="#">
+                  Book a Call
+                  <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a class="btn btn-2 btn-outline-primary" href="#">Download CV
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 9V11.6667C13 12.0203 12.8595 12.3594 12.6095 12.6095C12.3594 12.8595 12.0203 13 11.6667 13H2.33333C1.97971 13 1.64057 12.8595 1.39052 12.6095C1.14048 12.3594 1 12.0203 1 11.6667V9" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3.6665 5.6665L6.99984 8.99984L10.3332 5.6665" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7 9V1" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-5 offset-xxl-1 col-lg-6 col-md-8">
+            <div class="hero-section-01__image-group" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1500">
+              <img src="./image/l-1/hero.png" alt="hero-img" class="w-100">
+              <div class="hero-section-01__image-group--icon">
+                <div class="icon-1 floating-Y-animation">
+                  <img src="./image/l-1/vscode.png" alt="skill-icon">
+                </div>
+                <div class="icon-2 floating-Y-animation-reverse">
+                  <img src="./image/l-1/laravel.png" alt="skill-icon">
+                </div>
+                <div class="icon-3 floating-Y-animation">
+                  <img src="./image/l-1/sublimetext.png" alt="skill-icon">
+                </div>
+                <div class="icon-4 floating-Y-animation-reverse">
+                  <img src="./image/l-1/angular.png" alt="skill-icon">
+                </div>
+                <div class="icon-5 floating-Y-animation">
+                  <img src="./image/l-1/react.png" alt="skill-icon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+    <!-- Brand Section Start -->
+    <div class="brand-section-01">
+      <div class="container">
+        <div class="row">
+          <div class="brand-section-01__title section-title-block text-center">
+            <h6 class="subtitle">PROUD MARKETING <span class="text-primary d-inline">PARTNERS</span> WITH</h6>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="brand-section-01__group">
+            <div class="single-brand">
+              <img src="./image/l-1/logo-1.png" alt="sponsor">
+            </div>
+            <div class="single-brand">
+              <img src="./image/l-1/logo-2.png" alt="sponsor">
+            </div>
+            <div class="single-brand">
+              <img src="./image/l-1/logo-3.png" alt="sponsor">
+            </div>
+            <div class="single-brand">
+              <img src="./image/l-1/logo-4.png" alt="sponsor">
+            </div>
+            <div class="single-brand">
+              <img src="./image/l-1/logo-5.png" alt="sponsor">
+            </div>
+            <div class="single-brand">
+              <img src="./image/l-1/logo-6.png" alt="sponsor">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Brand Section End -->
+    <!-- About Section Start -->
+    <div class="about-section-01">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-xxl-5 col-xl-4 col-lg-5">
+            <div class="about-section-01__image-group d-none d-lg-block" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+              <img src="./image/l-1/about-img.png" alt="about-img" class="w-100">
+              <div class="about-section-01__image-group--shadow d-none d-xl-block">
+                <img src="./image/l-1/about-img-shadow.png" alt="shadow" class="w-100">
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-6 offset-xxl-1 col-xl-7 offset-xl-1 col-lg-7">
+            <div class="about-section-01__content section-content-block" data-aos="fade-left" data-aos-duration="800" data-aos-delay="1200">
+              <h6 class="subtitle mb-10 text-primary">About Me</h6>
+              <h2 class="title">More Than 5+ Years Programming Experienced</h2>
+              <p class="text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+              <div class="about-widget-01">
+                <ul class="list-unstyled">
+                  <li>Name: <span class="text-dark">Michle Jhon Doe</span></li>
+                  <li>Email: <span class="text-dark">example@gmail.com</span></li>
+                  <li>Location: <span class="text-dark">Dhaka, Bangladesh</span></li>
+                  <li>Office: <span class="text-dark">Kollanpur, Shamoli, Dhaka</span></li>
+                </ul>
+              </div>
+              <div class="about-bottom d-flex align-items-md-center flex-column flex-md-row">
+                <div class="button-area order-2 order-md-1">
+                  <a class="btn btn-primary" href="#">Download CV
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="social-area order-1 order-md-2">
+                  <ul class="list-unstyled m-0">
+                    <li class="line"></li>
+                    <li class="text text-dark">Follow me</li>
+                    <li class="list-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="list-item"><a href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="list-item"><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
+                    <li class="list-item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Section End -->
+    <!-- Skill Section Start -->
+    <div class="skill-section-01 bg-white-lilac">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-10 col-sm-11 order-lg-2">
+            <div class="skill-bar-01">
+              <div class="skill-bar-01__item">
+                <div class="skill-name">
+                  <h5>Product Design & Development</h5>
+                </div>
+                <div class="skill-bar-wrapper">
+                  <div class="skill-bar">
+                    <div class="skill-per" style="max-width: 67%"></div>
+                  </div>
+                  <div class="skill-bar-count">
+                    <span>67%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-bar-01__item">
+                <div class="skill-name">
+                  <h5>Web Development</h5>
+                </div>
+                <div class="skill-bar-wrapper">
+                  <div class="skill-bar">
+                    <div class="skill-per" style="max-width: 89%"></div>
+                  </div>
+                  <div class="skill-bar-count">
+                    <span>89%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-bar-01__item">
+                <div class="skill-name">
+                  <h5>Front-End Development</h5>
+                </div>
+                <div class="skill-bar-wrapper">
+                  <div class="skill-bar">
+                    <div class="skill-per" style="max-width: 55%"></div>
+                  </div>
+                  <div class="skill-bar-count">
+                    <span>55%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-bar-01__item">
+                <div class="skill-name">
+                  <h5>UI Design & UX Development</h5>
+                </div>
+                <div class="skill-bar-wrapper">
+                  <div class="skill-bar">
+                    <div class="skill-per" style="max-width: 67%"></div>
+                  </div>
+                  <div class="skill-bar-count">
+                    <span>67%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-10 col-sm-11 order-lg-1" data-aos="fade-right" data-aos-duration="800" data-aos-delay="1000">
+            <div class="skill-section-01__content section-content-block mt-5 mt-lg-0">
+              <h6 class="subtitle mb-10 text-primary">Skillset</h6>
+              <h2 class="title">Creative and Professional Skills
+                Experience on Few Area</h2>
+              <p class=" text-dark pe-xl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat fringilla lorem sed bibendum. Pellentesque venenatis, ipsum eget ullamcorper gravida in mattis ipsum ligula at tellus.</p>
+              <a class="btn btn-primary" href="#">Get Any Project
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Skill Section End -->
+    <!-- Service Section Start -->
+    <div class="service-section-01">
+      <div class="container">
+        <div class="section-title-block text-center">
+          <h6 class="subtitle text-primary mb-10">My Expertise</h6>
+          <h2 class="title">Awesome Services For You</h2>
+        </div>
+        <div class="row justify-content-center card-row">
+          <div class="col-xxl-4 col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div class="card card-service ">
+              <div class="card-image ">
+                <img src="./image/l-1/s-1.svg" alt="card" class="mw-100 make-it-inline">
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title heading-dark">Web Design</h4>
+                <p class="text-dark">Lorem Ipsum is simply dumy text of the printing and type setting industry.</p>
+                <a href="#">Explore Service</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <div class="card card-service ">
+              <div class="card-image ">
+                <img src="./image/l-1/s-2.svg" alt="card" class="mw-100 make-it-inline">
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title heading-dark">Web Development</h4>
+                <p class="text-dark">Lorem Ipsum is simply dumy text of the printing and type setting industry.</p>
+                <a href="#">Explore Service</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-lg-6 col-md-10 col-sm-11 col-xs-10" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+            <div class="card card-service ">
+              <div class="card-image ">
+                <img src="./image/l-1/s-3.svg" alt="card" class="mw-100 make-it-inline">
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title heading-dark">UI/UX Design</h4>
+                <p class="text-dark">Lorem Ipsum is simply dumy text of the printing and type setting industry.</p>
+                <a href="#">Explore Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service Section End -->
+    <!-- Counter Section Start -->
+    <div class="counter-section-01">
+      <div class="container">
+        <div class="counter-wrapper">
+          <div class="row align-items-center card-row">
+            <div class="col-md-3 col-6">
+              <div class="count-block section-content-block text-center">
+                <h3 class="title heading-dark"><span class="counter">68</span></h3>
+                <p class="text-dark">Happy Clients</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="count-block section-content-block text-center">
+                <h3 class="title heading-dark"><span class="counter">07</span></h3>
+                <p class="text-dark">Years Experience</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="count-block section-content-block text-center">
+                <h3 class="title heading-dark"><span class="counter">25</span>k+</h3>
+                <p class="text-dark">Hours Worked</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="count-block section-content-block text-center">
+                <h3 class="title heading-dark"><span class="counter">8</span></h3>
+                <p class="text-dark">Awards Won</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Section End -->
+    <!-- Qualification Section Start -->
+    <div class="qualification-section-01">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-10">
+            <div class="qualification-section-01__content one" data-aos="fade-right" data-aos-duration="800" data-aos-delay="1000">
+              <div class="section-content-block">
+                <h6 class="subtitle mb-10 text-primary">Qualification</h6>
+                <h2 class="title">My Education</h2>
+              </div>
+              <div class="qualification-widget">
+                <div class="circle">
+                  <div class="inner-circle"></div>
+                </div>
+                <div class="widget-content">
+                  <h3 class="title heading-dark">Rajshahi Polytechnic Institute <span class="date text-dark">( 2011-2012 ) </span></h3>
+                  <p class="text-dark">Lorem ipsum dolor sit amese adipiscing elit. Donec feugiated a fringilla sed bibendum.</p>
+                  <span class="widget-designations text-primary">Diploma In Computer Eng.</span>
+                </div>
+              </div>
+              <div class="qualification-widget">
+                <div class="circle">
+                  <div class="inner-circle"></div>
+                </div>
+                <div class="widget-content">
+                  <h3 class="title heading-dark">Varendra University <span class="date text-dark">( 2013-2017 )</span></h3>
+                  <p class="text-dark">Lorem ipsum dolor sit amese adipiscing elit. Donec feugiated a fringilla sed bibendum.</p>
+                  <span class="widget-designations text-primary">BSC in CSE</span>
+                </div>
+              </div>
+              <div class="qualification-widget">
+                <div class="circle">
+                  <div class="inner-circle"></div>
+                </div>
+                <div class="widget-content">
+                  <h3 class="title heading-dark">Rajshahi University <span class="date text-dark">( 2017-2021 )</span></h3>
+                  <p class="text-dark">Lorem ipsum dolor sit amese adipiscing elit. Donec feugiated a fringilla sed bibendum.</p>
+                  <span class="widget-designations text-primary">Programming</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-10">
+            <div class="qualification-section-01__content two" data-aos="fade-left" data-aos-duration="800" data-aos-delay="1000">
+              <div class="section-content-block">
+                <h6 class="subtitle mb-10 text-primary">Work Experience</h6>
+                <h2 class="title">My Awesome Experience</h2>
+              </div>
+              <div class="qualification-widget">
+                <div class="circle">
+                  <div class="inner-circle"></div>
+                </div>
+                <div class="widget-content">
+                  <h3 class="title heading-dark">Code Astrology <span class="date text-dark">( 2011-2012 )</span></h3>
+                  <p class="text-dark">Lorem ipsum dolor sit amese adipiscing elit. Donec feugiated a fringilla sed bibendum.</p>
+                  <span class="widget-designations text-primary">Internship</span>
+                </div>
+              </div>
+              <div class="qualification-widget">
+                <div class="circle">
+                  <div class="inner-circle"></div>
+                </div>
+                <div class="widget-content">
+                  <h3 class="title heading-dark">Zakir Soft <span class="date text-dark">( 2011-2012 )</span></h3>
+                  <p class="text-dark">Lorem ipsum dolor sit amese adipiscing elit. Donec feugiated a fringilla sed bibendum.</p>
+                  <span class="widget-designations text-primary">UI/UX Designer</span>
+                </div>
+              </div>
+              <div class="qualification-widget">
+                <div class="circle">
+                  <div class="inner-circle"></div>
+                </div>
+                <div class="widget-content">
+                  <h3 class="title heading-dark">DevignEdge <span class="date text-dark">( 2011-2012 )</span></h3>
+                  <p class="text-dark">Lorem ipsum dolor sit amese adipiscing elit. Donec feugiated a fringilla sed bibendum.</p>
+                  <span class="widget-designations text-primary">Product Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Qualification Section End -->
+    <!-- Cta Section Start -->
+    <div class="cta-section-01">
+      <div class="container">
+        <div class="cta-section-01__wrapper" style="background-image: url(./image/l-1/cta.png);">
+          <div class="section-content-block text-center text-lg-start" data-aos="fade-right" data-aos-duration="800" data-aos-delay="1000">
+            <h6 class="text-white subtitle mb-10">Have Any Project In Mind?</h6>
+            <h2 class="title text-white">Don’t Be Hesitate To Contact <br class=" d-none d-lg-block"> With Me</h2>
+          </div>
+          <div class="content-button mt-4 mt-lg-0" data-aos="fade-left" data-aos-duration="800" data-aos-delay="1000">
+            <a class="btn btn-1 btn-primary text-white svg-white" href="#">
+              Get A Quote
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13L7 7L1 1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cta Section End -->
+    <!-- Portfolio Section Start -->
+    <div class="portfolio-section-01">
+      <div class="container">
+        <div class="row">
+          <div class="section-title-block text-center">
+            <h6 class="subtitle mb-10 text-primary">Portfolio</h6>
+            <h2 class="title">Some Of My Recent Works</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio-section-01__tab  portfolio-filter-menu text-center">
+            <button class="btn active text-dark" data-filter="*">All</button>
+            <button class="btn text-dark" data-filter=".portfolio-1">Web Development</button>
+            <button class="btn text-dark" data-filter=".portfolio-2">Web Design</button>
+            <button class="btn text-dark" data-filter=".portfolio-3">UI/UX Design</button>
+          </div>
+        </div>
+        <div class="row card-row portfolio-masonry portfolio-active">
+          <div class="col-lg-6 grid-item portfolio-1 portfolio-2">
+            <a href="#" class="portfolio-card">
+              <img src="./image/l-1/project-1.png" alt="portfolio" class="w-100">
+              <div class="portfolio-body">
+                <div class="content">
+                  <span>Web Development</span>
+                  <h6>Beskit Website Development</h6>
+                </div>
+                <div class="icon">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="2.5" stroke="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 13C21.5625 12.4477 21.1148 12 20.5625 12C20.0102 12 19.5625 12.4477 19.5625 13V18.5625L14 18.5625C13.4477 18.5625 13 19.0102 13 19.5625C13 20.1148 13.4477 20.5625 14 20.5625H19.5625V26C19.5625 26.5523 20.0102 27 20.5625 27C21.1148 27 21.5625 26.5523 21.5625 26V20.5625H27C27.5523 20.5625 28 20.1148 28 19.5625C28 19.0102 27.5523 18.5625 27 18.5625L21.5625 18.5625V13Z" fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 grid-item portfolio-2 portfolio-3 portfolio-4">
+            <a href="#" class="portfolio-card">
+              <img src="./image/l-1/project-2.png" alt="portfolio" class="w-100">
+              <div class="portfolio-body">
+                <div class="content">
+                  <span>Web Design</span>
+                  <h6>Beskit Website Development</h6>
+                </div>
+                <div class="icon">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="2.5" stroke="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 13C21.5625 12.4477 21.1148 12 20.5625 12C20.0102 12 19.5625 12.4477 19.5625 13V18.5625L14 18.5625C13.4477 18.5625 13 19.0102 13 19.5625C13 20.1148 13.4477 20.5625 14 20.5625H19.5625V26C19.5625 26.5523 20.0102 27 20.5625 27C21.1148 27 21.5625 26.5523 21.5625 26V20.5625H27C27.5523 20.5625 28 20.1148 28 19.5625C28 19.0102 27.5523 18.5625 27 18.5625L21.5625 18.5625V13Z" fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 grid-item portfolio-3 portfolio-2">
+            <a href="#" class="portfolio-card active">
+              <img src="./image/l-1/project-3.png" alt="portfolio" class="w-100">
+              <div class="portfolio-body">
+                <div class="content">
+                  <span>UI/UX Design</span>
+                  <h6>Beskit Website Development</h6>
+                </div>
+                <div class="icon">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="2.5" stroke="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 13C21.5625 12.4477 21.1148 12 20.5625 12C20.0102 12 19.5625 12.4477 19.5625 13V18.5625L14 18.5625C13.4477 18.5625 13 19.0102 13 19.5625C13 20.1148 13.4477 20.5625 14 20.5625H19.5625V26C19.5625 26.5523 20.0102 27 20.5625 27C21.1148 27 21.5625 26.5523 21.5625 26V20.5625H27C27.5523 20.5625 28 20.1148 28 19.5625C28 19.0102 27.5523 18.5625 27 18.5625L21.5625 18.5625V13Z" fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 grid-item portfolio-1 portfolio-4">
+            <a href="#" class="portfolio-card">
+              <img src="./image/l-1/project-4.png" alt="portfolio" class="w-100">
+              <div class="portfolio-body">
+                <div class="content">
+                  <span>Web Design</span>
+                  <h6>Beskit Website Development</h6>
+                </div>
+                <div class="icon">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="39" height="39" rx="2.5" stroke="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5625 13C21.5625 12.4477 21.1148 12 20.5625 12C20.0102 12 19.5625 12.4477 19.5625 13V18.5625L14 18.5625C13.4477 18.5625 13 19.0102 13 19.5625C13 20.1148 13.4477 20.5625 14 20.5625H19.5625V26C19.5625 26.5523 20.0102 27 20.5625 27C21.1148 27 21.5625 26.5523 21.5625 26V20.5625H27C27.5523 20.5625 28 20.1148 28 19.5625C28 19.0102 27.5523 18.5625 27 18.5625L21.5625 18.5625V13Z" fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Section End -->
+    <!-- Testimonial Section Start -->
+    <div class="testimonial-section-01 bg-white-lilac">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-8 col-lg-9">
+            <div class="testimonial-section-01__slider">
+              <div class="testimonial-slider--01 slick-dots-style-1">
+                <div class="slide">
+                  <div class="testimonial-content">
+                    <img class="client-img" src="./image/l-1/client-1.png" alt="client-img">
+                    <h6 class=" heading-dark say-title">“ It was great working with you! I loved starting new projects and seeing how a simple idea can be explored and turned into a real dolor ipsum masterpiece. ”</h6>
+                    <div class="client-info">
+                      <h6 class="text-dark">Chris Brendon</h6>
+                      <span>Senior Manager</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="testimonial-content">
+                    <img class="client-img" src="./image/l-1/client-2.png" alt="client-img">
+                    <h6 class=" heading-dark say-title">“ It was great working with you! I loved starting new projects and seeing how a simple idea can be explored and turned into a real dolor ipsum masterpiece. ”</h6>
+                    <div class="client-info">
+                      <h6 class="text-dark">Chris Brendon</h6>
+                      <span>Senior Manager</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="testimonial-content">
+                    <img class="client-img" src="./image/l-1/client-3.png" alt="client-img">
+                    <h6 class=" heading-dark say-title">“ It was great working with you! I loved starting new projects and seeing how a simple idea can be explored and turned into a real dolor ipsum masterpiece. ”</h6>
+                    <div class="client-info">
+                      <h6 class="text-dark">Chris Brendon</h6>
+                      <span>Senior Manager</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slider--01__control-buttons">
+                <button class="button button--prev"><img src="./image/l-1/prev.svg" class="d-block" /></button>
+                <button class="button button--next"><img src="./image/l-1/next.svg" class="d-block" /></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial Section End -->
+    <!-- Blog Section Start -->
+    <div class="blog-section-01">
+      <div class="container">
+        <div class="row align-items-center justify-content-center blog-section-01__content">
+          <div class="col-sm-6">
+            <div class="section-content-block text-center text-sm-start">
+              <h6 class="subtitle text-primary mb-10">Blog & News</h6>
+              <h2 class="title">Our Latest Blogs</h2>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="section-button text-center mt-4 mt-sm-0 text-sm-end">
+              <a class="btn btn-1 btn-primary" href="#">
+                Read Our Blogs
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row card-row justify-content-center">
+          <div class="col-md-6 col-xl-4 single-slider" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <a href="#" class="d-block">
+              <div class="card-blog">
+                <div class="card-image">
+                  <img src="./image/l-1/blog-1.png" alt="cad" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="date">
+                    <span class="text-dark">08 Feb, 21</span>
+                  </div>
+                  <h6 class="titel">Determing Marketing Budget Can be Frustrating.</h6>
+                  <div class="author-block">
+                    <div class="d-flex align-items-center">
+                      <div class="author">
+                        <img src="./image/l-1/author.png" alt="author">
+                      </div>
+                      <div class="author-name">
+                        <h6 class="text-dark">Souja Flora</h6>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10.3333C15 10.7459 14.8361 11.1416 14.5444 11.4333C14.2527 11.725 13.857 11.8889 13.4444 11.8889H4.11111L1 15V2.55556C1 2.143 1.16389 1.74733 1.45561 1.45561C1.74733 1.16389 2.143 1 2.55556 1H13.4444C13.857 1 14.2527 1.16389 14.5444 1.45561C14.8361 1.74733 15 2.143 15 2.55556V10.3333Z" stroke="#8492A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="text-dark">56</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-4 single-slider" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <a href="#" class="d-block">
+              <div class="card-blog">
+                <div class="card-image">
+                  <img src="./image/l-1/blog-2.png" alt="cad" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="date">
+                    <span class="text-dark">08 Feb, 21</span>
+                  </div>
+                  <h6 class="titel">How to Win The Attention of New Clients: Tips &amp; Tricks</h6>
+                  <div class="author-block">
+                    <div class="d-flex align-items-center">
+                      <div class="author">
+                        <img src="./image/l-1/author.png" alt="author">
+                      </div>
+                      <div class="author-name">
+                        <h6 class="text-dark">Souja Flora</h6>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10.3333C15 10.7459 14.8361 11.1416 14.5444 11.4333C14.2527 11.725 13.857 11.8889 13.4444 11.8889H4.11111L1 15V2.55556C1 2.143 1.16389 1.74733 1.45561 1.45561C1.74733 1.16389 2.143 1 2.55556 1H13.4444C13.857 1 14.2527 1.16389 14.5444 1.45561C14.8361 1.74733 15 2.143 15 2.55556V10.3333Z" stroke="#8492A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="text-dark">56</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-4 single-slider" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+            <a href="#" class="d-block">
+              <div class="card-blog">
+                <div class="card-image">
+                  <img src="./image/l-1/blog-3.png" alt="cad" class="w-100">
+                </div>
+                <div class="card-body">
+                  <div class="date">
+                    <span class="text-dark">08 Feb, 21</span>
+                  </div>
+                  <h6 class="titel">Business Agencies vs Advertising Agencies</h6>
+                  <div class="author-block">
+                    <div class="d-flex align-items-center">
+                      <div class="author">
+                        <img src="./image/l-1/author.png" alt="author">
+                      </div>
+                      <div class="author-name">
+                        <h6 class="text-dark">Souja Flora</h6>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 10.3333C15 10.7459 14.8361 11.1416 14.5444 11.4333C14.2527 11.725 13.857 11.8889 13.4444 11.8889H4.11111L1 15V2.55556C1 2.143 1.16389 1.74733 1.45561 1.45561C1.74733 1.16389 2.143 1 2.55556 1H13.4444C13.857 1 14.2527 1.16389 14.5444 1.45561C14.8361 1.74733 15 2.143 15 2.55556V10.3333Z" stroke="#8492A7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span class="text-dark">56</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog Section End -->
+    <!-- Footer Section Start -->
+    <div class="footer-section-01">
+      <div class="footer-section-01__shape">
+        <img src="./image/l-1/ctarectangle.svg" alt="shape" class="make-it-inline">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="footer-section-block text-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
+            <h6 class="subtitle mb-10">Contact me</h6>
+            <h2 class="title text-white">Got a Project? Lets Talk!</h2>
+            <a class="btn btn-1 btn-primary text-white svg-white" href="#">
+              Get A Quote
+              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-block">
+      <div class="container">
+        <div class="row">
+          <div class="copyright-block__wrapper">
+            <ul class="list-unstyled copyright-block__social">
+              <li class="list-item"><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-item"><a href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a></li>
+              <li class="list-item"><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
+              <li class="list-item"><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            <div class="copyright-block__content">
+              <p class="text-dark">© 2021 Zakirsoft. Powered by Bestkit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section End -->
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/slider-activations.js"></script>
+  <script src="js/menu.js"></script>
+  <div class="templatecookie-btn">
+    <a href="#" class="purchase-btn">
+      Purchase Now
+      <span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </span>
+    </a>
+  </div>
+</body>
+
+</html>

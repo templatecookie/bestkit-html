@@ -50,6 +50,21 @@
     }
   }
 }
+.preview-card-row {
+  margin-bottom: -35px;
+  @media (min-width:992px) {
+    margin-bottom: -70px;
+    
+  }
+
+  [class^="col"] {
+    margin-bottom: 35px;
+    @media (min-width:992px) {
+      margin-bottom: 70px;
+      
+    }
+  }
+}
 
 .gallery-row {
   margin-bottom: -24px;
