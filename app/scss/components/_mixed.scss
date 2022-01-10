@@ -711,6 +711,7 @@
         padding: 50px;
     }
     .admin-img{
+        overflow: hidden;
         margin-bottom: 25px;
         @media (min-width:575px) {
             margin-bottom: 0;
