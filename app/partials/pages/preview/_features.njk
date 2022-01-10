@@ -1,0 +1,86 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/preview/icon-1.png",
+        title:"Bootstrap 5",
+        text:"Best features with the latest design technologies to make a standard 
+User interface website."
+        },
+        {
+        id:2,
+        img:"./image/preview/icon-2.png",
+        title:"Free Google Font",
+        text:"Best features with the latest design technologies to make a standard 
+User interface website."
+        },
+        {
+        id:3,
+        img:"./image/preview/icon-3.png",
+        title:"Contact Form 7",
+        text:"Best features with the latest design technologies to make a standard 
+User interface website."
+        },
+        {
+        id:4,
+        img:"./image/preview/icon-4.png",
+        title:"Mailchimp",
+        text:"Best features with the latest design technologies to make a standard 
+User interface website."
+        },
+        {
+        id:5,
+        img:"./image/preview/icon-1.png",
+        title:"Mailchimp",
+        text:"Best features with the latest design technologies to make a standard 
+User interface website."
+        },
+        {
+        id:6,
+        img:"./image/preview/icon-2.png",
+        title:"Contact Form 7",
+        text:"Best features with the latest design technologies to make a standard 
+User interface website."
+        },
+        {
+        id:7,
+        img:"./image/preview/icon-3.png",
+        title:"Mailchimp",
+        text:"Best features with the latest design technologies to make a standard 
+User interface website."
+        },
+        {
+        id:8,
+        img:"./image/preview/icon-4.png",
+        title:"Contact Form 7",
+        text:"Best features with the latest design technologies to make a standard 
+User interface website."
+        }
+
+
+]%}
+<div class="preview-feature-section overflow-hidden bg-white-lilac">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="section-title-block text-center">
+                <h6 class="subtitle text-primary mb-10">Core Features</h6>
+                <h2 class="title">Useful Features For A Standard Template</h2>
+            </div>
+        </div>
+        <div class="row featre-card-bottom justify-content-center">
+            {% for item in cardData%}
+                <div class="col-lg-3 col-md-4 col-xs-6 col-9 col-xxl-3" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                        {{Card.FeatureCard({
+                            modifier:"feature-card--02 bg-transparent",
+                            img:item.img,
+                            text:item.text,
+                            title:item.title
+                        })}}
+                </div>
+            {% endfor %}
+        </div>
+    </div>              
+</div>
+{% endmacro %}

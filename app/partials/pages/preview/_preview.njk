@@ -39,7 +39,6 @@
         link:"mobile-app.html"
         }
 
-
 ]%}
 {% set innerData =[
         {
@@ -95,11 +94,29 @@
         linkText:"Coming Soon",
         img:"./image/preview/comingsoon.png",
         link:"coming-soon.html"
+        },
+        {
+        id:10,
+        linkText:"Sign In",
+        img:"./image/preview/sign-in.png",
+        link:"sign-in.html"
+        },
+        {
+        id:11,
+        linkText:"Sign Up",
+        img:"./image/preview/sign-up.png",
+        link:"sign-up.html"
+        },
+        {
+        id:12,
+        linkText:"Reset Password",
+        img:"./image/preview/forgot.png",
+        link:"forgot.html"
         }
 
 
 ]%}
-<div class="page-preview-section bg-white-lilac">
+<div class="page-preview-section bg-white-lilac overflow-hidden">
     <div class="container">
         <div class="section-content-block text-center">
             <h6 class="subtitle text-primary mb-10">Home Pages</h6>
@@ -107,7 +124,7 @@
         </div>
         <div class="row preview-card-row justify-content-center">
             {% for item in homeData%}
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                <div class="col-sm-6 col-lg-4 col-xs-8 col-10" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
                         {{Card.PreviewCard({
                             img:item.img,
                             link:item.link,
@@ -118,7 +135,7 @@
         </div>
     </div>              
 </div>
-<div class="page-preview-section">
+<div class="page-preview-section overflow-hidden">
     <div class="container">
         <div class="section-content-block text-center">
             <h6 class="subtitle text-primary mb-10">Home Pages</h6>
@@ -126,7 +143,7 @@
         </div>
         <div class="row preview-card-row justify-content-center">
             {% for item in innerData%}
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
+                <div class="col-sm-6 col-lg-4 col-xs-8 col-10" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="1000">
                         {{Card.PreviewCard({
                             modifer:"preview-card--02",
                             img:item.img,

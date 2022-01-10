@@ -3,6 +3,7 @@
 {% import "pages/preview/_hero.njk" as HeroSection %}
 {% import "pages/preview/_counter.njk" as CounterSection %}
 {% import "pages/preview/_preview.njk" as PreviewSection %}
+{% import "pages/preview/_features.njk" as FeaturesSection %}
 {% import "pages/preview/_cta.njk" as CtaSection %}
 {% import "pages/landing-6/_testimonial.njk" as TestimonialSection %}
 {% block main %}
@@ -18,6 +19,9 @@
   <!-- Preview Section Start -->
   {{PreviewSection.render()}}
   <!-- Preview Section End -->
+  <!-- Features Section Start -->
+  {{FeaturesSection.render()}}
+  <!-- Features Section End -->
   <!-- Testimonial Section  Start -->
   {{TestimonialSection.render()}}
   <!-- Testimonial Section  End -->
