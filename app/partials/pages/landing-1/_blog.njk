@@ -7,6 +7,8 @@
         comment:"56",
         date:"08 Feb, 21",
         img:"./image/l-1/blog-1.png",
+        author:"./image/l-1/author-1.png",
+        authorName:"Jhon Smith",
         title:"Determing Marketing Budget Can be Frustrating."
         },
         {
@@ -14,6 +16,8 @@
         comment:"56",
         date:"08 Feb, 21",
         img:"./image/l-1/blog-2.png",
+        author:"./image/l-1/author-2.png",
+        authorName:"Souja Flora",
         title:"How to Win The Attention of New Clients: Tips & Tricks"
         },
         {
@@ -21,6 +25,8 @@
         comment:"56",
         date:"08 Feb, 21",
         img:"./image/l-1/blog-3.png",
+        author:"./image/l-1/author-3.png",
+        authorName:"Jesica Lirona",
         title:"Business Agencies vs Advertising Agencies"
         }
 
@@ -49,10 +55,12 @@
         <div class="row card-row justify-content-center">
             {% for item in cardData%}
                 <div class="col-md-6 col-xl-4 single-slider" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="800">
-                    <a href="blog.html" class="d-block">
+                    <a href="blog-details.html" class="d-block">
                         {{Card.BlogCardOne({
                         img:item.img,
                         date:item.date,
+                        author:item.author,
+                        authorName:item.authorName,
                         comment:item.comment,
                         title:item.title
                         })}}
