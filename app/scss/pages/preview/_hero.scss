@@ -4,31 +4,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    padding: 90px 0 110px;
+    padding: 90px 0 120px;
     @media (min-width:480px) {
-        padding-bottom: 145px;
+        padding-bottom: 165px;
     }
     @media (min-width:575px) {
-        padding: 110px 0 205px;
+        padding: 110px 0 225px;
         
     }
     @media (min-width:768px) {
-        padding-bottom: 300px;
+        padding-bottom: 320px;
         
     }
     @media (min-width:992px) {
-        padding: 200px 0 340px;
+        padding: 200px 0 350px;
         
     }
     @media (min-width:1200px) {
-        padding: 235px 0 390px;
+        padding: 235px 0 400px;
     }
     @media (min-width:1400px) {
         padding-top: 250px;
-        padding-bottom: 418px;
+        padding-bottom: 450px;
     }
     @media (min-width:1600px) {
-        padding-bottom: 525px;
+        padding-bottom: 550px;
     }
     &::before{
         position: absolute;
@@ -104,4 +104,7 @@
     z-index: 9999;
     text-align: center;
     position: relative;
+    img{
+        box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.05);
+    }
 }
