@@ -802,9 +802,9 @@
     .avatar{
       margin-right: 20px;
       @include square(60px,500px);
+      overflow: hidden;
       img{
         object-fit: cover;
-        border-radius: 500px;
       }
     }
     h6{
