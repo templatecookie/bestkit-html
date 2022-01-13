@@ -302,7 +302,7 @@ if (jQuery(".testimonial-slider--07").length > 0) {
             prevArrow: $(".testimonial-slider--07__control-buttons .button--prev"),
             nextArrow: $(".testimonial-slider--07__control-buttons .button--next"),
             responsive: [{
-                breakpoint: 991,
+                breakpoint: 1199,
                 settings: {
                     dots: true,
                 },
