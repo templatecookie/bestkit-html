@@ -14,7 +14,7 @@
     "absolute_header":true,
     "header_button":true,
     "additional_button_classes":"site-header__btns--01",
-    "header_button_class":"btn-primary w-180",
+    "header_button_class":"btn-primary",
     "header_button_text" :"Contact Us <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
   },
   "siteHeaderFour":{
@@ -23,7 +23,7 @@
     "absolute_header":true,
     "header_button":true,
     "additional_button_classes":"site-header__btns--03",
-    "header_button_class":"btn-outline-secondary w-183",
+    "header_button_class":"btn-outline-secondary",
     "header_button_text" :"Get In Touch <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
   },
   "siteHeaderFive":{
@@ -32,7 +32,7 @@
     "absolute_header":true,
     "header_button":true,
     "additional_button_classes":"site-header__btns--04",
-    "header_button_class":"btn text-white svg-white btn-primary w-198",
+    "header_button_class":"btn text-white svg-white btn-primary ",
     "header_button_text" :"Join For Free <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
   },
   "siteHeaderSix":{
@@ -41,7 +41,7 @@
     "absolute_header":false,
     "header_button":true,
     "additional_button_classes":"site-header__btns--01",
-    "header_button_class":"btn-primary w-210",
+    "header_button_class":"btn-primary",
     "header_button_text" :"Download Now <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
   },
   "innerHeader":{
@@ -50,7 +50,7 @@
     "absolute_header":true,
     "header_button":true,
     "additional_button_classes":"site-header__btns--01",
-    "header_button_class":"btn-primary w-225",
+    "header_button_class":"btn-primary",
     "header_button_text" :"Get Started Now <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
   },
   "nonabsoluteHeader":{
@@ -59,7 +59,7 @@
     "absolute_header":false,
     "header_button":true,
     "additional_button_classes":"site-header__btns--01",
-    "header_button_class":"btn-primary w-225",
+    "header_button_class":"btn-primary",
     "header_button_text" :"Get Started Now <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
   },
   "previewHeader":{
