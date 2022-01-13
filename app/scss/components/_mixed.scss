@@ -1150,3 +1150,26 @@ padding-bottom: 30px;
         }
     }
 }
+.logo-slider {
+    margin: auto;
+    overflow:hidden;
+    position: relative;
+    width: auto;
+    
+    &__track {
+        display: flex;
+        align-items: center;
+        animation: logoscroll 40s linear infinite;
+        width: calc(150px * 14);
+        @media (min-width:575px) {
+            width: calc(220px * 14);
+        }
+        .slide {
+            width: 150px;
+            margin: auto;
+            @media (min-width:575px) {
+                width: 220px;
+            }
+        }
+    }
+}
