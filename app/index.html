@@ -1,5 +1,5 @@
 {% extends "template.njk" %}
-{% import "components/Header/_header.njk" as Header %}
+{% import "pages/preview/_header.njk" as Header %}
 {% import "pages/preview/_hero.njk" as HeroSection %}
 {% import "pages/preview/_counter.njk" as CounterSection %}
 {% import "pages/preview/_preview.njk" as PreviewSection %}
@@ -8,7 +8,7 @@
 {% import "pages/landing-6/_testimonial.njk" as TestimonialSection %}
 {% block main %}
   <!-- Header Section Start -->
-  {{Header.render(previewHeader)}}
+  {{Header.render()}}
   <!-- Header Section End -->
   <!-- Hero Section Start -->
   {{HeroSection.render()}} 

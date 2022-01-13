@@ -1,0 +1,55 @@
+{% macro render(args) %}
+    <header class="site-header site-header--menu-center logo-dark-white site-header--dark site-header--absolute">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="site-header__brand">
+            <a href="index.html">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-dark-white.png" alt="logo" class="logo-white-black">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-dark.png" alt="logo" class="logo-white">
+              <!-- Dark version logo (logo must be White)-->
+              <img src="image/logo/logo-white.png" alt="logo" class="logo-black">
+            </a>
+          </div>
+          <div class="menu-block-wrapper ">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block menu-block-inner" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item nav-item-has-children">
+                  <a href="#featuresTheme" class="nav-link-item drop-trigger">Features
+                  </a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Documentation
+                  </a>
+                </li>
+                <li class="nav-item nav-item-has-children">
+                  <a href="#" class="nav-link-item drop-trigger">Support
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-button header-btn site-header__btns--01">
+              <a class="btn btn-primary text-white svg-white w-210" href="">
+                Purchase Now <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>
+              </a>
+            </div>
+          </div>
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+{% endmacro %}
