@@ -21,7 +21,7 @@
         position: relative;
         .testimonial-slider--07{
             &__control-buttons{
-                @media (max-width:992px) {
+                @media (max-width:1200px) {
                     display: none;
                 }
                 .button{

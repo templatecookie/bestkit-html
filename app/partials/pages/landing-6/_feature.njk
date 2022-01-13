@@ -43,12 +43,12 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="feature-section-04__content">
-                        <div class="section-content-block">
+                        <div class="section-content-block text-center text-lg-start">
                             <h6 class="subtitle text-primary mb-10">Great Features</h6>
                             <h2 class="titel">What Make’s Us Special</h2>
                         </div>
                         <div class="feature-section-04__content--card">
-                            <div class="row featre-card-bottom-two">
+                            <div class="row featre-card-bottom-two justify-content-center">
                                 {% for item in cardData%}
                                     <div class="col-xs-6 col-10" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="800">
                                             {{Card.FeatureCard({

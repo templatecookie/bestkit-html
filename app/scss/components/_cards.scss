@@ -219,6 +219,7 @@
     &:hover{
         box-shadow: 0px 15px 30px rgba(210, 217, 224, 0.35);
         border-radius: 3px;
+        background: white;
       .card-image{
         background: transparent;
       }
@@ -386,6 +387,7 @@
     }
     .card-image{
       margin-bottom: 35px;
+      width: 100%;
       @media (min-width:768px) {
         @include size(270px,250px);
         margin-right: 30px;
@@ -633,6 +635,9 @@
   &--04{
     background: transparent;
     padding: 0;
+    @media (max-width:768px) {
+      text-align: center;
+    }
     .card-img{
       @include square(70px,3px);
       @include flexAllCenter;
@@ -640,6 +645,10 @@
       background: var(--bs-solitude);
       &::before{
         display: none;
+      }
+      @media (max-width:768px) {
+       margin: auto;
+       margin-bottom: 20px;
       }
       @media (min-width:992px) {
         margin-bottom: 35px;
@@ -974,12 +983,16 @@
   }
 }
 .testimonial-card-05{
+  overflow: hidden;
   position: relative;
   background: white;
   box-shadow: 0px 8px 35px rgba(210, 217, 224, 0.2);
   border-radius: 3px;
   padding: 40px 25px;
   z-index: 1;
+  @media (max-width:768px) {
+    text-align: center;
+  }
   @media (min-width:480px) {
     padding: 50px;
   }
@@ -997,6 +1010,9 @@
       display: flex;
       align-items: center;
       padding: 25px 0;
+      @media (max-width:768px) {
+        justify-content: center;
+      }
       @media (min-width:992px) {
         padding: 35px 0;
       }
@@ -1039,13 +1055,18 @@
       margin: 0;
       mask-image: url(../../image/l-4/t-rectagle.png);
       mask-repeat: no-repeat;
-      width: 100%;
+      width: 106%;
       height: 100%;
       mask-position: right center;
       mask-size: contain;
     }
     img{
       object-fit: cover;
+    }
+  }
+  .btn{
+    @media (max-width:768px) {
+      width: 100%;
     }
   }
 }
@@ -1096,9 +1117,12 @@
   background: var(--bs-white-lilac);
   padding: 40px 20px;
   @media (min-width:480px) {
-    padding: 50px 30px;
+    padding: 40px 30px;
   }
-  @media (min-width:992px) {
+  @media (min-width:575px) {
+    padding: 40px;
+  }
+  @media (min-width:1400px) {
     padding: 70px 50px;
   }
   .card-img{
@@ -1109,7 +1133,7 @@
       top: 0;
       left: 0;
       height: 100%;
-      width: 100%;
+      width: 50%;
       .mask-img{
         margin: 0;
         mask-image: url(../../image/l-6/t-rectagle.png);
@@ -1130,21 +1154,20 @@
       img{
         margin: auto;
       }
-      margin-bottom: 20px;
-      @media (min-width:992px) {
-        margin-bottom: 40px;
-      }
     }
     p{
         font-weight: 500;
         font-size: 18px;
         color: var(--bs-black);
         line-height: 1.5;
+        margin: 20px 0;
         @media (min-width:575px) {
           font-size: 20px;
+          margin: 25px 0;
         }
         @media (min-width:992px) {
           font-size: 24px;
+          margin: 35px 0;
         }
     }
     span{

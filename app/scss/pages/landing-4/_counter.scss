@@ -6,9 +6,11 @@
         display: flex;
         align-items: center;
         padding: 51px 0 28px;
-        justify-content: space-between;
         flex-wrap: wrap;
+        @media (min-width:480px) {
+        }
         @media (min-width:768px) {
+            justify-content: space-between;
             padding: 68px 0;
         }
         @media (min-width:992px) {
@@ -20,6 +22,12 @@
         .count-block{
             @media (max-width:480px) {
                 width: 100%;
+            }
+            @media (min-width:480px) {
+                width: 50%;
+            }
+            @media (min-width:768px) {
+                width: auto;
             }
             @media (max-width:768px) {
                 padding: 0 30px;

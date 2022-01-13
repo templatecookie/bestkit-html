@@ -11,6 +11,9 @@
         padding-bottom: 0;
     }
     &__content{
+        @media (min-width:992px) {
+            padding: 70px 0;
+        }
         .title{
             margin-bottom: 25px;
         }
@@ -26,6 +29,12 @@
        position: relative;
        margin-left: -7%;
        z-index: 1;
+       @media (min-width:992px) {
+        transform: translateY(70px) !important;
+       }
+       @media (min-width:1200px) {
+        transform: translateY(0) !important;
+       }
        &--shadow{
         width: 125%;
         position: absolute;
