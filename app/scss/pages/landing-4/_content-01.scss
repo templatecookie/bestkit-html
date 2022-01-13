@@ -15,8 +15,25 @@
             }
             .content-list-wrapper{
                 margin-bottom: 33px;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    top: 50%;
+                    left: 22px;
+                    content: "";
+                    transform: translateY(-30%);
+                    height: 120px;
+                    width: 2px;
+                    background: var(--bs-primary);
+                    @media (min-width:992px) {
+                        transform: translateY(-18%);
+                    }
+                }
                 &:last-child{
                     margin-bottom: 0;
+                    &::before{
+                        display: none;
+                    }
                 }
                 @media (min-width:992px) {
                     margin-bottom: 53px;

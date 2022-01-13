@@ -306,7 +306,7 @@ $(".counter").counterUp({
         nextArrow: $(".testimonial-slider--07__control-buttons .button--next"),
         responsive: [
           {
-            breakpoint: 991,
+            breakpoint: 1199,
             settings: {
               dots: true,
             },

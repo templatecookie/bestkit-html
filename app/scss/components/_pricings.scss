@@ -102,28 +102,42 @@
         }
     }
   }
-  &.active,
-  &:hover{
+  &.active{
       @media (min-width:1400px) {
-          transform: translateY(-40px);
+          transform: translateY(-40px) !important;
       }
-      background: var(--bs-black);
-      cursor: default;
+      background: var(--bs-black) !important;
+      cursor: default !important;
       .price-head{
           &__text{
               h6{
-                  color: var(--bs-white); 
+                  color: var(--bs-white) !important; 
               }
           }
       }
       ul{
           li{
-              color: white;
+              color: white !important;
               span{
-                  color: white;
+                  color: white !important;
               }
           }
       }
+      .card-price-01__btn{
+          .btn{
+              background: var(--bs-primary) !important;
+              border-color: var(--bs-primary) !important;
+              color: white !important;
+              svg{
+                  path{
+                      stroke: white !important;
+                  }
+              }
+          }
+      }
+  }
+  &:hover{
+      background: var(--bs-white-lilac);
       .card-price-01__btn{
           .btn{
               background: var(--bs-primary);

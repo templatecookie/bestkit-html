@@ -15,15 +15,24 @@
         padding: 195px 0;
     }
     &__content{
+        @media (max-width:992px) {
+            text-align: center;
+        }
         .subtitle{
             display: flex;
             align-items: center;
+            @media (max-width:992px) {
+                justify-content: center;
+            }
             span{
                 margin-right: 8px;
             }
         }
         .title{
             padding-bottom: 20px;
+            @media (max-width:480px) {
+                font-size: 36px;
+            }
             @media (min-width:575px) {
                 padding-bottom: 25px;
             }
@@ -32,6 +41,9 @@
             display: flex;
             align-items: center;
             margin-top: 30px;
+            @media (max-width:992px) {
+                justify-content: center;
+            }
             @media (min-width:992px) {
                 margin-top: 50px;
             }
