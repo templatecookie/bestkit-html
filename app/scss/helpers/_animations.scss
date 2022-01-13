@@ -344,3 +344,7 @@
 .sonar-emitter-2::after {
   animation: sonarWave 2s linear infinite;
 }
+@keyframes logoscroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-220px * 7))}
+}
