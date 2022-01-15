@@ -661,6 +661,13 @@
             @media (min-width:575px) {
                 font-size: 18px;
             }
+            a{
+                color: var(--bs-primary);
+                transition: .3s;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
         }
     }
     &--modifi-01{
