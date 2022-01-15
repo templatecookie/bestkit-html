@@ -77,6 +77,15 @@
             }
         }
         .btn{
+            text-shadow: 0px 1px 0px #fff;
+            background-image: -webkit-linear-gradient(top, #ffffff, #cccccc);
+            background-image: -moz-linear-gradient(top, #ffffff, #cccccc);
+            background-image: -o-linear-gradient(top, #ffffff, #cccccc);
+            background-image: linear-gradient(to bottom, #ffffff, #cccccc);
+            -webkit-animation: white 1s infinite;
+            -moz-animation: white 1s infinite;
+            -o-animation: white 1s infinite;
+            animation: white 1s infinite; 
             margin-top: 25px;
             @media (min-width:992px) {
                 margin-top: 50px;
@@ -108,3 +117,35 @@
         box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.05);
     }
 }
+@-moz-keyframes white {
+    0%, 100% {
+      -moz-box-shadow: 1px 0px 19px 4px rgba(255, 255, 255, 0.7), inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+      box-shadow: 1px 0px 19px 4px rgba(255, 255, 255, 0.7), inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+  
+    50% {
+      -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 0px 0px rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+  
+  @-webkit-keyframes white {
+    0%, 100% {
+      -webkit-box-shadow: 1px 0px 19px 4px rgba(255, 255, 255, 0.7), inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+      box-shadow: 1px 0px 19px 4px rgba(255, 255, 255, 0.7), inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+  
+    50% {
+      -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 0px 0px rgba(255, 255, 255, 0);
+      box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+  
+  @-o-keyframes white {
+    0%, 100% {
+      box-shadow: 1px 0px 19px 4px rgba(255, 255, 255, 0.7), inset 0px 0px 10px rgba(255, 255, 255, 0.5); }
+  
+    50% {
+      box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+  
+  @keyframes white {
+    0%, 100% {
+      box-shadow: 1px 0px 7px 2px rgba(255, 255, 255, 0.7), inset 0px 0px 6px rgba(255, 255, 255, 0.5); }
+  
+    50% {
+      box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 0px 0px rgba(255, 255, 255, 0); } }
+  

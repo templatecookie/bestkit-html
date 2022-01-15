@@ -116,7 +116,7 @@
 
 
 ]%}
-<div class="page-preview-section bg-white-lilac overflow-hidden">
+<div class="page-preview-section bg-white-lilac overflow-hidden" id="pagePreview">
     <div class="container">
         <div class="section-content-block text-center">
             <h6 class="subtitle text-primary mb-10">Home Pages</h6>
@@ -124,7 +124,7 @@
         </div>
         <div class="row preview-card-row justify-content-center">
             {% for item in homeData%}
-                <div class="col-sm-6 col-lg-4 col-xs-8 col-10" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}" data-aos-duration="1000">
+                <div class="col-sm-6 col-lg-4 col-xs-8 col-10" data-aos="fade-up" data-aos-delay="{{ 100 * item.id }}" data-aos-duration="800">
                         {{Card.PreviewCard({
                             img:item.img,
                             link:item.link,
@@ -143,7 +143,7 @@
         </div>
         <div class="row preview-card-row justify-content-center">
             {% for item in innerData%}
-                <div class="col-sm-6 col-lg-4 col-xs-8 col-10" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}" data-aos-duration="1000">
+                <div class="col-sm-6 col-lg-4 col-xs-8 col-10" data-aos="fade-up" data-aos-delay="{{ 100 * item.id }}" data-aos-duration="800">
                         {{Card.PreviewCard({
                             modifer:"preview-card--02",
                             img:item.img,

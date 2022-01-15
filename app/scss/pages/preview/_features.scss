@@ -1,3 +1,4 @@
+@use "../../abstracts/mixins" as *;
 .preview-feature-section{
     padding: 60px 0;
     @media (min-width:575px) {
@@ -10,6 +11,14 @@
         margin-bottom: 35px;
         @media (min-width:992px) {
             margin-bottom: 70px;
+        }
+    }
+    .feature-card--02{
+        .card-img{
+            margin-right: 0;
+            @media (min-width:992px) {
+                margin-bottom: 25px;
+            }
         }
     }
 }

@@ -16,9 +16,12 @@
 
     }
     &__image{
-        margin-top: 30px;
+        margin-top: 60px;
         @media (min-width:992px) {
-            margin-top: 65px;
+            margin-top: 80px;
+        }
+        @media (min-width:1200px) {
+            margin-top: 120px;
         }
     }
 }
