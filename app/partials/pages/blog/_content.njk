@@ -117,7 +117,7 @@
                             <h3 class="content-title">Recent Post</h3>
                             <div class="blog-post-box__single-post overflow-hidden">
                                 {% for item in postCardData%}
-                                <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}"
+                                <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}"
                                 data-aos-duration="800">
                                     <a href="#" class="d-block">
                                         {{Card.PostCard({
@@ -142,7 +142,7 @@
                             <h3 class="content-title">Instagram Shots</h3>
                             <div class="shots-box__single-post overflow-hidden">
                                 {% for item in shotsCardData%}
-                                <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}"
+                                <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}"
                                 data-aos-duration="800">
                                     <a href="#" class="d-block">
                                         {{Card.InstagramShots({
@@ -159,7 +159,7 @@
                     <div class="blog-content-area__card">
                         <div class="row card-row">
                             {% for item in cardData%}
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="{{ 200 * item.id }}" data-aos-duration="800">
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}" data-aos-duration="800">
                                 <a href="blog-details.html" class="d-block">
                                     {{Card.BlogCardThree({
                                         img:item.img,
