@@ -1,0 +1,14 @@
+.preview-site-header{
+    padding: 20px 0;
+    .navbar{
+        justify-content: space-between !important;
+        @media (max-width:480px) {
+            flex-direction: column !important;
+        }
+        .header-button{
+            @media (max-width:480px) {
+                margin-top: 10px;
+            }
+        }
+    }
+}
