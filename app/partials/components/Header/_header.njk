@@ -33,14 +33,6 @@ Available variables
 {% macro render(settings, count) %}
   {% import "components/Header/_menu.njk" as Menu %}
 
-  <!-- Preloader -->
-
-  <!-- <div id="loading">
-    <div class="preloader">
-     <img src="./image/preloader-3.gif" alt="preloader">
-   </div>
-   </div>   -->
-
   <!-- Header Area -->
   <header
   class="site-header{{ ' ' + settings.additional_header_class if settings.additional_header_class }}{{ ' site-header--absolute' if settings.absolute_header}}{{ ' site-header--sticky' if settings.sticky_header}}{{ ' mobile-sticky-enable' if settings.mobile_sticky}}">
