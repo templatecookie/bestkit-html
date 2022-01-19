@@ -46,7 +46,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="section-button text-center mt-4 mt-sm-0 text-sm-end">
-                    <a class="btn btn-1 btn-primary" href="#">
+                    <a class="btn btn-1 btn-primary" href="blog.html">
                         Read Our Blogs
                         <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -58,7 +58,7 @@
         <div class="row card-row justify-content-center">
             {% for item in cardData%}
                 <div class="col-md-6 col-xl-4" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}" data-aos-duration="800">
-                    <a href="blog.html" class="d-block">
+                    <a href="blog-details.html" class="d-block">
                         {{Card.BlogCardTwo({
                         img:item.img,
                         date:item.date,
