@@ -7,6 +7,9 @@
         padding: 125px 0;
     }
     &__content{
+        @media screen and (max-width: 991px){
+            margin-bottom: 36px;
+        }
         .title{
             margin-bottom: 20px;
             @media (min-width:992px) {

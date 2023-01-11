@@ -15,4 +15,23 @@
             margin-right: 80px;
         }
     }
+    .contact-form {
+        form {
+            .form-services {
+                .list-group {
+                    .list{
+                        &.active{
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+            .form-control, textarea{
+                &:focus{
+                    border: 1px solid #008AFF;
+                    border-radius: 3px;
+                }
+            }
+        }
+    } 
 }

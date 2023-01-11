@@ -61,14 +61,24 @@
         <div class="row justify-content-center card-row service-section-02__card">
             {% for item in cardData%}
             <div class="col-xl-5 col-sm-6 col-xxl-3 col-xs-9" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}" data-aos-duration="800">
-                {{Card.SerciceCard({
-                    modifier:"card-service--02",
+                {# {{Card.SerciceCard({
+                    modifier:"card-service--{{item.id}}",
                     img:item.img,
                     bgWrapper:item.bgWrapper,
                     title:item.title,
                     btnText:item.btnText,
                     text:item.text
-                })}}
+                })}} #}
+                <div class="card card-service card-service--0{{item.id}}">
+    <div class="card-image {{item.bgWrapper}}">
+        <img src="{{item.img}}" alt="card" class="mw-100 make-it-inline">
+    </div>
+    <div class="card-body p-0">
+        <h4 class="card-title heading-dark">{{item.title | safe}}</h4>
+        <p class="text-dark">{{item.text}}</p>
+        <a href="#">{{item.btnText | safe}}</a>
+    </div>
+</div>
             </div>
             {% endfor %}
         </div>

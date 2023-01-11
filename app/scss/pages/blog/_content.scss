@@ -11,6 +11,11 @@
         @media (min-width:1400px) {
             margin-right: 30px;
         }
+        .card-blog{
+            .titel{
+                font-weight: 600;
+            }
+        }
     }
     &__button{
         margin-top: 30px;
@@ -21,10 +26,22 @@
     &__shots{
         .shots-box{
           &__single-post{
-              display: grid;
-              grid-template-columns: repeat(4, minmax(0, 1fr));
-              row-gap: 20px;
-              column-gap: 20px;
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            //   display: grid;
+            //   grid-template-columns: repeat(4, minmax(0, 1fr));
+            //   row-gap: 20px;
+            //   column-gap: 20px;
+            //   @media (max-width: 991px) {
+            //     grid-template-columns: repeat(6, minmax(0, 1fr));
+            //   }
+            //   @media (max-width: 767px) {
+            //     grid-template-columns: repeat(5, minmax(0, 1fr));
+            //   }
+            //   @media (max-width: 425px) {
+            //     grid-template-columns: repeat(4, minmax(0, 1fr));
+            //   }
           }  
         }
     }

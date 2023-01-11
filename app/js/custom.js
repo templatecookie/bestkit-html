@@ -31,7 +31,7 @@ $(".counter").counterUp({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        fade: true,
+        fade: false,
         prevArrow: $(".testimonial-slider--01__control-buttons .button--prev"),
         nextArrow: $(".testimonial-slider--01__control-buttons .button--next"),
       });
@@ -372,4 +372,11 @@ $('.portfolio-filter-menu').on('click', 'button', function() {
 $('.service-category').on('click', 'li', function() {
   $('.service-category li.active').removeClass('active');
   $(this).addClass('active');
+});
+
+var typed = new Typed(".typed", {
+	strings: ["Web Developer", "PHP Expert"],
+	typeSpeed: 100,
+	loop: true,
+	cursorChar: "|",
 });

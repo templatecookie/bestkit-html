@@ -41,6 +41,39 @@
            border-radius: 5px;
            z-index: -1;
        }
+       .experience-card{
+         position: absolute;
+         bottom: 80px;
+         right: 38px;
+         background: #36CD77;
+         border-radius: 3px;
+         padding: 18px 20px;
+         @media (max-width: 767px) {
+           padding: 8px 12px;
+           right: 24px;
+         }
+         h2{
+            color: white;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            @media (max-width: 767px) {
+                font-size: 28px;
+            }
+            span{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: left;
+                @media (max-width: 767px) {
+                  font-size: 14px;
+                }
+            }
+         }
+       }
     }
 }
 .tab-content-01{
@@ -86,6 +119,7 @@
                    align-items: center;
                    span{
                        margin-right: 15px;
+                       display: inline-flex;
                     }
                     font-weight: 500;
                     margin-bottom: 18px;

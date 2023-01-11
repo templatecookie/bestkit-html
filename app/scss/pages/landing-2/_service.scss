@@ -29,5 +29,37 @@
                 }
             }
         } 
+        .card-service--01 {
+          &:hover {
+            &::before {
+              background-color: #7054FF;
+            }
+            .card-image{
+                background-color: #7054FF !important;
+            }
+          }
+        }
+        .card-service--03 {
+          &:hover {
+            &::before {
+              background-color: #FFAB2E;
+            }
+
+            .card-image {
+              background-color: #FFAB2E !important;
+            }
+          }
+        }
+        .card-service--04 {
+          &:hover {
+            &::before {
+              background-color: #36CD77;
+            }
+
+            .card-image {
+              background-color: #36CD77 !important;
+            }
+          }
+        }
     }
 }

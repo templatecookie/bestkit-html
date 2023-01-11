@@ -108,14 +108,14 @@
     <div class="blog-content-area">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-8 col-xs-10 order-lg-2">
+                <div class="col-lg-4 col-12 order-lg-2">
                     <div class="blog-content-area__search">
                         {{MixtComponent.SearchBox()}}
                     </div>
                     <div class="blog-content-area__post">
                         <div class="blog-post-box">
                             <h3 class="content-title">Recent Post</h3>
-                            <div class="blog-post-box__single-post overflow-hidden">
+                            <div class="blog-post-box__single-post">
                                 {% for item in postCardData%}
                                 <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}"
                                 data-aos-duration="800">
@@ -140,7 +140,7 @@
                         <div class="blog-content-area__shots">
                         <div class="shots-box">
                             <h3 class="content-title">Instagram Shots</h3>
-                            <div class="shots-box__single-post overflow-hidden">
+                            <div class="shots-box__single-post">
                                 {% for item in shotsCardData%}
                                 <div class="single-post" data-aos="fade-up" data-aos-delay="{{ 150 * item.id }}"
                                 data-aos-duration="800">

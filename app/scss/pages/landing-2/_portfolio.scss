@@ -22,7 +22,7 @@
         display: flex;
         align-items: center;
         @media (max-width:575px) {
-            flex-direction: column;
+            display: none;
         }
         .filter-text{
             margin-bottom: 10px;
@@ -39,6 +39,32 @@
                 padding-bottom: 5px;
                 @media (min-width:575px) {
                     font-size: 18px;
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        .portfolio-active.row{
+            gap: 70px !important;
+            .grid-item {
+                &:first-child, 
+                &:nth-child(3){
+                    padding-right: 35px;
+                }
+                &:last-child,
+                &:nth-child(2) {
+                  padding-left: 35px;
+                }
+                .portfolio-card{
+                    &.one
+                    &.three {
+                      padding-right: -35px;
+                    }
+
+                    &.two
+                    &.four {
+                      padding-left: -35px;
+                    }
                 }
             }
         }

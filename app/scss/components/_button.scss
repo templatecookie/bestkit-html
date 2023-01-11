@@ -143,6 +143,9 @@ button {
         img{
           margin-right: 15px;
         }
+        &:hover{
+          color: var(--bs-primary);
+        }
       }
     }
     &--02{
